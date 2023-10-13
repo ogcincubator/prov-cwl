@@ -29,7 +29,7 @@ This is a template for creating a customised profile of the PROV schema building
 </p>
 
 <aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/prov-profile-template/blob/master/build/tests/prov/template/example-prov-profile/" target="_blank">valid</a></strong>
+This building block is <strong><a href="https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/prov/template/example-prov-profile/" target="_blank">valid</a></strong>
 </aside>
 
 # Description
@@ -78,8 +78,8 @@ JSON
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/tests/prov/template/example-prov-profile/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fprov-profile-template%2Fmaster%2Fbuild%2Ftests%2Fprov%2Ftemplate%2Fexample-prov-profile%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/tests/prov/template/example-prov-profile/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fprov-cwl%2Fmaster%2Fbuild%2Ftests%2Fprov%2Ftemplate%2Fexample-prov-profile%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -96,14 +96,14 @@ JSON
     "extraProperty": "",
     "endedAtTime": "2029-01-01"
   },
-  "@context": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/context.jsonld"
+  "@context": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/tests/prov/template/example-prov-profile/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fprov-profile-template%2Fmaster%2Fbuild%2Ftests%2Fprov%2Ftemplate%2Fexample-prov-profile%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/tests/prov/template/example-prov-profile/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fprov-cwl%2Fmaster%2Fbuild%2Ftests%2Fprov%2Ftemplate%2Fexample-prov-profile%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -139,12 +139,12 @@ x-jsonld-extra-terms:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fprov-profile-template%2Fmaster%2Fbuild%2Fannotated%2Fprov%2Ftemplate%2Fexample-prov-profile%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fprov-cwl%2Fmaster%2Fbuild%2Fannotated%2Fprov%2Ftemplate%2Fexample-prov-profile%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.yaml" target="_blank">https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.yaml</a>
-* JSON version: <a href="https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.json" target="_blank">https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.json</a>
+* YAML version: <a href="https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.yaml" target="_blank">https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.yaml</a>
+* JSON version: <a href="https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.json" target="_blank">https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.json</a>
 
 
 # JSON-LD Context
@@ -169,16 +169,16 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fprov-profile-template%2Fmaster%2Fbuild%2Fannotated%2Fprov%2Ftemplate%2Fexample-prov-profile%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fogcincubator%2Fprov-cwl%2Fmaster%2Fbuild%2Fannotated%2Fprov%2Ftemplate%2Fexample-prov-profile%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/context.jsonld" target="_blank">https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/context.jsonld</a>
+<a href="https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/context.jsonld" target="_blank">https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/context.jsonld</a>
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/ogcincubator/prov-profile-template" target="_blank">https://github.com/ogcincubator/prov-profile-template</a>
+* URL: <a href="https://github.com/ogcincubator/prov-cwl" target="_blank">https://github.com/ogcincubator/prov-cwl</a>
 * Path:
-<code><a href="https://github.com/ogcincubator/prov-profile-template/blob/HEAD/_sources/example-prov-profile" target="_blank">_sources/example-prov-profile</a></code>
+<code><a href="https://github.com/ogcincubator/prov-cwl/blob/HEAD/_sources/example-prov-profile" target="_blank">_sources/example-prov-profile</a></code>
 

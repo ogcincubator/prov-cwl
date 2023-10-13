@@ -1,13 +1,13 @@
 {
   "title": "Validation report for ogc.prov.template.example-prov-profile - Provenance Profile",
   "bblockId": "ogc.prov.template.example-prov-profile",
-  "generated": "2023-10-13T05:31:40.151357+00:00",
+  "generated": "2023-10-13T07:02:52.194359+00:00",
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "require_fail": false,
-        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/_sources/example-prov-profile/example_1_1.json",
+        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"

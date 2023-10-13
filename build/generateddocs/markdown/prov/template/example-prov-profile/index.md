@@ -60,7 +60,7 @@ JSON
     "extraProperty": "",
     "endedAtTime": "2029-01-01"
   },
-  "@context": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/context.jsonld"
+  "@context": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/context.jsonld"
 }
 ```
 
@@ -102,8 +102,8 @@ x-jsonld-extra-terms:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.yaml)
+* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.json)
+* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.yaml)
 
 
 # JSON-LD Context
@@ -129,13 +129,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/context.jsonld)
+[context.jsonld](https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/prov-profile-template](https://github.com/ogcincubator/prov-profile-template)
+* URL: [https://github.com/ogcincubator/prov-cwl](https://github.com/ogcincubator/prov-cwl)
 * Path: `_sources/example-prov-profile`
 

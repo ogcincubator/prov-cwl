@@ -92,25 +92,25 @@
       ],
       "shaclRules": [],
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.json"
+        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.json"
       },
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/_sources/example-prov-profile/",
+      "ldContext": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/prov-profile-template/blob/master/build/tests/prov/template/example-prov-profile/",
+      "testOutputs": "https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/prov/template/example-prov-profile/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/generateddocs/markdown/prov/template/example-prov-profile/index.md"
+          "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/markdown/prov/template/example-prov-profile/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/generateddocs/json-full/prov/template/example-prov-profile/index.json"
+          "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/json-full/prov/template/example-prov-profile/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/generateddocs/slate-build/prov/template/example-prov-profile/"
+          "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/slate-build/prov/template/example-prov-profile/"
         }
       },
       "@type": [
