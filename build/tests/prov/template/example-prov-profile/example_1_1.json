@@ -1,0 +1,11 @@
+{
+  "id": "ProvProfile",
+  "name": "EntityExample",
+  "featureType": "MyEntityType",
+  "wasGeneratedBy": {
+    "type": "Activity",
+    "activity": "MyActivity",
+    "extraProperty": "",
+    "endedAtTime": "2029-01-01"
+  }
+}

@@ -1,0 +1,4 @@
+identifier-prefix: ogc.prov.template.
+imports:
+  - default
+  - https://ogcincubator.github.io/bblock-prov-schema/build/register.json

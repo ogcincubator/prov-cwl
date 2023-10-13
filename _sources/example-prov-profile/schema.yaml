@@ -1,0 +1,17 @@
+description: 'Example profile schema'
+$defs:
+  MyActivity:
+    $anchor: MyActivity
+    allOf:
+      - ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Activity
+      - type: object
+        properties:
+          extraProperty:
+            type: string
+            description: "Just an extra property that MyActivity has"
+        required:
+          - extraProperty
+type: object
+allOf:
+  - ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+

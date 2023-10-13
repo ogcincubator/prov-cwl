@@ -1,0 +1,51 @@
+{
+  "imports": [
+    "https://blocks.ogc.org/register.json",
+    "https://ogcincubator.github.io/bblock-prov-schema/build/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.prov.template.example-prov-profile",
+      "name": "Provenance Profile",
+      "abstract": "This is a template for creating a customised profile of the PROV schema building block.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2023-04-05",
+      "link": "https://ogcincubator.github.io/bblock-prov-schema/build/generateddocs/slate-build/ogc-utils/prov/",
+      "sources": [],
+      "maturity": "under-development",
+      "scope": "unstable",
+      "tags": [
+        "templates",
+        "provenance",
+        "profile"
+      ],
+      "shaclRules": [],
+      "schema": {
+        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/schema.json"
+      },
+      "ldContext": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/_sources/example-prov-profile/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/prov-profile-template/blob/master/build/tests/prov/template/example-prov-profile/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/generateddocs/markdown/prov/template/example-prov-profile/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/generateddocs/json-full/prov/template/example-prov-profile/index.json"
+        },
+        "slate": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/generateddocs/slate-build/prov/template/example-prov-profile/"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "extraProperty": "http://mymodel.eg/ont/extraProperty",
+    "@base": "http://mymodel.eg/activityTypes/",
+    "featureType": {
+      "x-jsonld-context": {
+        "@base": "http://mymodel.eg/EntityTypes/"
+      }
+    },
+    "activity": {
+      "x-jsonld-context": {
+        "@base": "http://mymodel.eg/activityTypes/"
+      }
+    },
+    "@version": 1.1
+  }
+}

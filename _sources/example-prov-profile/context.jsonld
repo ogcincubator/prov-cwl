@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "extraProperty": "http://mymodel.eg/ont/extraProperty",
+    "featureType": {
+       "@context": {
+        "@base": "http://mymodel.eg/EntityTypes/"
+      }
+    },
+    "activity": {
+      "@context": {
+        "@base": "http://mymodel.eg/activityTypes/"
+      }
+    }
+  }
+}

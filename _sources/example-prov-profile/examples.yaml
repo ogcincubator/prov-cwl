@@ -1,0 +1,7 @@
+- title: Profile example
+  content: |-
+    JSON
+
+  snippets:
+    - language: json
+      ref: example.json

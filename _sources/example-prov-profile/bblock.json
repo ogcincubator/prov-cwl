@@ -1,0 +1,16 @@
+{
+  "name": "Provenance Profile",
+  "abstract": "This is a template for creating a customised profile of the PROV schema building block.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+  "link": "https://ogcincubator.github.io/bblock-prov-schema/build/generateddocs/slate-build/ogc-utils/prov/",
+  "sources": [
+  ],
+  "maturity": "under-development",
+  "scope": "unstable",
+  "tags": ["templates", "provenance", "profile"]
+}

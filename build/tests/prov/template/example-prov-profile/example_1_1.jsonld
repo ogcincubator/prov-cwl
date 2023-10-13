@@ -1,0 +1,12 @@
+{
+  "id": "ProvProfile",
+  "name": "EntityExample",
+  "featureType": "MyEntityType",
+  "wasGeneratedBy": {
+    "type": "Activity",
+    "activity": "MyActivity",
+    "extraProperty": "",
+    "endedAtTime": "2029-01-01"
+  },
+  "@context": "https://raw.githubusercontent.com/ogcincubator/prov-profile-template/master/build/annotated/prov/template/example-prov-profile/context.jsonld"
+}
