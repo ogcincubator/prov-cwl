@@ -1,17 +1,218 @@
-description: 'Example profile schema'
+$schema: https://json-schema.org/draft/2020-12/schema
+description: provenance chain
 $defs:
-  MyActivity:
-    $anchor: MyActivity
-    allOf:
-      - ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Activity
-      - type: object
-        properties:
-          extraProperty:
-            type: string
-            description: "Just an extra property that MyActivity has"
-        required:
-          - extraProperty
-type: object
-allOf:
-  - ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
-
+  objectref:
+    $anchor: objectref
+    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json
+  oneOrMoreObjectref:
+    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json#/$defs/MultipleOrObject
+  oneOrMoreActivitiesOrRefIds:
+    oneOf:
+    - $ref: '#/$defs/objectref'
+    - $ref: '#/$defs/Activity'
+    - type: array
+      items:
+        anyOf:
+        - $ref: '#/$defs/objectref'
+        - $ref: '#/$defs/Activity'
+  oneOrMoreEntitiesOrRefIds:
+    oneOf:
+    - $ref: '#/$defs/objectref'
+    - $ref: '#/$defs/Entity'
+    - type: array
+      items:
+        anyOf:
+        - $ref: '#/$defs/objectref'
+        - $ref: '#/$defs/Entity'
+  oneOrMoreAgentsOrRefIds:
+    oneOf:
+    - $ref: '#/$defs/objectref'
+    - $ref: '#/$defs/externalLink'
+    - $ref: '#/$defs/Agent'
+    - type: array
+      items:
+        anyOf:
+        - $ref: '#/$defs/objectref'
+        - $ref: '#/$defs/Agent'
+  externalLink:
+    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json
+  Entity:
+    type: object
+    properties:
+      id:
+        type: string
+      featureType:
+        $ref: '#/$defs/objectref'
+      provenance:
+        $ref: '#/$defs/Prov'
+      wasGeneratedBy:
+        $ref: '#/$defs/oneOrMoreActivitiesOrRefIds'
+      wasAttributedTo:
+        $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+      wasDerivedFrom:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      alternateOf:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      hadPrimarySource:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      specializationOf:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      wasInvalidatedBy:
+        $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+      wasQuotedFrom:
+        $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+      wasRevisionOf:
+        $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+      mentionOf:
+        $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+      atLocation:
+        $ref: '#/$defs/objectref'
+      links:
+        type: array
+        items:
+          $ref: '#/$defs/externalLink'
+    required:
+    - id
+    anyOf:
+    - properties:
+        type:
+          oneOf:
+            - type: string
+              enum: [ Entity, Bundle, Plan ]
+            - type: array
+              contains:
+                type: string
+                enum: [ Entity, Bundle, Plan ]
+      required:
+      - type
+    - required:
+      - featureType
+    - required:
+      - wasGeneratedBy
+    - required:
+      - wasAttributedTo
+    - required:
+      - wasDerivedFrom
+    - required:
+      - provenance
+    - properties:
+        type:
+          type: string
+          const: Collection
+        hadMember:
+          type: array
+          items:
+            $ref: '#/$defs/Entity'
+      required:
+        - hadMember
+        - type
+    - properties:
+        type:
+          type: string
+          const: EmptyCollection
+        hadMember:
+          type: array
+          maxItems: 0
+      required:
+        - hadMember
+        - type
+  dateOrTime:
+    oneOf:
+    - type: string
+      format: date
+      pattern: ^\d{4}-\d{2}-\d{2}$
+    - type: string
+      format: date-time
+      pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?$
+  Activity:
+    type: object
+    properties:
+      type:
+        $ref: '#/$defs/oneOrMoreObjectref'
+      endedAtTime:
+        $ref: '#/$defs/dateOrTime'
+      wasAssociatedWith:
+        $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+      wasInformedBy:
+        $ref: '#/$defs/oneOrMoreActivitiesOrRefIds'
+      used:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      wasStartedBy:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      wasEndedBy:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      invalidated:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      generated:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      atLocation:
+        $ref: '#/$defs/objectref'
+    anyOf:
+    - properties:
+        type:
+          oneOf:
+            - type: string
+              const: Activity
+            - type: array
+              items:
+                type: string
+                contains: Activity
+      required:
+      - type
+    - required:
+      - activity
+    - required:
+      - used
+    - required:
+      - wasInformedBy
+    - required:
+      - endedAtTime
+    - required:
+      - startedAtTime
+    - required:
+      - wasAssociatedWith
+  Agent:
+    type: object
+    properties:
+      type:
+        $ref: '#/$defs/oneOrMoreObjectref'
+      name:
+        type: string
+      id:
+        type: string
+        format: uri
+      actedOnBehalfOf:
+        $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+      atLocation:
+        $ref: '#/$defs/objectref'
+    required:
+    - name
+    anyOf:
+    - properties:
+        type:
+          oneOf:
+            - type: string
+              const: [ Agent, Organization, Person, SoftwareAgent, SoftwareDescription, DirectQueryService ]
+            - type: array
+              contains:
+                type: string
+                const: [ Agent, Organization, Person, SoftwareAgent, SoftwareDescription, DirectQueryService ]
+      required:
+      - type
+    - required:
+      - agentType
+    - required:
+      - actedOnBehalfOf
+  Prov:
+    description: An list of provenance objects linked together to form a provenance
+      chain for the current object. Objects may have nested objects as well, with
+      or without referencable ids
+    type: array
+    items:
+      oneOf:
+      - $ref: '#/$defs/Entity'
+      - $ref: '#/$defs/Activity'
+      - $ref: '#/$defs/Agent'
+anyOf:
+- $ref: '#/$defs/Entity'
+- $ref: '#/$defs/Activity'
