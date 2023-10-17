@@ -1,12 +1,13 @@
 {
   "title": "Validation report for ogc.prov.template.example-prov-profile - Provenance Profile",
+  "bblockName": "Provenance Profile",
   "bblockId": "ogc.prov.template.example-prov-profile",
-  "generated": "2023-10-13T07:02:52.194359+00:00",
+  "generated": "2023-10-17T18:52:13.839548+00:00",
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
-        "require_fail": false,
+        "requireFail": false,
         "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
@@ -31,11 +32,103 @@
           },
           {
             "op": "ttl-create",
-            "empty": true,
+            "empty": false,
             "filename": "example_1_1.ttl",
-            "size": 0,
+            "size": 4,
             "is_error": false,
-            "message": "**Empty** output Turtle example_1_1.ttl created"
+            "message": "Output Turtle example_1_1.ttl created"
+          }
+        ],
+        "JSON_SCHEMA": [
+          {
+            "op": "validation",
+            "result": true,
+            "is_error": false,
+            "message": "Validation passed"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "sections": {
+        "FILES": [
+          {
+            "is_error": false,
+            "message": "Using example_2_1.json from examples"
+          },
+          {
+            "op": "jsonld-uplift",
+            "is_error": false,
+            "message": "JSON-LD context is present - uplifting"
+          },
+          {
+            "op": "jsonld-create",
+            "filename": "example_2_1.jsonld",
+            "is_error": false,
+            "message": "Output JSON-LD example_2_1.jsonld created"
+          },
+          {
+            "op": "ttl-create",
+            "empty": false,
+            "filename": "example_2_1.ttl",
+            "size": 154,
+            "is_error": false,
+            "message": "Output Turtle example_2_1.ttl created"
+          }
+        ],
+        "JSON_SCHEMA": [
+          {
+            "op": "validation",
+            "result": false,
+            "exception": "ValidationError",
+            "errorMessage": "'Activity' was expected",
+            "is_error": true,
+            "message": "ValidationError: 'Activity' was expected\n\nFailed validating 'const' in schema[0]:\n    {'const': 'Activity', 'type': 'string'}\n\nOn instance:\n    'Agent'"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/example_3_1.json",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "sections": {
+        "FILES": [
+          {
+            "is_error": false,
+            "message": "Using example_3_1.json from examples"
+          },
+          {
+            "op": "jsonld-uplift",
+            "is_error": false,
+            "message": "JSON-LD context is present - uplifting"
+          },
+          {
+            "op": "jsonld-create",
+            "filename": "example_3_1.jsonld",
+            "is_error": false,
+            "message": "Output JSON-LD example_3_1.jsonld created"
+          },
+          {
+            "op": "ttl-create",
+            "empty": false,
+            "filename": "example_3_1.ttl",
+            "size": 47,
+            "is_error": false,
+            "message": "Output Turtle example_3_1.ttl created"
           }
         ],
         "JSON_SCHEMA": [

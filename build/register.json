@@ -8,7 +8,7 @@
       "itemIdentifier": "ogc.prov.template.example-prov-profile",
       "name": "Provenance Profile",
       "abstract": "This is a template for creating a customised profile of the PROV schema building block.",
-      "status": "under-development",
+      "status": "invalid",
       "dateTimeAddition": "2023-04-05T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-register",
@@ -24,13 +24,17 @@
         "profile"
       ],
       "shaclRules": [],
+      "dependsOn": [
+        "ogc.ogc-utils.json-link",
+        "ogc.ogc-utils.iri-or-curie"
+      ],
       "schema": {
         "application/yaml": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.yaml",
         "application/json": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.json"
       },
       "ldContext": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/context.jsonld",
       "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/",
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/prov/template/example-prov-profile/",
       "documentation": {
         "markdown": {

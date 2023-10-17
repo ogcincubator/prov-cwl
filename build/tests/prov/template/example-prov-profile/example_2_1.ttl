@@ -1,0 +1,129 @@
+@prefix cwlprov: <https://w3id.org/cwl/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schemaorg: <http://schema.org/> .
+@prefix sha1: <urn:hash::sha1:> .
+@prefix uuid: <urn:uuid:> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] dct:type "Entity",
+        "wf4ever:File",
+        "wfprov:Artifact" ;
+    prov:qualifiedGeneration [ dct:type "Generation" ;
+            prov:activity [ rdfs:label "Run of workflow/packed.cwl#main/sorted" ;
+                    dct:type "Activity",
+                        "wfprov:ProcessRun" ;
+                    prov:qualifiedAssociation [ dct:type "Association" ;
+                            prov:hadPlan [ dct:type "Entity",
+                                        "Plan",
+                                        "wfdesc:Process" ] ] ;
+                    prov:qualifiedEnd [ dct:type "End" ;
+                            prov:atTime "2018-10-25T15:46:38.069110"^^xsd:dateTime ;
+                            prov:hadActivity [ rdfs:label "Run of workflow/packed.cwl#main" ;
+                                    dct:type "Activity",
+                                        "wfprov:WorkflowRun" ;
+                                    prov:qualifiedAssociation [ dct:type "Association" ;
+                                            prov:hadPlan [ rdfs:label "Prospective provenance" ;
+                                                    dct:type "Entity",
+                                                        "Plan",
+                                                        "wfdesc:Workflow" ;
+                                                    wfdesc:hasSubProcess [ dct:type "Entity",
+                                                                "Plan",
+                                                                "wfdesc:Process" ],
+                                                        [ ] ] ] ;
+                                    prov:qualifiedEnd [ dct:type "End" ;
+                                            prov:atTime "2018-10-25T15:46:43.020168"^^xsd:dateTime ;
+                                            prov:hadActivity [ rdfs:label "cwltool 1.0.20181012180214" ;
+                                                    dct:type "Agent",
+                                                        "SoftwareAgent",
+                                                        "wfprov:WorkflowEngine" ;
+                                                    prov:qualifiedStart [ dct:type "Start" ;
+                                                            prov:atTime "2018-10-25T15:46:35.210973"^^xsd:dateTime ;
+                                                            prov:hadActivity [ dct:type "Agent" ;
+                                                                    prov:actedOnBehalfOf [ rdfs:label "Stian Soiland-Reyes" ;
+                                                                            dct:type "Agent",
+                                                                                "Person",
+                                                                                "schemaorg:Person" ;
+                                                                            schemaorg:name "Stian Soiland-Reyes" ;
+                                                                            foaf:name "Stian Soiland-Reyes" ] ] ] ] ] ;
+                                    prov:qualifiedStart [ dct:type "Start" ;
+                                            prov:atTime "2018-10-25T15:46:35.211153"^^xsd:dateTime ;
+                                            prov:hadActivity uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;
+                                    prov:qualifiedUsage [ dct:type "Usage" ;
+                                            prov:atTime "2018-10-25T15:46:35.303643"^^xsd:dateTime ;
+                                            prov:entity [ dct:type "Entity" ;
+                                                    prov:value true ] ],
+                                        [ dct:type "Usage" ;
+                                            prov:atTime "2018-10-25T15:46:35.303484"^^xsd:dateTime ;
+                                            prov:entity [ dct:type "Entity",
+                                                        "wf4ever:File",
+                                                        "wfprov:Artifact" ;
+                                                    prov:specializationOf [ dct:type "Entity",
+                                                                "wfprov:Artifact" ] ;
+                                                    cwlprov:basename "whale.txt" ;
+                                                    cwlprov:nameext ".txt" ;
+                                                    cwlprov:nameroot "whale" ] ] ;
+                                    prov:startedAtTime "2018-10-25T15:46:35.211026"^^xsd:dateTime ;
+                                    prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ] ;
+                    prov:qualifiedStart [ dct:type "Start" ;
+                            prov:atTime "2018-10-25T15:46:36.975235"^^xsd:dateTime ;
+                            prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] ;
+                    prov:qualifiedUsage [ dct:type "Usage" ;
+                            prov:atTime "2018-10-25T15:46:37.067864"^^xsd:dateTime ;
+                            prov:entity [ dct:type "Entity" ;
+                                    prov:value true ] ],
+                        [ dct:type "Usage" ;
+                            prov:atTime "2018-10-25T15:46:37.067604"^^xsd:dateTime ;
+                            prov:entity [ dct:type "Entity",
+                                        "wf4ever:File",
+                                        "wfprov:Artifact" ;
+                                    prov:qualifiedGeneration [ dct:type "Generation" ;
+                                            prov:activity [ rdfs:label "Run of workflow/packed.cwl#main/rev" ;
+                                                    dct:type "Activity",
+                                                        "wfprov:ProcessRun" ;
+                                                    prov:qualifiedAssociation [ dct:type "Association" ;
+                                                            prov:hadPlan <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev> ] ;
+                                                    prov:qualifiedEnd [ dct:type "End" ;
+                                                            prov:atTime "2018-10-25T15:46:36.967359"^^xsd:dateTime ;
+                                                            prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] ;
+                                                    prov:qualifiedStart [ dct:type "Start" ;
+                                                            prov:atTime "2018-10-25T15:46:35.314101"^^xsd:dateTime ;
+                                                            prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] ;
+                                                    prov:qualifiedUsage [ dct:type "Usage" ;
+                                                            prov:atTime "2018-10-25T15:46:35.597726"^^xsd:dateTime ;
+                                                            prov:entity [ dct:type "Entity",
+                                                                        "wf4ever:File",
+                                                                        "wfprov:Artifact" ;
+                                                                    prov:specializationOf sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376 ;
+                                                                    cwlprov:basename "whale.txt" ;
+                                                                    cwlprov:nameext ".txt" ;
+                                                                    cwlprov:nameroot "whale" ] ] ;
+                                                    prov:wasAssociatedWith [ rdfs:label "Container execution of image debian:8" ;
+                                                            dct:type "Agent",
+                                                                "SoftwareAgent" ;
+                                                            cwlprov:image "debian:8" ],
+                                                        uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;
+                                            prov:atTime "2018-10-25T15:46:36.963254"^^xsd:dateTime ] ;
+                                    prov:specializationOf [ dct:type "Entity",
+                                                "wfprov:Artifact" ] ;
+                                    cwlprov:basename "output.txt" ;
+                                    cwlprov:nameext ".txt" ;
+                                    cwlprov:nameroot "output" ] ] ;
+                    prov:wasAssociatedWith [ rdfs:label "Container execution of image debian:8" ;
+                            dct:type "Agent",
+                                "SoftwareAgent" ;
+                            cwlprov:image "debian:8" ],
+                        uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;
+            prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ],
+        [ dct:type "Generation" ;
+            prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
+            prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ] ;
+    prov:specializationOf [ dct:type "Entity",
+                "wfprov:Artifact" ] ;
+    cwlprov:basename "output.txt" ;
+    cwlprov:nameext ".txt" ;
+    cwlprov:nameroot "output" .
+
