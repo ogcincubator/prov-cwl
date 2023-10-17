@@ -64,6 +64,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       featureType:
         $ref: '#/$defs/objectref'
       provenance:
@@ -226,6 +227,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         $ref: '#/$defs/oneOrMoreObjectref'
       endedAtTime:
@@ -347,6 +349,7 @@ $defs:
         x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       actedOnBehalfOf:
         $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
         x-jsonld-id: http://www.w3.org/ns/prov#actedOnBehalfOf
@@ -405,6 +408,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -433,6 +437,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -461,6 +466,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -489,6 +495,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -512,6 +519,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -559,6 +567,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -601,6 +610,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -628,6 +638,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -649,6 +660,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       type:
         oneOf:
         - type: string
@@ -678,6 +690,7 @@ $defs:
     properties:
       id:
         $ref: '#/$defs/curie'
+        x-jsonld-id: '@id'
       influencer:
         anyOf:
         - $ref: '#/$defs/oneOrMoreActivitiesOrRefIds'

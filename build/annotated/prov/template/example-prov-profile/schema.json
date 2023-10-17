@@ -136,7 +136,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "featureType": {
           "$ref": "#/$defs/objectref"
@@ -419,7 +420,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "$ref": "#/$defs/oneOrMoreObjectref"
@@ -643,7 +645,8 @@
           "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#label"
         },
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "actedOnBehalfOf": {
           "$ref": "#/$defs/oneOrMoreAgentsOrRefIds",
@@ -745,7 +748,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -792,7 +796,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -839,7 +844,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -886,7 +892,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -927,7 +934,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -1026,7 +1034,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -1104,7 +1113,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -1154,7 +1164,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -1192,7 +1203,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "type": {
           "oneOf": [
@@ -1240,7 +1252,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/curie"
+          "$ref": "#/$defs/curie",
+          "x-jsonld-id": "@id"
         },
         "influencer": {
           "anyOf": [

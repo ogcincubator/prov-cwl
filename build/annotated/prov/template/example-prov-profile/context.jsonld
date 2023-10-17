@@ -1,5 +1,6 @@
 {
   "@context": {
+    "id": "@id",
     "endedAtTime": {
       "@id": "prov:endedAtTime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -7887,6 +7888,16 @@
                 }
               }
             },
+            "qualifiedCommunication": {
+              "@id": "prov:qualifiedCommunication",
+              "@type": "@id",
+              "@context": {
+                "activity": {
+                  "@id": "prov:activity",
+                  "@type": "@id"
+                }
+              }
+            },
             "qualifiedStart": {
               "@id": "prov:qualifiedStart",
               "@type": "@id",
@@ -9248,6 +9259,44 @@
                     }
                   }
                 },
+                "qualifiedUsage": {
+                  "@id": "prov:qualifiedUsage",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    }
+                  }
+                },
+                "qualifiedStart": {
+                  "@id": "prov:qualifiedStart",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "qualifiedEnd": {
+                  "@id": "prov:qualifiedEnd",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
+                    }
+                  }
+                },
                 "qualifiedAssociation": {
                   "@id": "prov:qualifiedAssociation",
                   "@type": "@id",
@@ -9316,6 +9365,44 @@
                     }
                   }
                 },
+                "qualifiedUsage": {
+                  "@id": "prov:qualifiedUsage",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    }
+                  }
+                },
+                "qualifiedStart": {
+                  "@id": "prov:qualifiedStart",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "qualifiedEnd": {
+                  "@id": "prov:qualifiedEnd",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
+                    }
+                  }
+                },
                 "qualifiedAssociation": {
                   "@id": "prov:qualifiedAssociation",
                   "@type": "@id",
@@ -9375,6 +9462,44 @@
                         "wasAssociatedWith": {
                           "@id": "prov:wasAssociatedWith",
                           "@type": "@id"
+                        },
+                        "qualifiedUsage": {
+                          "@id": "prov:qualifiedUsage",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            }
+                          }
+                        },
+                        "qualifiedStart": {
+                          "@id": "prov:qualifiedStart",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            },
+                            "hadActivity": {
+                              "@id": "prov:hadActivity",
+                              "@type": "@id"
+                            }
+                          }
+                        },
+                        "qualifiedEnd": {
+                          "@id": "prov:qualifiedEnd",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            },
+                            "hadActivity": {
+                              "@id": "prov:hadActivity",
+                              "@type": "@id"
+                            }
+                          }
                         },
                         "qualifiedAssociation": {
                           "@id": "prov:qualifiedAssociation",
@@ -9658,6 +9783,44 @@
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
                     },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
                       "@type": "@id",
@@ -9685,6 +9848,44 @@
                     "wasAssociatedWith": {
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
+                    },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
                     },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
@@ -9814,6 +10015,44 @@
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
                     },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
                       "@type": "@id",
@@ -9841,6 +10080,44 @@
                     "wasAssociatedWith": {
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
+                    },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
                     },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
@@ -9970,6 +10247,44 @@
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
                     },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
                       "@type": "@id",
@@ -9997,6 +10312,44 @@
                     "wasAssociatedWith": {
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
+                    },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
                     },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
@@ -10126,6 +10479,44 @@
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
                     },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
                       "@type": "@id",
@@ -10153,6 +10544,44 @@
                     "wasAssociatedWith": {
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
+                    },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
                     },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
@@ -10282,6 +10711,44 @@
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
                     },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
                       "@type": "@id",
@@ -10309,6 +10776,44 @@
                     "wasAssociatedWith": {
                       "@id": "prov:wasAssociatedWith",
                       "@type": "@id"
+                    },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "atTime": {
+                          "@id": "prov:atTime",
+                          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                        },
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
                     },
                     "qualifiedAssociation": {
                       "@id": "prov:qualifiedAssociation",
@@ -10346,12 +10851,50 @@
               "@id": "prov:activity",
               "@type": "@id",
               "@context": {
+                "qualifiedUsage": {
+                  "@id": "prov:qualifiedUsage",
+                  "@type": "@id",
+                  "@context": {
+                    "entity": {
+                      "@id": "prov:entity",
+                      "@type": "@id"
+                    }
+                  }
+                },
                 "qualifiedCommunication": {
                   "@id": "prov:qualifiedCommunication",
                   "@type": "@id",
                   "@context": {
                     "activity": {
                       "@id": "prov:activity",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "qualifiedStart": {
+                  "@id": "prov:qualifiedStart",
+                  "@type": "@id",
+                  "@context": {
+                    "entity": {
+                      "@id": "prov:entity",
+                      "@type": "@id"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "qualifiedEnd": {
+                  "@id": "prov:qualifiedEnd",
+                  "@type": "@id",
+                  "@context": {
+                    "entity": {
+                      "@id": "prov:entity",
+                      "@type": "@id"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
                       "@type": "@id"
                     }
                   }
@@ -10458,6 +11001,54 @@
               "@id": "prov:activity",
               "@type": "@id",
               "@context": {
+                "qualifiedUsage": {
+                  "@id": "prov:qualifiedUsage",
+                  "@type": "@id",
+                  "@context": {
+                    "entity": {
+                      "@id": "prov:entity",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "qualifiedCommunication": {
+                  "@id": "prov:qualifiedCommunication",
+                  "@type": "@id",
+                  "@context": {
+                    "activity": {
+                      "@id": "prov:activity",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "qualifiedStart": {
+                  "@id": "prov:qualifiedStart",
+                  "@type": "@id",
+                  "@context": {
+                    "entity": {
+                      "@id": "prov:entity",
+                      "@type": "@id"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "qualifiedEnd": {
+                  "@id": "prov:qualifiedEnd",
+                  "@type": "@id",
+                  "@context": {
+                    "entity": {
+                      "@id": "prov:entity",
+                      "@type": "@id"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
+                    }
+                  }
+                },
                 "wasInfluencedBy": {
                   "@id": "prov:wasInfluencedBy",
                   "@type": "@id",
@@ -10610,12 +11201,37 @@
                         }
                       }
                     },
+                    "qualifiedUsage": {
+                      "@id": "prov:qualifiedUsage",
+                      "@type": "@id",
+                      "@context": {}
+                    },
                     "qualifiedCommunication": {
                       "@id": "prov:qualifiedCommunication",
                       "@type": "@id",
                       "@context": {
                         "activity": {
                           "@id": "prov:activity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedStart": {
+                      "@id": "prov:qualifiedStart",
+                      "@type": "@id",
+                      "@context": {
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
+                          "@type": "@id"
+                        }
+                      }
+                    },
+                    "qualifiedEnd": {
+                      "@id": "prov:qualifiedEnd",
+                      "@type": "@id",
+                      "@context": {
+                        "hadActivity": {
+                          "@id": "prov:hadActivity",
                           "@type": "@id"
                         }
                       }
@@ -10812,6 +11428,44 @@
                           "@type": "@id"
                         }
                       }
+                    }
+                  }
+                },
+                "qualifiedUsage": {
+                  "@id": "prov:qualifiedUsage",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    }
+                  }
+                },
+                "qualifiedStart": {
+                  "@id": "prov:qualifiedStart",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "qualifiedEnd": {
+                  "@id": "prov:qualifiedEnd",
+                  "@type": "@id",
+                  "@context": {
+                    "atTime": {
+                      "@id": "prov:atTime",
+                      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    },
+                    "hadActivity": {
+                      "@id": "prov:hadActivity",
+                      "@type": "@id"
                     }
                   }
                 },
@@ -11024,6 +11678,44 @@
                           "@type": "@id",
                           "@context": {}
                         },
+                        "qualifiedUsage": {
+                          "@id": "prov:qualifiedUsage",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            }
+                          }
+                        },
+                        "qualifiedStart": {
+                          "@id": "prov:qualifiedStart",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            },
+                            "hadActivity": {
+                              "@id": "prov:hadActivity",
+                              "@type": "@id"
+                            }
+                          }
+                        },
+                        "qualifiedEnd": {
+                          "@id": "prov:qualifiedEnd",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            },
+                            "hadActivity": {
+                              "@id": "prov:hadActivity",
+                              "@type": "@id"
+                            }
+                          }
+                        },
                         "qualifiedAssociation": {
                           "@id": "prov:qualifiedAssociation",
                           "@type": "@id",
@@ -11056,6 +11748,44 @@
                           "@id": "prov:wasAssociatedWith",
                           "@type": "@id",
                           "@context": {}
+                        },
+                        "qualifiedUsage": {
+                          "@id": "prov:qualifiedUsage",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            }
+                          }
+                        },
+                        "qualifiedStart": {
+                          "@id": "prov:qualifiedStart",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            },
+                            "hadActivity": {
+                              "@id": "prov:hadActivity",
+                              "@type": "@id"
+                            }
+                          }
+                        },
+                        "qualifiedEnd": {
+                          "@id": "prov:qualifiedEnd",
+                          "@type": "@id",
+                          "@context": {
+                            "atTime": {
+                              "@id": "prov:atTime",
+                              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                            },
+                            "hadActivity": {
+                              "@id": "prov:hadActivity",
+                              "@type": "@id"
+                            }
+                          }
                         },
                         "qualifiedAssociation": {
                           "@id": "prov:qualifiedAssociation",

@@ -2,44 +2,58 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sha1: <urn:hash::sha1:> .
 @prefix uuid: <urn:uuid:> .
+@prefix wf: <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#> .
 @prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] dct:type "Entity",
+uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd dct:type "Entity",
         "wf4ever:File",
         "wfprov:Artifact" ;
     prov:qualifiedGeneration [ dct:type "Generation" ;
-            prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
-            prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ],
+            prov:activity uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 ;
+            prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ],
         [ dct:type "Generation" ;
-            prov:activity [ rdfs:label "Run of workflow/packed.cwl#main/sorted" ;
-                    dct:type "Activity",
-                        "wfprov:ProcessRun" ;
-                    prov:qualifiedAssociation [ dct:type "Association" ;
-                            prov:hadPlan [ dct:type "Entity",
-                                        "Plan",
-                                        "wfdesc:Process" ] ] ;
-                    prov:qualifiedEnd [ dct:type "End" ;
-                            prov:atTime "2018-10-25T15:46:38.069110"^^xsd:dateTime ;
-                            prov:hadActivity [ rdfs:label "Run of workflow/packed.cwl#main" ;
-                                    dct:type "Activity",
-                                        "wfprov:WorkflowRun" ;
-                                    prov:qualifiedAssociation [ dct:type "Association" ;
-                                            prov:hadPlan [ rdfs:label "Prospective provenance" ;
-                                                    dct:type "Entity",
-                                                        "Plan",
-                                                        "wfdesc:Workflow" ;
-                                                    wfdesc:hasSubProcess [ dct:type "Entity",
-                                                                "Plan",
-                                                                "wfdesc:Process" ],
-                                                        [ ] ] ] ;
-                                    prov:startedAtTime "2018-10-25T15:46:35.211026"^^xsd:dateTime ;
-                                    prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ] ] ;
-            prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ] ;
-    prov:specializationOf [ dct:type "Entity",
-                "wfprov:Artifact" ] ;
+            prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
+            prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ] ;
+    prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
     cwlprov:basename "output.txt" ;
     cwlprov:nameext ".txt" ;
     cwlprov:nameroot "output" .
+
+wf:main rdfs:label "Prospective provenance" ;
+    dct:type "Entity",
+        "Plan",
+        "wfdesc:Workflow" ;
+    wfdesc:hasSubProcess <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,
+        <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted> .
+
+<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev> dct:type "Entity",
+        "Plan",
+        "wfdesc:Process" .
+
+sha1:b9214658cc453331b62c2282b772a5c063dbd284 dct:type "Entity",
+        "wfprov:Artifact" .
+
+uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 rdfs:label "Run of workflow/packed.cwl#main/sorted" ;
+    dct:type "Activity",
+        "wfprov:ProcessRun" ;
+    prov:qualifiedAssociation [ dct:type "Association" ;
+            prov:hadPlan <wf:main/sorted> ] ;
+    prov:qualifiedEnd [ dct:type "End" ;
+            prov:atTime "2018-10-25T15:46:38.069110"^^xsd:dateTime ;
+            prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] .
+
+<wf:main/sorted> dct:type "Entity",
+        "Plan",
+        "wfdesc:Process" .
+
+uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f rdfs:label "Run of workflow/packed.cwl#main" ;
+    dct:type "Activity",
+        "wfprov:WorkflowRun" ;
+    prov:qualifiedAssociation [ dct:type "Association" ;
+            prov:hadPlan wf:main ] ;
+    prov:startedAtTime "2018-10-25T15:46:35.211026"^^xsd:dateTime ;
+    prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 .
 

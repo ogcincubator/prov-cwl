@@ -25,8 +25,8 @@
       ],
       "shaclRules": [],
       "dependsOn": [
-        "ogc.ogc-utils.json-link",
-        "ogc.ogc-utils.iri-or-curie"
+        "ogc.ogc-utils.iri-or-curie",
+        "ogc.ogc-utils.json-link"
       ],
       "schema": {
         "application/yaml": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/prov/template/example-prov-profile/schema.yaml",

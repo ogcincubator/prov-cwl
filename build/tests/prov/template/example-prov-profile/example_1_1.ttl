@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] rdfs:label "EntityExample" ;
+<file:///github/workspace/ProvProfile> rdfs:label "EntityExample" ;
     prov:wasGeneratedBy [ dct:type "Activity" ;
             prov:endedAtTime "2029-01-01T22:05:01+00:00"^^xsd:dateTime ] .
 
