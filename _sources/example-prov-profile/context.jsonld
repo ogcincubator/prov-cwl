@@ -330,6 +330,7 @@
     "cwlprov": "https://w3id.org/cwl/prov#",
     "schemaorg": "http://schema.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "id": "@id",
     "name": "rdfs:label"
   }
 }
