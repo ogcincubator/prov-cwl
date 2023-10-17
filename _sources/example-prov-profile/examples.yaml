@@ -5,3 +5,20 @@
   snippets:
     - language: json
       ref: example.json
+
+- title: Profile example
+  content: |-
+    JSON
+
+  snippets:
+    - language: json
+      ref: example2.json
+
+- title: Profile example
+  content: |-
+    JSON
+
+  snippets:
+    - language: json
+      ref: example3.json
+

@@ -1,0 +1,269 @@
+{
+  "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
+  "type": [
+    "Entity",
+    "wf4ever:File",
+    "wfprov:Artifact"
+  ],
+  "qualifiedGeneration": [
+    {
+      "type": "Generation",
+      "activity": {
+        "id": "uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44",
+        "type": [
+          "wfprov:ProcessRun",
+          "Activity"
+        ],
+        "name": "Run of workflow/packed.cwl#main/sorted",
+        "qualifiedAssociation": {
+          "type": "Association",
+          "hadPlan": {
+            "id":" wf:main/sorted",
+            "type": [
+              "Entity",
+              "Plan",
+              "wfdesc:Process"
+            ]
+          }
+        },
+        "qualifiedEnd": {
+          "type": "End",
+          "atTime": "2018-10-25T15:46:38.069110",
+          "hadActivity": {
+            "id": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
+            "type": [
+              "wfprov:WorkflowRun",
+              "Activity"
+            ],
+            "name": "Run of workflow/packed.cwl#main",
+            "qualifiedAssociation": {
+              "type": "Association",
+              "hadPlan": {
+                "id": "wf:main",
+                "type": [
+                  "Entity",
+                  "Plan",
+                  "wfdesc:Workflow"
+                ],
+                "wfdesc:hasSubProcess": [
+                  {
+                    "id": "wf:main/rev",
+                    "type": [
+                      "Plan",
+                      "Entity",
+                      "wfdesc:Process"
+                    ]
+                  },
+                  {
+                    "id": "wf:main/sorted"
+                  }
+                ],
+                "name": "Prospective provenance"
+              }
+            },
+            "qualifiedEnd": {
+              "type": "End",
+              "atTime": "2018-10-25T15:46:43.020168",
+              "hadActivity": {
+                "id": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519",
+                "type": [
+                  "Agent",
+                  "SoftwareAgent",
+                  "wfprov:WorkflowEngine"
+                ],
+                "name": "cwltool 1.0.20181012180214",
+                "qualifiedStart": {
+                  "type": "Start",
+                  "atTime": "2018-10-25T15:46:35.210973",
+                  "hadActivity": {
+                    "id": "uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210",
+                    "type": "Agent",
+                    "actedOnBehalfOf": {
+                      "id": "https://orcid.org/0000-0001-9842-9718",
+                      "type": [
+                        "schemaorg:Person",
+                        "Person",
+                        "Agent"
+                      ],
+                      "schemaorg:name": "Stian Soiland-Reyes",
+                      "name": "Stian Soiland-Reyes",
+                      "foaf:name": "Stian Soiland-Reyes"
+                    }
+                  }
+                }
+              }
+            },
+            "qualifiedStart": {
+              "type": "Start",
+              "atTime": "2018-10-25T15:46:35.211153",
+              "hadActivity": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
+            },
+            "qualifiedUsage": [
+              {
+                "type": "Usage",
+                "atTime": "2018-10-25T15:46:35.303484",
+                "entity": {
+                  "id": "uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7",
+                  "type": [
+                    "Entity",
+                    "wfprov:Artifact",
+                    "wf4ever:File"
+                  ],
+                  "specializationOf": {
+                    "id": "sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+                    "type": [
+                      "wfprov:Artifact",
+                      "Entity"
+                    ]
+                  },
+                  "cwlprov:basename": "whale.txt",
+                  "cwlprov:nameext": ".txt",
+                  "cwlprov:nameroot": "whale"
+                },
+                "hadRole": "wf:main/input"
+              },
+              {
+                "type": "Usage",
+                "atTime": "2018-10-25T15:46:35.303643",
+                "entity": {
+                  "id": "uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d",
+                  "type": "Entity",
+                  "value": true
+                },
+                "hadRole": "wf:main/reverse_sort"
+              }
+            ],
+            "startedAtTime": "2018-10-25T15:46:35.211026",
+            "wasAssociatedWith": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
+          }
+        },
+        "qualifiedStart": {
+          "type": "Start",
+          "atTime": "2018-10-25T15:46:36.975235",
+          "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
+        },
+        "qualifiedUsage": [
+          {
+            "type": "Usage",
+            "atTime": "2018-10-25T15:46:37.067604",
+            "entity": {
+              "id": "uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265",
+              "type": [
+                "wf4ever:File",
+                "wfprov:Artifact",
+                "Entity"
+              ],
+              "qualifiedGeneration": {
+                "type": "Generation",
+                "activity": {
+                  "id": "uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de",
+                  "type": [
+                    "wfprov:ProcessRun",
+                    "Activity"
+                  ],
+                  "name": "Run of workflow/packed.cwl#main/rev",
+                  "qualifiedAssociation": {
+                    "type": "Association",
+                    "hadPlan": "wf:main/rev"
+                  },
+                  "qualifiedEnd": {
+                    "type": "End",
+                    "atTime": "2018-10-25T15:46:36.967359",
+                    "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
+                  },
+                  "qualifiedStart": {
+                    "type": "Start",
+                    "atTime": "2018-10-25T15:46:35.314101",
+                    "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
+                  },
+                  "qualifiedUsage": {
+                    "type": "Usage",
+                    "atTime": "2018-10-25T15:46:35.597726",
+                    "entity": {
+                      "id": "uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b",
+                      "type": [
+                        "wfprov:Artifact",
+                        "wf4ever:File",
+                        "Entity"
+                      ],
+                      "specializationOf": "sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+                      "cwlprov:basename": "whale.txt",
+                      "cwlprov:nameext": ".txt",
+                      "cwlprov:nameroot": "whale"
+                    },
+                    "hadRole": "wf:main/rev/input"
+                  },
+                  "wasAssociatedWith": [
+                    {
+                      "id": "uuid:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0",
+                      "type": [
+                        "SoftwareAgent",
+                        "Agent"
+                      ],
+                      "name": "Container execution of image debian:8",
+                      "cwlprov:image": "debian:8"
+                    },
+                    "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
+                  ]
+                },
+                "atTime": "2018-10-25T15:46:36.963254",
+                "hadRole": "wf:main/rev/output"
+              },
+              "specializationOf": {
+                "id": "sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f",
+                "type": [
+                  "Entity",
+                  "wfprov:Artifact"
+                ]
+              },
+              "cwlprov:basename": "output.txt",
+              "cwlprov:nameext": ".txt",
+              "cwlprov:nameroot": "output"
+            },
+            "hadRole": "wf:main/sorted/input"
+          },
+          {
+            "type": "Usage",
+            "atTime": "2018-10-25T15:46:37.067864",
+            "entity": {
+              "id": "uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93",
+              "type": "Entity",
+              "value": true
+            },
+            "hadRole": "wf:main/sorted/reverse"
+          }
+        ],
+        "wasAssociatedWith": [
+          "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519",
+          {
+            "id": "uuid:ba0fe122-124e-417b-8a2a-95e721320a2d",
+            "type": [
+              "SoftwareAgent",
+              "Agent"
+            ],
+            "name": "Container execution of image debian:8",
+            "cwlprov:image": "debian:8"
+          }
+        ]
+      },
+      "atTime": "2018-10-25T15:46:38.058365",
+      "hadRole": "wf:main/sorted/output"
+    },
+    {
+      "type": "Generation",
+      "activity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
+      "atTime": "2018-10-25T15:46:43.020002",
+      "hadRole": "wf:main/primary/output"
+    }
+  ],
+  "specializationOf": {
+    "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
+    "type": [
+      "Entity",
+      "wfprov:Artifact"
+    ]
+  },
+  "cwlprov:basename": "output.txt",
+  "cwlprov:nameext": ".txt",
+  "cwlprov:nameroot": "output"
+}

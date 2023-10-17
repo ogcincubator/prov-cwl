@@ -6,6 +6,8 @@ $defs:
     $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json
   oneOrMoreObjectref:
     $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json#/$defs/MultipleOrObject
+  curie:
+    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json
   oneOrMoreActivitiesOrRefIds:
     oneOf:
       - $ref: '#/$defs/objectref'
@@ -57,7 +59,7 @@ $defs:
     type: object
     properties:
       id:
-        type: string
+        $ref: '#/$defs/curie'
       featureType:
         $ref: '#/$defs/objectref'
       provenance:
@@ -172,21 +174,19 @@ $defs:
           - type
     allOf:
       - $ref: '#/$defs/influenced'
-  dateOrTime:
-    oneOf:
-      - type: string
-        format: date
-        pattern: ^\d{4}-\d{2}-\d{2}$
-      - type: string
-        format: date-time
-        pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?$
+  dateTime:
+    type: string
+    format: date-time
+    pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})?$
   Activity:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         $ref: '#/$defs/oneOrMoreObjectref'
       endedAtTime:
-        $ref: '#/$defs/dateOrTime'
+        $ref: '#/$defs/dateTime'
       wasAssociatedWith:
         $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
       wasInformedBy:
@@ -274,8 +274,7 @@ $defs:
       name:
         type: string
       id:
-        type: string
-        format: uri
+        $ref: '#/$defs/curie'
       actedOnBehalfOf:
         $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
       atLocation:
@@ -314,6 +313,8 @@ $defs:
   Usage:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
@@ -325,7 +326,7 @@ $defs:
             items:
               type: string
       atTime:
-        $ref: '#/$defs/dateOrTime'
+        $ref: '#/$defs/dateTime'
       entity:
         oneOf:
           - $ref: '#/$defs/objectref'
@@ -336,6 +337,8 @@ $defs:
   Generation:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
@@ -347,7 +350,7 @@ $defs:
             items:
               type: string
       atTime:
-        $ref: '#/$defs/dateOrTime'
+        $ref: '#/$defs/dateTime'
       activity:
         oneOf:
           - $ref: '#/$defs/objectref'
@@ -358,6 +361,8 @@ $defs:
   Invalidation:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
@@ -369,7 +374,7 @@ $defs:
             items:
               type: string
       atTime:
-        $ref: '#/$defs/dateOrTime'
+        $ref: '#/$defs/dateTime'
       activity:
         oneOf:
           - $ref: '#/$defs/objectref'
@@ -380,6 +385,8 @@ $defs:
   Communication:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
@@ -399,6 +406,8 @@ $defs:
   StartOrEnd:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
@@ -406,7 +415,7 @@ $defs:
             items:
               type: string
       atTime:
-        $ref: '#/$defs/dateOrTime'
+        $ref: '#/$defs/dateTime'
       entity:
         oneOf:
           - $ref: '#/$defs/objectref'
@@ -415,12 +424,14 @@ $defs:
         oneOf:
           - $ref: '#/$defs/objectref'
           - $ref: '#/$defs/Activity'
+    required:
+      - atTime
   Start:
     allOf:
       - $ref: '#/$defs/StartOrEnd'
       - properties:
           type:
-            oneOf:
+            anyOf:
               - const: Start
               - contains:
                   const: Start
@@ -429,16 +440,15 @@ $defs:
       - $ref: '#/$defs/StartOrEnd'
       - properties:
           type:
-            oneOf:
+            anyOf:
               - const: End
               - contains:
                   const: End
-    required:
-      - atTime
-      - entity
   Derivation:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
@@ -471,6 +481,8 @@ $defs:
   Delegation:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
@@ -489,11 +501,11 @@ $defs:
         oneOf:
           - $ref: '#/$defs/objectref'
           - $ref: '#/$defs/Activity'
-    required:
-      - agent
   Attribution:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
@@ -508,19 +520,19 @@ $defs:
         oneOf:
           - $ref: '#/$defs/objectref'
           - $ref: '#/$defs/Agent'
-    required:
-      - agent
   Association:
     type: object
     properties:
+      id:
+        $ref: '#/$defs/curie'
       type:
         oneOf:
           - type: string
-            const: Attribution
+            const: Association
           - type: array
             contains:
               type: string
-              const: Attribution
+              const: Association
             items:
               type: string
       agent:
@@ -531,20 +543,22 @@ $defs:
         $ref: '#/$defs/oneOrMoreObjectref'
       hadPlan:
         $ref: '#/$defs/oneOrMoreObjectref'
-    required:
-      - agent
   Influence:
-    influencer:
-      anyOf:
-        - $ref: '#/$defs/oneOrMoreActivitiesOrRefIds'
-        - $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
-        - $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
-    entity:
-      $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
-    activity:
-      $ref: '#/$defs/oneOrMoreActivitiesOrRefIds'
-    agent:
-      $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+    type: object
+    properties:
+      id:
+        $ref: '#/$defs/curie'
+      influencer:
+        anyOf:
+          - $ref: '#/$defs/oneOrMoreActivitiesOrRefIds'
+          - $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+          - $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
+      entity:
+        $ref: '#/$defs/oneOrMoreEntitiesOrRefIds'
+      activity:
+        $ref: '#/$defs/oneOrMoreActivitiesOrRefIds'
+      agent:
+        $ref: '#/$defs/oneOrMoreAgentsOrRefIds'
     anyOf:
       - required: [ influencer ]
       - required: [ entity ]
