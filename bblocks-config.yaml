@@ -1,4 +1,4 @@
-identifier-prefix: ogc.prov.template.
+identifier-prefix: cwlprov.
 imports:
   - default
   - https://ogcincubator.github.io/bblock-prov-schema/build/register.json
