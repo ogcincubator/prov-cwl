@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "CWL Provenance Chain",
+  "$ref": "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
+  "x-jsonld-prefixes": {
+    "uuid": "urn:uuid:",
+    "sha1": "urn:hash::sha1:",
+    "wf": "arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#",
+    "wf4ever": "http://purl.org/wf4ever/wf4ever#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "cwlprov": "https://w3id.org/cwl/prov#",
+    "schemaorg": "http://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }
+}

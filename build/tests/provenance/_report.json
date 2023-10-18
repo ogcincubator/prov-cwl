@@ -1,14 +1,14 @@
 {
-  "title": "Validation report for ogc.prov.template.example-prov-profile - Provenance Profile",
+  "title": "Validation report for cwlprov.provenance - Provenance Profile",
   "bblockName": "Provenance Profile",
-  "bblockId": "ogc.prov.template.example-prov-profile",
-  "generated": "2023-10-17T19:01:00.656054+00:00",
+  "bblockId": "cwlprov.provenance",
+  "generated": "2023-10-18T07:30:06.765333+00:00",
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/example_1_1.json",
+        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/provenance/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
@@ -34,7 +34,7 @@
             "op": "ttl-create",
             "empty": false,
             "filename": "example_1_1.ttl",
-            "size": 4,
+            "size": 3,
             "is_error": false,
             "message": "Output Turtle example_1_1.ttl created"
           }
@@ -53,7 +53,7 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/example_2_1.json",
+        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/provenance/example_2_1.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "json"
@@ -79,7 +79,7 @@
             "op": "ttl-create",
             "empty": false,
             "filename": "example_2_1.ttl",
-            "size": 154,
+            "size": 97,
             "is_error": false,
             "message": "Output Turtle example_2_1.ttl created"
           }
@@ -100,7 +100,7 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/example-prov-profile/example_3_1.json",
+        "filename": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/provenance/example_3_1.json",
         "exampleIndex": 3,
         "snippetIndex": 1,
         "language": "json"
@@ -126,7 +126,7 @@
             "op": "ttl-create",
             "empty": false,
             "filename": "example_3_1.ttl",
-            "size": 47,
+            "size": 24,
             "is_error": false,
             "message": "Output Turtle example_3_1.ttl created"
           }
