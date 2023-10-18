@@ -11,12 +11,12 @@ bblocks:cwlprov.provenance a skos:Concept,
     rdfs:label "Provenance Profile" ;
     dct:abstract "This is a template for creating a customised profile of the PROV schema building block." ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/markdown/provenance/index.md" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/slate-build/provenance/" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/json-full/provenance/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/slate-build/provenance/" ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/markdown/provenance/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-04-05"^^xsd:date ;
     skos:inScheme <https://www.opengis.net/def/bblocks> ;
@@ -31,8 +31,8 @@ bblocks:cwlprov.provenance a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-10-18T07:30:06.837503"^^xsd:dateTime ;
-    prov:startedAtTime "2023-10-18T07:30:06.770577"^^xsd:dateTime ;
+    prov:endedAtTime "2023-10-18T17:38:38.834152"^^xsd:dateTime ;
+    prov:startedAtTime "2023-10-18T17:38:38.761958"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
@@ -42,6 +42,6 @@ bblocks:cwlprov.provenance a skos:Concept,
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.15.dev1+g2b17930" ;
+            dct:hasVersion "0.3.16" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 

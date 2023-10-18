@@ -103,13 +103,13 @@
       "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/provenance/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/markdown/provenance/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/json-full/provenance/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/markdown/provenance/index.md"
         },
         "slate": {
           "mediatype": "text/html",
