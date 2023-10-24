@@ -1,12 +1,10 @@
-# OGC Building Block template
+# Common WorkFlow Language Building Block for OpenAPI
 
-This template provides a working example of an OGC BuildingBlock.
+This repository is an experiment in using a profile of the PROV vocabulary, ["Common Workflow Language"](https://github.com/common-workflow-language/cwlprov/blob/main/prov.md) with a [base JSON schema and JSON-LD binding to the PROV vocabulary](https://github.com/ogcincubator/bblock-prov-schema).
 
-[Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
+##  Examples
 
-Please replace the contents of this README with information about your Building Block(s).
-
-# How to use this template
+The generated documentation with examples is at [https://ogcincubator.github.io/cwl-prov/](https://ogcincubator.github.io/cwl-prov/)
 
 [More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
 
