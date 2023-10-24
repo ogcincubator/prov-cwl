@@ -11,37 +11,37 @@ bblocks:cwlprov.provenance a skos:Concept,
     rdfs:label "Provenance Profile" ;
     dct:abstract "This is a template for creating a customised profile of the PROV schema building block." ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/slate-build/provenance/" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/json-full/provenance/index.json" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/provenance/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/markdown/provenance/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/markdown/provenance/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/slate-build/provenance/" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-04-05"^^xsd:date ;
     skos:inScheme <https://www.opengis.net/def/bblocks> ;
     bblocks:dependsOn bblocks:ogc.ogc-utils.prov ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/provenance/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/provenance/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/provenance/schema.yaml> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.json>,
+        <https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/invalid> .
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://www.opengis.net/def/bblocks> a skos:ConceptScheme ;
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-10-18T17:38:38.834152"^^xsd:dateTime ;
-    prov:startedAtTime "2023-10-18T17:38:38.761958"^^xsd:dateTime ;
+    prov:endedAtTime "2023-10-24T06:10:36.692844"^^xsd:dateTime ;
+    prov:startedAtTime "2023-10-24T06:10:36.599895"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/register.json> ] ;
+            rdfs:seeAlso <https://ogcincubator.github.io/prov-cwl/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.16" ;
+            dct:hasVersion "0.3.18" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 

@@ -266,5 +266,5 @@
   "cwlprov:basename": "output.txt",
   "cwlprov:nameext": ".txt",
   "cwlprov:nameroot": "output",
-  "@context": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/provenance/context.jsonld"
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld"
 }

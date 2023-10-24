@@ -8,5 +8,5 @@
     "extraProperty": "",
     "endedAtTime": "2029-01-01T22:05:01Z"
   },
-  "@context": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/provenance/context.jsonld"
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld"
 }

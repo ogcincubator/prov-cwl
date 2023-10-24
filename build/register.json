@@ -8,7 +8,7 @@
       "itemIdentifier": "cwlprov.provenance",
       "name": "Provenance Profile",
       "abstract": "This is a template for creating a customised profile of the PROV schema building block.",
-      "status": "invalid",
+      "status": "under-development",
       "dateTimeAddition": "2023-04-05T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-register",
@@ -28,25 +28,25 @@
         "ogc.ogc-utils.prov"
       ],
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/provenance/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/provenance/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.json"
       },
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/annotated/provenance/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/_sources/provenance/",
-      "validationPassed": false,
+      "ldContext": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/prov-cwl/_sources/provenance/",
+      "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/provenance/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/json-full/provenance/index.json"
+          "url": "https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/provenance/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/markdown/provenance/index.md"
+          "url": "https://ogcincubator.github.io/prov-cwl/build/generateddocs/markdown/provenance/index.md"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/prov-cwl/master/build/generateddocs/slate-build/provenance/"
+          "url": "https://ogcincubator.github.io/prov-cwl/build/generateddocs/slate-build/provenance/"
         }
       }
     }
