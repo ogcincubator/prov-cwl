@@ -23,17 +23,18 @@
         "provenance",
         "profile"
       ],
-      "shaclRules": [],
+      "shaclRules": {},
       "dependsOn": [
         "ogc.ogc-utils.prov"
       ],
+      "ldContext": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld",
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.yaml",
         "application/json": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.json"
       },
-      "ldContext": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld",
+      "sourceLdContext": "https://ogcincubator.github.io/prov-cwl/_sources/provenance/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/prov-cwl/_sources/provenance/",
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/provenance/",
       "documentation": {
         "json-full": {
@@ -47,8 +48,15 @@
         "slate": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/prov-cwl/build/generateddocs/slate-build/provenance/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/prov-cwl/bblock/cwlprov.provenance"
         }
       }
     }
-  ]
+  ],
+  "baseURL": "https://ogcincubator.github.io/prov-cwl/",
+  "viewerURL": "https://ogcincubator.github.io/prov-cwl/",
+  "validationReport": "https://ogcincubator.github.io/prov-cwl/build/tests/report.html"
 }
