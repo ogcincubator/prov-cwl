@@ -4,7 +4,7 @@ This repository is an experiment in using a profile of the PROV vocabulary, ["Co
 
 ##  Examples
 
-The generated documentation with examples is at [https://ogcincubator.github.io/cwl-prov/](https://ogcincubator.github.io/cwl-prov/)
+The generated documentation with examples is at [https://ogcincubator.github.io/cwl-prov/](https://ogcincubator.github.io/prov-cwl/)
 
 [More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
 
