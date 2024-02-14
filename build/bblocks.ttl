@@ -7,20 +7,20 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ogcincubator.github.io/cwlprov.provenance> a skos:Concept,
+<https://ogcincubator.github.io/ogc.profiles.prov.cwl.provenance> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Provenance Profile" ;
     dct:abstract "This is a template for creating a customised profile of the PROV schema building block." ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/provenance/index.json" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/profiles/prov/cwl/provenance/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/slate-build/provenance/" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/bblock/cwlprov.provenance" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/bblock/ogc.profiles.prov.cwl.provenance" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/markdown/provenance/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/markdown/profiles/prov/cwl/provenance/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/slate-build/profiles/prov/cwl/provenance/" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-02-14"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/prov-cwl/> ;
@@ -28,31 +28,37 @@
         "provenance",
         "templates" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.ogc-utils.prov> ;
-    bblocks:hasJsonLdContext <https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld> ;
-    bblocks:hasSchema <https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.json>,
-        <https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.yaml> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld> ;
+    bblocks:hasSchema <https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema.json>,
+        <https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema.yaml> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/prov-cwl/_sources/provenance/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://ogcincubator.github.io/prov-cwl/> a skos:ConceptScheme,
         dcat:Catalog ;
-    rdfs:label "workspace" ;
-    skos:prefLabel "workspace" ;
+    rdfs:label "Common Workflow Language Profile of PROV" ;
+    dct:abstract "This is a test of the generic PROV building block using the CWL profile of PROV" ;
+    dct:description """[CWL (Common Workflow Language)](https://github.com/common-workflow-language/cwl-v1.2) is a scientific workflow description approach.
+[CWLPROV](https://github.com/common-workflow-language/cwlprov) is a profile of the W3C PROV to describe workflows using a standard encoding.
+
+This bblock is an initial test that the PROV schema can be extended to support such a profile.
+""" ;
+    skos:prefLabel "Common Workflow Language Profile of PROV" ;
     bblocks:hasValidationReport <https://ogcincubator.github.io/prov-cwl/build/tests/report.html> ;
     bblocks:imports <https://ogcincubator.github.io/bblock-prov-schema/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-02-14T00:49:17.340364"^^xsd:dateTime ;
-    prov:startedAtTime "2024-02-14T00:49:17.279727"^^xsd:dateTime ;
+    prov:endedAtTime "2024-02-14T01:16:02.821769"^^xsd:dateTime ;
+    prov:startedAtTime "2024-02-14T01:16:02.763122"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:0e8d1b0a5ab0b6ed6f500978b39f6baa82242e5d" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/prov-cwl/build/register.json> ],
-        [ a prov:Entity ;
             dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+        [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:ffa5a9aa8e5490862a9817bda6bb13cfdbb48d6b" ;
+            rdfs:seeAlso <https://ogcincubator.github.io/prov-cwl/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

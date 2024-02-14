@@ -1,36 +1,36 @@
 {
   "x-defs": {
-    "cwlprov.provenance": {
+    "ogc.profiles.prov.cwl.provenance": {
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json"
+      "x-schema-source": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json"
     },
     "ogc.ogc-utils.prov": {
       "description": "Provenance Chain using PROV-O core model supporting both an ID based object graph and nesting",
       "$defs": {
         "objectref": {},
         "oneOrMoreObjectref": {
-          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/MultipleOrObject"
+          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/MultipleOrObject"
         },
         "curie": {
-          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.iri-or-curie"
+          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.iri-or-curie"
         },
         "oneOrMoreActivitiesOrRefIds": {
           "oneOf": [
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
             },
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
             },
             {
               "type": "array",
               "items": {
                 "anyOf": [
                   {
-                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                   },
                   {
-                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
+                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
                   }
                 ]
               }
@@ -40,20 +40,20 @@
         "oneOrMoreEntitiesOrRefIds": {
           "oneOf": [
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
             },
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
             },
             {
               "type": "array",
               "items": {
                 "anyOf": [
                   {
-                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                   },
                   {
-                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
+                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
                   }
                 ]
               }
@@ -63,23 +63,23 @@
         "oneOrMoreAgentsOrRefIds": {
           "oneOf": [
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
             },
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/externalLink"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/externalLink"
             },
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
             },
             {
               "type": "array",
               "items": {
                 "anyOf": [
                   {
-                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                   },
                   {
-                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
+                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
                   }
                 ]
               }
@@ -87,7 +87,7 @@
           ]
         },
         "externalLink": {
-          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.json-link"
+          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.json-link"
         },
         "influenced": {
           "type": "object",
@@ -95,13 +95,13 @@
             "wasInfluencedBy": {
               "anyOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreActivitiesOrRefIds"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreActivitiesOrRefIds"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreEntitiesOrRefIds"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreEntitiesOrRefIds"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreAgentsOrRefIds"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreAgentsOrRefIds"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#wasInfluencedBy",
@@ -110,20 +110,20 @@
             "qualifiedInfluence": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Influence"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Influence"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Influence"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Influence"
                       }
                     ]
                   }
@@ -155,27 +155,27 @@
             "links": {
               "type": "array",
               "items": {
-                "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/externalLink"
+                "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/externalLink"
               },
               "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
             },
             "qualifiedGeneration": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Generation"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Generation"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Generation"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Generation"
                       }
                     ]
                   }
@@ -187,20 +187,20 @@
             "qualifiedInvalidation": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Invalidation"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Invalidation"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Invalidation"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Invalidation"
                       }
                     ]
                   }
@@ -212,20 +212,20 @@
             "qualifiedDerivation": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Derivation"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Derivation"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Derivation"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Derivation"
                       }
                     ]
                   }
@@ -237,20 +237,20 @@
             "qualifiedAttribution": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Attribution"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Attribution"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Attribution"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Attribution"
                       }
                     ]
                   }
@@ -334,7 +334,7 @@
                 "hadMember": {
                   "type": "array",
                   "items": {
-                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
+                    "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
                   },
                   "x-jsonld-id": "http://www.w3.org/ns/prov#hadMember",
                   "x-jsonld-type": "@id"
@@ -366,7 +366,7 @@
           ],
           "allOf": [
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/influenced"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/influenced"
             }
           ]
         },
@@ -392,20 +392,20 @@
             "qualifiedUsage": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Usage"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Usage"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Usage"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Usage"
                       }
                     ]
                   }
@@ -417,20 +417,20 @@
             "qualifiedCommunication": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Communication"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Communication"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Generation"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Generation"
                       }
                     ]
                   }
@@ -442,10 +442,10 @@
             "qualifiedStart": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Start"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Start"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#qualifiedStart",
@@ -454,10 +454,10 @@
             "qualifiedEnd": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/End"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/End"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#qualifiedEnd",
@@ -466,20 +466,20 @@
             "qualifiedAssociation": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Association"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Association"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Association"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Association"
                       }
                     ]
                   }
@@ -523,7 +523,7 @@
           ],
           "allOf": [
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/influenced"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/influenced"
             }
           ]
         },
@@ -541,20 +541,20 @@
             "qualifiedDelegation": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Delegation"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Delegation"
                 },
                 {
                   "type": "array",
                   "items": {
                     "oneOf": [
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                       },
                       {
-                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Delegation"
+                        "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Delegation"
                       }
                     ]
                   }
@@ -621,7 +621,7 @@
           ],
           "allOf": [
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/influenced"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/influenced"
             }
           ]
         },
@@ -651,10 +651,10 @@
             "entity": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#entity",
@@ -747,10 +747,10 @@
             "activity": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
                 }
               ]
             }
@@ -780,10 +780,10 @@
             "entity": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#entity",
@@ -792,10 +792,10 @@
             "hadActivity": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#hadActivity",
@@ -809,7 +809,7 @@
         "Start": {
           "allOf": [
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/StartOrEnd"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/StartOrEnd"
             },
             {
               "properties": {
@@ -832,7 +832,7 @@
         "End": {
           "allOf": [
             {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/StartOrEnd"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/StartOrEnd"
             },
             {
               "properties": {
@@ -877,10 +877,10 @@
             "hadGeneration": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Generation"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Generation"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#hadGeneration",
@@ -889,10 +889,10 @@
             "hadActivity": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#hadActivity",
@@ -901,10 +901,10 @@
             "hadUsage": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Usage"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Usage"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#hadUsage",
@@ -913,10 +913,10 @@
             "entity": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#entity",
@@ -953,10 +953,10 @@
             "agent": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#agent",
@@ -965,10 +965,10 @@
             "hadActivity": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#hadActivity",
@@ -1001,10 +1001,10 @@
             "agent": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#agent",
@@ -1037,10 +1037,10 @@
             "agent": {
               "oneOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/objectref"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#agent",
@@ -1057,13 +1057,13 @@
             "influencer": {
               "anyOf": [
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreActivitiesOrRefIds"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreActivitiesOrRefIds"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreEntitiesOrRefIds"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreEntitiesOrRefIds"
                 },
                 {
-                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreAgentsOrRefIds"
+                  "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreAgentsOrRefIds"
                 }
               ],
               "x-jsonld-id": "http://www.w3.org/ns/prov#influencer",
@@ -1071,7 +1071,7 @@
             },
             "entity": {},
             "activity": {
-              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreActivitiesOrRefIds"
+              "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreActivitiesOrRefIds"
             },
             "agent": {}
           },
@@ -1104,13 +1104,13 @@
           "items": {
             "oneOf": [
               {
-                "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
+                "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
               },
               {
-                "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
+                "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
               },
               {
-                "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
+                "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Agent"
               }
             ]
           }
@@ -1118,13 +1118,13 @@
       },
       "anyOf": [
         {
-          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Prov"
+          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Prov"
         },
         {
-          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
+          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Entity"
         },
         {
-          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
+          "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.ogc-utils.prov/$defs/Activity"
         }
       ],
       "x-jsonld-extra-terms": {
@@ -1334,7 +1334,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema-oas3.0.json#/x-defs/cwlprov.provenance"
+      "$ref": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.json#/x-defs/ogc.profiles.prov.cwl.provenance"
     }
   ]
 }

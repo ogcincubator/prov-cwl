@@ -1,7 +1,7 @@
 {
   "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-  "type": [
-    "Entity",
+  "type": "Entity",
+  "featureType": [
     "wf4ever:File",
     "wfprov:Artifact"
   ],
@@ -19,8 +19,8 @@
           "type": "Association",
           "hadPlan": {
             "id": " wf:main/sorted",
-            "type": [
-              "Entity",
+            "type": "Entity",
+            "featureType": [
               "Plan",
               "wfdesc:Process"
             ]
@@ -40,17 +40,17 @@
               "type": "Association",
               "hadPlan": {
                 "id": "wf:main",
-                "type": [
-                  "Entity",
+                "type": "Entity",
+                "featureType": [
                   "Plan",
                   "wfdesc:Workflow"
                 ],
                 "wfdesc:hasSubProcess": [
                   {
                     "id": "wf:main/rev",
-                    "type": [
+                    "type": "Entity",
+                    "featureType": [
                       "Plan",
-                      "Entity",
                       "wfdesc:Process"
                     ]
                   },
@@ -104,8 +104,8 @@
                 "atTime": "2018-10-25T15:46:35.303484",
                 "entity": {
                   "id": "uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7",
-                  "type": [
-                    "Entity",
+                  "type": "Entity",
+                  "featureType": [
                     "wfprov:Artifact",
                     "wf4ever:File"
                   ],
@@ -148,10 +148,10 @@
             "atTime": "2018-10-25T15:46:37.067604",
             "entity": {
               "id": "uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265",
-              "type": [
+              "type": "Entity",
+              "featureType": [
                 "wf4ever:File",
-                "wfprov:Artifact",
-                "Entity"
+                "wfprov:Artifact"
               ],
               "qualifiedGeneration": {
                 "type": "Generation",
@@ -181,10 +181,10 @@
                     "atTime": "2018-10-25T15:46:35.597726",
                     "entity": {
                       "id": "uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b",
-                      "type": [
+                      "type": "Entity",
+                      "featureType": [
                         "wfprov:Artifact",
-                        "wf4ever:File",
-                        "Entity"
+                        "wf4ever:File"
                       ],
                       "specializationOf": "sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
                       "cwlprov:basename": "whale.txt",
@@ -211,8 +211,8 @@
               },
               "specializationOf": {
                 "id": "sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f",
-                "type": [
-                  "Entity",
+                "type": "Entity",
+                "featureType": [
                   "wfprov:Artifact"
                 ]
               },
@@ -258,8 +258,8 @@
   ],
   "specializationOf": {
     "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
-    "type": [
-      "Entity",
+    "type": "Entity",
+    "featureType": [
       "wfprov:Artifact"
     ]
   },

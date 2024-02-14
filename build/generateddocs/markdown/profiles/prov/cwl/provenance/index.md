@@ -1,39 +1,13 @@
----
-title: Provenance Profile (Schema)
 
-language_tabs:
-  - json: JSON
-  - jsonld: JSON-LD
-  - turtle: RDF/Turtle
+# Provenance Profile (Schema)
 
-toc_footers:
-  - Version 0.1
-  - <a href='#'>Provenance Profile</a>
-  - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
-
-search: true
-
-code_clipboard: true
-
-meta:
-  - name: Provenance Profile (Schema)
----
-
-
-# Provenance Profile `cwlprov.provenance`
+`ogc.profiles.prov.cwl.provenance` *v0.1*
 
 This is a template for creating a customised profile of the PROV schema building block.
 
-<p class="status">
-    <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
-</p>
+[*Status*](http://www.opengis.net/def/status): Under development
 
-<aside class="warning">
-Validation for this building block has <strong><a href="https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/provenance/" target="_blank">failed</a></strong>
-</aside>
-
-# Description
+## Description
 
 ## Provenance profile
 
@@ -55,12 +29,11 @@ under a building block directory _/example-prov-profile:
 
 Note that compliance with general PROV patterns is handled by inheritance of SHACL rules from the base profile.
 
-# Examples
+## Examples
 
-## Profile example
-
-
-
+### Profile example
+JSON
+#### json
 ```json
 {
   "id": "ProvProfile",
@@ -75,15 +48,7 @@ Note that compliance with general PROV patterns is handled by inheritance of SHA
 }
 ```
 
-<blockquote class="lang-specific json">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fprov-cwl%2Fbuild%2Ftests%2Fprovenance%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
-</blockquote>
-
-
-
-
+#### jsonld
 ```jsonld
 {
   "id": "ProvProfile",
@@ -95,20 +60,12 @@ Note that compliance with general PROV patterns is handled by inheritance of SHA
     "extraProperty": "",
     "endedAtTime": "2029-01-01T22:05:01Z"
   },
-  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld"
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld"
 }
 ```
 
-<blockquote class="lang-specific jsonld">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fprov-cwl%2Fbuild%2Ftests%2Fprovenance%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
-</blockquote>
-
-
-
-
-```turtle
+#### ttl
+```ttl
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -120,24 +77,15 @@ Note that compliance with general PROV patterns is handled by inheritance of SHA
 
 ```
 
-<blockquote class="lang-specific turtle">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_1_1.ttl">Open in new window</a>
-</blockquote>
 
-
+### Profile example
 JSON
-
-
-## Profile example
-
-
-
+#### json
 ```json
 {
   "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-  "type": [
-    "Entity",
+  "type": "Entity",
+  "featureType": [
     "wf4ever:File",
     "wfprov:Artifact"
   ],
@@ -154,9 +102,9 @@ JSON
         "qualifiedAssociation": {
           "type": "Association",
           "hadPlan": {
-            "id":" wf:main/sorted",
-            "type": [
-              "Entity",
+            "id": " wf:main/sorted",
+            "type": "Entity",
+            "featureType": [
               "Plan",
               "wfdesc:Process"
             ]
@@ -176,17 +124,17 @@ JSON
               "type": "Association",
               "hadPlan": {
                 "id": "wf:main",
-                "type": [
-                  "Entity",
+                "type": "Entity",
+                "featureType": [
                   "Plan",
                   "wfdesc:Workflow"
                 ],
                 "wfdesc:hasSubProcess": [
                   {
                     "id": "wf:main/rev",
-                    "type": [
+                    "type": "Entity",
+                    "featureType": [
                       "Plan",
-                      "Entity",
                       "wfdesc:Process"
                     ]
                   },
@@ -240,8 +188,8 @@ JSON
                 "atTime": "2018-10-25T15:46:35.303484",
                 "entity": {
                   "id": "uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7",
-                  "type": [
-                    "Entity",
+                  "type": "Entity",
+                  "featureType": [
                     "wfprov:Artifact",
                     "wf4ever:File"
                   ],
@@ -284,10 +232,10 @@ JSON
             "atTime": "2018-10-25T15:46:37.067604",
             "entity": {
               "id": "uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265",
-              "type": [
+              "type": "Entity",
+              "featureType": [
                 "wf4ever:File",
-                "wfprov:Artifact",
-                "Entity"
+                "wfprov:Artifact"
               ],
               "qualifiedGeneration": {
                 "type": "Generation",
@@ -317,10 +265,10 @@ JSON
                     "atTime": "2018-10-25T15:46:35.597726",
                     "entity": {
                       "id": "uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b",
-                      "type": [
+                      "type": "Entity",
+                      "featureType": [
                         "wfprov:Artifact",
-                        "wf4ever:File",
-                        "Entity"
+                        "wf4ever:File"
                       ],
                       "specializationOf": "sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
                       "cwlprov:basename": "whale.txt",
@@ -347,8 +295,8 @@ JSON
               },
               "specializationOf": {
                 "id": "sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f",
-                "type": [
-                  "Entity",
+                "type": "Entity",
+                "featureType": [
                   "wfprov:Artifact"
                 ]
               },
@@ -394,8 +342,8 @@ JSON
   ],
   "specializationOf": {
     "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
-    "type": [
-      "Entity",
+    "type": "Entity",
+    "featureType": [
       "wfprov:Artifact"
     ]
   },
@@ -405,20 +353,12 @@ JSON
 }
 ```
 
-<blockquote class="lang-specific json">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fprov-cwl%2Fbuild%2Ftests%2Fprovenance%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
-</blockquote>
-
-
-
-
+#### jsonld
 ```jsonld
 {
   "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-  "type": [
-    "Entity",
+  "type": "Entity",
+  "featureType": [
     "wf4ever:File",
     "wfprov:Artifact"
   ],
@@ -436,8 +376,8 @@ JSON
           "type": "Association",
           "hadPlan": {
             "id": " wf:main/sorted",
-            "type": [
-              "Entity",
+            "type": "Entity",
+            "featureType": [
               "Plan",
               "wfdesc:Process"
             ]
@@ -457,17 +397,17 @@ JSON
               "type": "Association",
               "hadPlan": {
                 "id": "wf:main",
-                "type": [
-                  "Entity",
+                "type": "Entity",
+                "featureType": [
                   "Plan",
                   "wfdesc:Workflow"
                 ],
                 "wfdesc:hasSubProcess": [
                   {
                     "id": "wf:main/rev",
-                    "type": [
+                    "type": "Entity",
+                    "featureType": [
                       "Plan",
-                      "Entity",
                       "wfdesc:Process"
                     ]
                   },
@@ -521,8 +461,8 @@ JSON
                 "atTime": "2018-10-25T15:46:35.303484",
                 "entity": {
                   "id": "uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7",
-                  "type": [
-                    "Entity",
+                  "type": "Entity",
+                  "featureType": [
                     "wfprov:Artifact",
                     "wf4ever:File"
                   ],
@@ -565,10 +505,10 @@ JSON
             "atTime": "2018-10-25T15:46:37.067604",
             "entity": {
               "id": "uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265",
-              "type": [
+              "type": "Entity",
+              "featureType": [
                 "wf4ever:File",
-                "wfprov:Artifact",
-                "Entity"
+                "wfprov:Artifact"
               ],
               "qualifiedGeneration": {
                 "type": "Generation",
@@ -598,10 +538,10 @@ JSON
                     "atTime": "2018-10-25T15:46:35.597726",
                     "entity": {
                       "id": "uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b",
-                      "type": [
+                      "type": "Entity",
+                      "featureType": [
                         "wfprov:Artifact",
-                        "wf4ever:File",
-                        "Entity"
+                        "wf4ever:File"
                       ],
                       "specializationOf": "sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
                       "cwlprov:basename": "whale.txt",
@@ -628,8 +568,8 @@ JSON
               },
               "specializationOf": {
                 "id": "sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f",
-                "type": [
-                  "Entity",
+                "type": "Entity",
+                "featureType": [
                   "wfprov:Artifact"
                 ]
               },
@@ -675,289 +615,259 @@ JSON
   ],
   "specializationOf": {
     "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
-    "type": [
-      "Entity",
+    "type": "Entity",
+    "featureType": [
       "wfprov:Artifact"
     ]
   },
   "cwlprov:basename": "output.txt",
   "cwlprov:nameext": ".txt",
   "cwlprov:nameroot": "output",
-  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld"
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld"
 }
 ```
 
-<blockquote class="lang-specific jsonld">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fprov-cwl%2Fbuild%2Ftests%2Fprovenance%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
-</blockquote>
-
-
-
-
-```turtle
+#### ttl
+```ttl
 @prefix cwlprov: <https://w3id.org/cwl/prov#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix sha1: <urn:hash::sha1:> .
 @prefix uuid: <urn:uuid:> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd prov:qualifiedGeneration [ prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ],
-        [ prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ] ;
-    prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
-    cwlprov:basename "output.txt" ;
-    cwlprov:nameext ".txt" ;
-    cwlprov:nameroot "output" .
-
-
-```
-
-<blockquote class="lang-specific turtle">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_2_1.ttl">Open in new window</a>
-</blockquote>
-
-
-JSON
-
-
-## Profile example
-
-
-
-```json
-{
-  "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-  "type": [
-    "Entity",
-    "wf4ever:File",
-    "wfprov:Artifact"
-  ],
-  "qualifiedGeneration": [
-    {
-      "type": "Generation",
-      "activity": {
-        "id": "uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44",
-        "type": [
-          "wfprov:ProcessRun",
-          "Activity"
-        ],
-        "name": "Run of workflow/packed.cwl#main/sorted",
-        "qualifiedAssociation": {
-          "type": "Association",
-          "hadPlan": {
-            "id":" wf:main/sorted",
-            "type": [
-              "Entity",
-              "Plan",
-              "wfdesc:Process"
-            ]
-          }
-        },
-        "qualifiedEnd": {
-          "type": "End",
-          "atTime": "2018-10-25T15:46:38.069110",
-          "hadActivity": {
-            "id": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
-            "type": [
-              "wfprov:WorkflowRun",
-              "Activity"
-            ],
-            "name": "Run of workflow/packed.cwl#main",
-            "qualifiedAssociation": {
-              "type": "Association",
-              "hadPlan": {
-                "id": "wf:main",
-                "type": [
-                  "Entity",
-                  "Plan",
-                  "wfdesc:Workflow"
-                ],
-                "wfdesc:hasSubProcess": [
-                  {
-                    "id": "wf:main/rev",
-                    "type": [
-                      "Plan",
-                      "Entity",
-                      "wfdesc:Process"
-                    ]
-                  },
-                  {
-                    "id": "wf:main/sorted"
-                  }
-                ],
-                "name": "Prospective provenance"
-              }
-            },
-            "startedAtTime": "2018-10-25T15:46:35.211026",
-            "wasAssociatedWith": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
-          }
-        }
-      },
-      "atTime": "2018-10-25T15:46:38.058365",
-      "hadRole": "wf:main/sorted/output"
-    },
-    {
-      "type": "Generation",
-      "activity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
-      "atTime": "2018-10-25T15:46:43.020002",
-      "hadRole": "wf:main/primary/output"
-    }
-  ],
-  "specializationOf": {
-    "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
-    "type": [
-      "Entity",
-      "wfprov:Artifact"
-    ]
-  },
-  "cwlprov:basename": "output.txt",
-  "cwlprov:nameext": ".txt",
-  "cwlprov:nameroot": "output"
-}
-```
-
-<blockquote class="lang-specific json">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_3_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fprov-cwl%2Fbuild%2Ftests%2Fprovenance%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
-</blockquote>
-
-
-
-
-```jsonld
-{
-  "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-  "type": [
-    "Entity",
-    "wf4ever:File",
-    "wfprov:Artifact"
-  ],
-  "qualifiedGeneration": [
-    {
-      "type": "Generation",
-      "activity": {
-        "id": "uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44",
-        "type": [
-          "wfprov:ProcessRun",
-          "Activity"
-        ],
-        "name": "Run of workflow/packed.cwl#main/sorted",
-        "qualifiedAssociation": {
-          "type": "Association",
-          "hadPlan": {
-            "id": " wf:main/sorted",
-            "type": [
-              "Entity",
-              "Plan",
-              "wfdesc:Process"
-            ]
-          }
-        },
-        "qualifiedEnd": {
-          "type": "End",
-          "atTime": "2018-10-25T15:46:38.069110",
-          "hadActivity": {
-            "id": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
-            "type": [
-              "wfprov:WorkflowRun",
-              "Activity"
-            ],
-            "name": "Run of workflow/packed.cwl#main",
-            "qualifiedAssociation": {
-              "type": "Association",
-              "hadPlan": {
-                "id": "wf:main",
-                "type": [
-                  "Entity",
-                  "Plan",
-                  "wfdesc:Workflow"
-                ],
-                "wfdesc:hasSubProcess": [
-                  {
-                    "id": "wf:main/rev",
-                    "type": [
-                      "Plan",
-                      "Entity",
-                      "wfdesc:Process"
-                    ]
-                  },
-                  {
-                    "id": "wf:main/sorted"
-                  }
-                ],
-                "name": "Prospective provenance"
-              }
-            },
-            "startedAtTime": "2018-10-25T15:46:35.211026",
-            "wasAssociatedWith": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
-          }
-        }
-      },
-      "atTime": "2018-10-25T15:46:38.058365",
-      "hadRole": "wf:main/sorted/output"
-    },
-    {
-      "type": "Generation",
-      "activity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
-      "atTime": "2018-10-25T15:46:43.020002",
-      "hadRole": "wf:main/primary/output"
-    }
-  ],
-  "specializationOf": {
-    "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
-    "type": [
-      "Entity",
-      "wfprov:Artifact"
-    ]
-  },
-  "cwlprov:basename": "output.txt",
-  "cwlprov:nameext": ".txt",
-  "cwlprov:nameroot": "output",
-  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld"
-}
-```
-
-<blockquote class="lang-specific jsonld">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_3_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fprov-cwl%2Fbuild%2Ftests%2Fprovenance%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
-</blockquote>
-
-
-
-
-```turtle
-@prefix cwlprov: <https://w3id.org/cwl/prov#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix sha1: <urn:hash::sha1:> .
-@prefix uuid: <urn:uuid:> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd prov:qualifiedGeneration [ prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ],
+uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
+        wfprov:Artifact ;
+    prov:qualifiedGeneration [ prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ],
         [ prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ] ;
     prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
     cwlprov:basename "output.txt" ;
     cwlprov:nameext ".txt" ;
     cwlprov:nameroot "output" .
 
+sha1:b9214658cc453331b62c2282b772a5c063dbd284 a wfprov:Artifact .
+
 
 ```
 
-<blockquote class="lang-specific turtle">
-  <p class="example-links">
-    <a target="_blank" href="https://ogcincubator.github.io/prov-cwl/build/tests/provenance/example_3_1.ttl">Open in new window</a>
-</blockquote>
 
-
+### Profile example
 JSON
+#### json
+```json
+{
+  "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
+  "type": "Entity",
+  "featureType": [
+    "wf4ever:File",
+    "wfprov:Artifact"
+  ],
+  "qualifiedGeneration": [
+    {
+      "type": "Generation",
+      "activity": {
+        "id": "uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44",
+        "type": [
+          "wfprov:ProcessRun",
+          "Activity"
+        ],
+        "name": "Run of workflow/packed.cwl#main/sorted",
+        "qualifiedAssociation": {
+          "type": "Association",
+          "hadPlan": {
+            "id": " wf:main/sorted",
+            "type": "Entity",
+            "featureType": [
+              "Plan",
+              "wfdesc:Process"
+            ]
+          }
+        },
+        "qualifiedEnd": {
+          "type": "End",
+          "atTime": "2018-10-25T15:46:38.069110",
+          "hadActivity": {
+            "id": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
+            "type": [
+              "wfprov:WorkflowRun",
+              "Activity"
+            ],
+            "name": "Run of workflow/packed.cwl#main",
+            "qualifiedAssociation": {
+              "type": "Association",
+              "hadPlan": {
+                "id": "wf:main",
+                "type": "Entity",
+                "featureType": [
+                  "Plan",
+                  "wfdesc:Workflow"
+                ],
+                "wfdesc:hasSubProcess": [
+                  {
+                    "id": "wf:main/rev",
+                    "type": [
+                      "Plan",
+                      "Entity",
+                      "wfdesc:Process"
+                    ]
+                  },
+                  {
+                    "id": "wf:main/sorted"
+                  }
+                ],
+                "name": "Prospective provenance"
+              }
+            },
+            "startedAtTime": "2018-10-25T15:46:35.211026",
+            "wasAssociatedWith": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
+          }
+        }
+      },
+      "atTime": "2018-10-25T15:46:38.058365",
+      "hadRole": "wf:main/sorted/output"
+    },
+    {
+      "type": "Generation",
+      "activity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
+      "atTime": "2018-10-25T15:46:43.020002",
+      "hadRole": "wf:main/primary/output"
+    }
+  ],
+  "specializationOf": {
+    "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
+    "type": "Entity",
+    "featureType": [
+      "wfprov:Artifact"
+    ]
+  },
+  "cwlprov:basename": "output.txt",
+  "cwlprov:nameext": ".txt",
+  "cwlprov:nameroot": "output"
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
+  "type": "Entity",
+  "featureType": [
+    "wf4ever:File",
+    "wfprov:Artifact"
+  ],
+  "qualifiedGeneration": [
+    {
+      "type": "Generation",
+      "activity": {
+        "id": "uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44",
+        "type": [
+          "wfprov:ProcessRun",
+          "Activity"
+        ],
+        "name": "Run of workflow/packed.cwl#main/sorted",
+        "qualifiedAssociation": {
+          "type": "Association",
+          "hadPlan": {
+            "id": " wf:main/sorted",
+            "type": "Entity",
+            "featureType": [
+              "Plan",
+              "wfdesc:Process"
+            ]
+          }
+        },
+        "qualifiedEnd": {
+          "type": "End",
+          "atTime": "2018-10-25T15:46:38.069110",
+          "hadActivity": {
+            "id": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
+            "type": [
+              "wfprov:WorkflowRun",
+              "Activity"
+            ],
+            "name": "Run of workflow/packed.cwl#main",
+            "qualifiedAssociation": {
+              "type": "Association",
+              "hadPlan": {
+                "id": "wf:main",
+                "type": "Entity",
+                "featureType": [
+                  "Plan",
+                  "wfdesc:Workflow"
+                ],
+                "wfdesc:hasSubProcess": [
+                  {
+                    "id": "wf:main/rev",
+                    "type": [
+                      "Plan",
+                      "Entity",
+                      "wfdesc:Process"
+                    ]
+                  },
+                  {
+                    "id": "wf:main/sorted"
+                  }
+                ],
+                "name": "Prospective provenance"
+              }
+            },
+            "startedAtTime": "2018-10-25T15:46:35.211026",
+            "wasAssociatedWith": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
+          }
+        }
+      },
+      "atTime": "2018-10-25T15:46:38.058365",
+      "hadRole": "wf:main/sorted/output"
+    },
+    {
+      "type": "Generation",
+      "activity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
+      "atTime": "2018-10-25T15:46:43.020002",
+      "hadRole": "wf:main/primary/output"
+    }
+  ],
+  "specializationOf": {
+    "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
+    "type": "Entity",
+    "featureType": [
+      "wfprov:Artifact"
+    ]
+  },
+  "cwlprov:basename": "output.txt",
+  "cwlprov:nameext": ".txt",
+  "cwlprov:nameroot": "output",
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld"
+}
+```
+
+#### ttl
+```ttl
+@prefix cwlprov: <https://w3id.org/cwl/prov#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sha1: <urn:hash::sha1:> .
+@prefix uuid: <urn:uuid:> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
+        wfprov:Artifact ;
+    prov:qualifiedGeneration [ prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ],
+        [ prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ] ;
+    prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
+    cwlprov:basename "output.txt" ;
+    cwlprov:nameext ".txt" ;
+    cwlprov:nameroot "output" .
+
+sha1:b9214658cc453331b62c2282b772a5c063dbd284 a wfprov:Artifact .
 
 
-# JSON Schema
+```
 
-```yaml--schema
+## Schema
+
+```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 description: CWL Provenance Chain
 $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
@@ -974,17 +884,15 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2Fprov-cwl%2Fbuild%2Fannotated%2Fprovenance%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
-
 Links to the schema:
 
-* YAML version: <a href="https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.yaml" target="_blank">https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.yaml</a>
-* JSON version: <a href="https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.json" target="_blank">https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/schema.json</a>
+* YAML version: [schema.yaml](https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema.yaml)
 
 
 # JSON-LD Context
 
-```json--ldContext
+```jsonld
 {
   "@context": {
     "id": "@id",
@@ -1618,16 +1526,14 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Fprov-cwl%2Fbuild%2Fannotated%2Fprovenance%2Fcontext.jsonld">View on JSON-LD Playground</a>
-
 You can find the full JSON-LD context here:
-<a href="https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld" target="_blank">https://ogcincubator.github.io/prov-cwl/build/annotated/provenance/context.jsonld</a>
+[context.jsonld](https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld)
+
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/ogcincubator/prov-cwl" target="_blank">https://github.com/ogcincubator/prov-cwl</a>
-* Path:
-<code><a href="https://github.com/ogcincubator/prov-cwl/blob/HEAD/_sources/provenance" target="_blank">_sources/provenance</a></code>
+* URL: [https://github.com/ogcincubator/prov-cwl](https://github.com/ogcincubator/prov-cwl)
+* Path: `_sources/provenance`
 
