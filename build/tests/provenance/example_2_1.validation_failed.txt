@@ -1,5 +1,5 @@
 Validation report for cwlprov.provenance - Provenance Profile
-Generated 2024-01-16T08:13:57.975838+00:00
+Generated 2024-02-14T00:49:17.258256+00:00
 === Files ===
 Using example_2_1.json from examples
 JSON-LD context is present - uplifting
@@ -59,7 +59,7 @@ Failed validating 'anyOf' in schema[1]:
                                          'x-jsonld-id': 'http://www.w3.org/ns/prov#hadPrimarySource',
                                          'x-jsonld-type': '@id'},
                     'has_provenance': {'$ref': '#/$defs/Prov',
-                                       'x-jsonld-id': 'http://www.w3.org/ns/prov#has_provenance',
+                                       'x-jsonld-id': 'http://purl.org/dc/terms/provenance',
                                        'x-jsonld-type': '@id'},
                     'id': {'$ref': '#/$defs/curie', 'x-jsonld-id': '@id'},
                     'links': {'items': {'$ref': '#/$defs/externalLink'},
