@@ -1,9 +1,9 @@
 
-# Provenance Profile (Schema)
+# CWL (Prov) (Schema)
 
 `ogc.profiles.prov.cwl.provenance` *v0.1*
 
-This is a template for creating a customised profile of the PROV schema building block.
+Common Workflow Language - profile using PROV JSON schema building block.
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

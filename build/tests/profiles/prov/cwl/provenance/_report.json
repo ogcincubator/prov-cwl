@@ -1,8 +1,8 @@
 {
-  "title": "Validation report for ogc.profiles.prov.cwl.provenance - Provenance Profile",
-  "bblockName": "Provenance Profile",
+  "title": "Validation report for ogc.profiles.prov.cwl.provenance - CWL (Prov)",
+  "bblockName": "CWL (Prov)",
   "bblockId": "ogc.profiles.prov.cwl.provenance",
-  "generated": "2024-02-14T01:16:02.750071+00:00",
+  "generated": "2024-02-14T01:18:58.622234+00:00",
   "result": true,
   "items": [
     {

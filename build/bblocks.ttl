@@ -10,17 +10,17 @@
 <https://ogcincubator.github.io/ogc.profiles.prov.cwl.provenance> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
-    rdfs:label "Provenance Profile" ;
-    dct:abstract "This is a template for creating a customised profile of the PROV schema building block." ;
+    rdfs:label "CWL (Prov)" ;
+    dct:abstract "Common Workflow Language - profile using PROV JSON schema building block." ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/profiles/prov/cwl/provenance/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/bblock/ogc.profiles.prov.cwl.provenance" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/slate-build/profiles/prov/cwl/provenance/" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/markdown/profiles/prov/cwl/provenance/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/slate-build/profiles/prov/cwl/provenance/" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/bblock/ogc.profiles.prov.cwl.provenance" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/profiles/prov/cwl/provenance/index.json" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-02-14"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/prov-cwl/> ;
@@ -50,14 +50,14 @@ This bblock is an initial test that the PROV schema can be extended to support s
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-02-14T01:16:02.821769"^^xsd:dateTime ;
-    prov:startedAtTime "2024-02-14T01:16:02.763122"^^xsd:dateTime ;
+    prov:endedAtTime "2024-02-14T01:18:58.695584"^^xsd:dateTime ;
+    prov:startedAtTime "2024-02-14T01:18:58.635348"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:ffa5a9aa8e5490862a9817bda6bb13cfdbb48d6b" ;
+            dct:hasVersion "git:c3904e5f1e3f83c7ccbc68308abd8a0ecce50a28" ;
             rdfs:seeAlso <https://ogcincubator.github.io/prov-cwl/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
