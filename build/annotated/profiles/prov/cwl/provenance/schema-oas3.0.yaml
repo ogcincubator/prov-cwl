@@ -1,5 +1,5 @@
 x-defs:
-  ogc.profiles.prov.cwl.provenance:
+  _github_workspace_build_annotated_profiles_prov_cwl_provenance_schema.yaml:
     x-schema-version: https://json-schema.org/draft/2020-12/schema
     x-schema-source: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml
   ogc.ogc-utils.prov:
@@ -9,8 +9,6 @@ x-defs:
       objectref: {}
       oneOrMoreObjectref:
         $ref: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/MultipleOrObject
-      curie:
-        $ref: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
       oneOrMoreActivitiesOrRefIds:
         oneOf:
         - $ref: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.prov/$defs/objectref
@@ -399,6 +397,8 @@ x-defs:
             oneOf:
             - $ref: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.prov/$defs/objectref
             - $ref: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.prov/$defs/Activity
+            x-jsonld-id: http://www.w3.org/ns/prov#activity
+            x-jsonld-type: '@id'
         required:
         - activity
       StartOrEnd:
@@ -565,8 +565,7 @@ x-defs:
             x-jsonld-id: http://www.w3.org/ns/prov#influencer
             x-jsonld-type: '@id'
           entity: {}
-          activity:
-            $ref: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.prov/$defs/oneOrMoreActivitiesOrRefIds
+          activity: {}
           agent: {}
         anyOf:
         - required:
@@ -720,7 +719,7 @@ x-defs:
     x-schema-source: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
   ogc.ogc-utils.iri-or-curie:
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
   ogc.ogc-utils.json-link:
     description: JSON Link
     type: object
@@ -757,6 +756,6 @@ x-defs:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
       dct: http://purl.org/dc/terms/
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
 allOf:
-- $ref: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml#/x-defs/ogc.profiles.prov.cwl.provenance
+- $ref: https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema-oas3.0.yaml#/x-defs/_github_workspace_build_annotated_profiles_prov_cwl_provenance_schema.yaml

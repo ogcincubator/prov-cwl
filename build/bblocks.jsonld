@@ -11,6 +11,7 @@
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "prof": "http://www.w3.org/ns/dx/prof/",
       "dcat": "http://www.w3.org/ns/dcat#",
+      "modspec": "http://www.opengis.net/def/ont/modspec/",
       "itemIdentifier": "@id",
       "baseURL": "@id",
       "name": "rdfs:label",
@@ -95,18 +96,22 @@
       "imports": {
         "@id": "bblocks:imports",
         "@type": "@id"
+      },
+      "conformanceClasses": {
+        "@id": "modspec:class",
+        "@type": "@id"
       }
     }
   ],
-  "name": "Common Workflow Language Profile of PROV",
+  "name": "Building Blocks - Common Workflow Language Profile of PROV",
   "abstract": "This is a test of the generic PROV building block using the CWL profile of PROV",
   "description": "[CWL (Common Workflow Language)](https://github.com/common-workflow-language/cwl-v1.2) is a scientific workflow description approach.\n[CWLPROV](https://github.com/common-workflow-language/cwlprov) is a profile of the W3C PROV to describe workflows using a standard encoding.\n\nThis bblock is an initial test that the PROV schema can be extended to support such a profile.\n",
-  "modified": "2024-02-14T01:18:50.115607",
+  "modified": "2024-05-28T01:43:14.318961",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"14ee607a3043861f45036785e2601c2f26d55790",
-      "shortCommitId": "\"14ee60",
-      "date": "2024-02-08T21:40:56+00:00\""
+      "commitId": "\"18fbb122a3d7cc4de8b9271905f60ee3e86205a6",
+      "shortCommitId": "\"18fbb1",
+      "date": "2024-05-13T08:31:44+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/prov-cwl",
@@ -122,7 +127,7 @@
     "skos:ConceptScheme",
     "dcat:Catalog"
   ],
-  "skos:prefLabel": "Common Workflow Language Profile of PROV",
+  "skos:prefLabel": "Building Blocks - Common Workflow Language Profile of PROV",
   "hasConcepts": [
     {
       "itemIdentifier": "ogc.profiles.prov.cwl.provenance",
@@ -133,7 +138,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2024-02-14",
+      "dateOfLastChange": "2024-05-28",
       "link": "https://ogcincubator.github.io/prov-cwl/",
       "sources": [],
       "maturity": "under-development",
@@ -152,8 +157,8 @@
         "application/yaml": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema.yaml",
         "application/json": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema.json"
       },
-      "sourceLdContext": "https://ogcincubator.github.io/prov-cwl/_sources/provenance/context.jsonld",
       "sourceSchema": "https://ogcincubator.github.io/prov-cwl/_sources/provenance/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/prov-cwl/_sources/provenance/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/prov-cwl/_sources/provenance/",
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/profiles/prov/cwl/provenance/",

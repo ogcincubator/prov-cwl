@@ -2,14 +2,15 @@
   "title": "Validation report for ogc.profiles.prov.cwl.provenance - CWL (Prov)",
   "bblockName": "CWL (Prov)",
   "bblockId": "ogc.profiles.prov.cwl.provenance",
-  "generated": "2024-02-14T01:18:58.622234+00:00",
+  "generated": "2024-05-28T01:43:24.194003+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/provenance/example_1_1.json",
+        "filename": "build/tests/profiles/prov/cwl/provenance/example_1_1.json",
+        "url": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/provenance/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
@@ -88,7 +89,8 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/provenance/example_2_1.json",
+        "filename": "build/tests/profiles/prov/cwl/provenance/example_2_1.json",
+        "url": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/provenance/example_2_1.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "json"
@@ -123,7 +125,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_2_1.ttl",
-              "size": 11,
+              "size": 12,
               "isError": false,
               "message": "Output Turtle example_2_1.ttl created"
             }
@@ -167,7 +169,8 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/provenance/example_3_1.json",
+        "filename": "build/tests/profiles/prov/cwl/provenance/example_3_1.json",
+        "url": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/provenance/example_3_1.json",
         "exampleIndex": 3,
         "snippetIndex": 1,
         "language": "json"

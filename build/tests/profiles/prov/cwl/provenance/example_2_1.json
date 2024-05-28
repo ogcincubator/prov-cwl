@@ -1,6 +1,7 @@
 {
   "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-  "type": "Entity",
+  "type": "Feature",
+  "provType": "Entity",
   "featureType": [
     "wf4ever:File",
     "wfprov:Artifact"

@@ -84,7 +84,8 @@ JSON
 ```json
 {
   "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-  "type": "Entity",
+  "type": "Feature",
+  "provType": "Entity",
   "featureType": [
     "wf4ever:File",
     "wfprov:Artifact"
@@ -357,7 +358,8 @@ JSON
 ```jsonld
 {
   "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-  "type": "Entity",
+  "type": "Feature",
+  "provType": "Entity",
   "featureType": [
     "wf4ever:File",
     "wfprov:Artifact"
@@ -638,9 +640,10 @@ JSON
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
-        wfprov:Artifact ;
-    prov:qualifiedGeneration [ prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ],
-        [ prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ] ;
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:qualifiedGeneration [ prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ],
+        [ prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ] ;
     prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
     cwlprov:basename "output.txt" ;
     cwlprov:nameext ".txt" ;
@@ -853,8 +856,8 @@ JSON
 
 uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
         wfprov:Artifact ;
-    prov:qualifiedGeneration [ prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ],
-        [ prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ] ;
+    prov:qualifiedGeneration [ prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ],
+        [ prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ] ;
     prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
     cwlprov:basename "output.txt" ;
     cwlprov:nameext ".txt" ;
@@ -1165,6 +1168,10 @@ Links to the schema:
           "@id": "prov:entity",
           "@type": "@id"
         },
+        "activity": {
+          "@id": "prov:activity",
+          "@type": "@id"
+        },
         "agent": {
           "@context": {
             "href": {
@@ -1267,6 +1274,10 @@ Links to the schema:
     },
     "qualifiedCommunication": {
       "@context": {
+        "activity": {
+          "@id": "prov:activity",
+          "@type": "@id"
+        },
         "atTime": {
           "@id": "prov:atTime",
           "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
