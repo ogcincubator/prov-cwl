@@ -1,4 +1,5 @@
 {
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld",
   "id": "ProvProfile",
   "name": "EntityExample",
   "featureType": "MyEntityType",
@@ -7,6 +8,5 @@
     "activity": "MyActivity",
     "extraProperty": "",
     "endedAtTime": "2029-01-01T22:05:01Z"
-  },
-  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld"
+  }
 }

@@ -51,6 +51,7 @@ JSON
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld",
   "id": "ProvProfile",
   "name": "EntityExample",
   "featureType": "MyEntityType",
@@ -59,20 +60,22 @@ JSON
     "activity": "MyActivity",
     "extraProperty": "",
     "endedAtTime": "2029-01-01T22:05:01Z"
-  },
-  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld"
+  }
 }
 ```
 
 #### ttl
 ```ttl
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <file:///github/workspace/ProvProfile> a <file:///github/workspace/MyEntityType> ;
     rdfs:label "EntityExample" ;
-    prov:wasGeneratedBy [ prov:endedAtTime "2029-01-01T22:05:01+00:00"^^xsd:dateTime ] .
+    prov:wasGeneratedBy [ dct:type "Activity" ;
+            prov:activity <file:///github/workspace/MyActivity> ;
+            prov:endedAtTime "2029-01-01T22:05:01+00:00"^^xsd:dateTime ] .
 
 
 ```
@@ -357,6 +360,7 @@ JSON
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld",
   "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
   "type": "Feature",
   "provType": "Entity",
@@ -624,8 +628,7 @@ JSON
   },
   "cwlprov:basename": "output.txt",
   "cwlprov:nameext": ".txt",
-  "cwlprov:nameroot": "output",
-  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld"
+  "cwlprov:nameroot": "output"
 }
 ```
 
@@ -648,12 +651,15 @@ JSON
 uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
         wfprov:Artifact,
         prov:Entity ;
-    prov:qualifiedGeneration [ prov:activity uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 ;
-            prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/output> ],
-        [ prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
+    dct:type "Feature" ;
+    prov:qualifiedGeneration [ dct:type "Generation" ;
+            prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
             prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/primary/output> ] ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/primary/output> ],
+        [ dct:type "Generation" ;
+            prov:activity uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 ;
+            prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/output> ] ;
     prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
     cwlprov:basename "output.txt" ;
     cwlprov:nameext ".txt" ;
@@ -662,6 +668,7 @@ uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
 wf:main a wfdesc:Workflow,
         prov:Plan ;
     rdfs:label "Prospective provenance" ;
+    dct:type "Entity" ;
     wfdesc:hasSubProcess <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,
         <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted> .
 
@@ -672,20 +679,25 @@ wf:main a wfdesc:Workflow,
     schemaorg:name "Stian Soiland-Reyes" ;
     foaf:name "Stian Soiland-Reyes" .
 
-sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f a wfprov:Artifact .
+sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f a wfprov:Artifact ;
+    dct:type "Entity" .
 
-sha1:b9214658cc453331b62c2282b772a5c063dbd284 a wfprov:Artifact .
+sha1:b9214658cc453331b62c2282b772a5c063dbd284 a wfprov:Artifact ;
+    dct:type "Entity" .
 
-uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93 prov:value true .
+uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93 dct:type "Entity" ;
+    prov:value true .
 
 uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b a wf4ever:File,
         wfprov:Artifact ;
+    dct:type "Entity" ;
     prov:specializationOf sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376 ;
     cwlprov:basename "whale.txt" ;
     cwlprov:nameext ".txt" ;
     cwlprov:nameroot "whale" .
 
-uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210 prov:actedOnBehalfOf <https://orcid.org/0000-0001-9842-9718> .
+uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210 dct:type "Agent" ;
+    prov:actedOnBehalfOf <https://orcid.org/0000-0001-9842-9718> .
 
 uuid:ba0fe122-124e-417b-8a2a-95e721320a2d rdfs:label "Container execution of image debian:8" ;
     dct:type "Agent",
@@ -693,21 +705,28 @@ uuid:ba0fe122-124e-417b-8a2a-95e721320a2d rdfs:label "Container execution of ima
     cwlprov:image "debian:8" .
 
 uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 rdfs:label "Run of workflow/packed.cwl#main/sorted" ;
-    prov:qualifiedAssociation [ prov:hadPlan <wf:main/sorted> ] ;
-    prov:qualifiedEnd [ prov:atTime "2018-10-25T15:46:38.069110"^^xsd:dateTime ;
+    dct:type "Activity",
+        "wfprov:ProcessRun" ;
+    prov:qualifiedAssociation [ dct:type "Association" ] ;
+    prov:qualifiedEnd [ dct:type "End" ;
+            prov:atTime "2018-10-25T15:46:38.069110"^^xsd:dateTime ;
             prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] ;
-    prov:qualifiedStart [ prov:atTime "2018-10-25T15:46:36.975235"^^xsd:dateTime ;
+    prov:qualifiedStart [ dct:type "Start" ;
+            prov:atTime "2018-10-25T15:46:36.975235"^^xsd:dateTime ;
             prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] ;
-    prov:qualifiedUsage [ prov:atTime "2018-10-25T15:46:37.067604"^^xsd:dateTime ;
+    prov:qualifiedUsage [ dct:type "Usage" ;
+            prov:atTime "2018-10-25T15:46:37.067604"^^xsd:dateTime ;
             prov:entity uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265 ;
             prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/input> ],
-        [ prov:atTime "2018-10-25T15:46:37.067864"^^xsd:dateTime ;
+        [ dct:type "Usage" ;
+            prov:atTime "2018-10-25T15:46:37.067864"^^xsd:dateTime ;
             prov:entity uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93 ;
             prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/reverse> ] ;
     prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519,
         uuid:ba0fe122-124e-417b-8a2a-95e721320a2d .
 
-uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d prov:value true .
+uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d dct:type "Entity" ;
+    prov:value true .
 
 uuid:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0 rdfs:label "Container execution of image debian:8" ;
     dct:type "Agent",
@@ -715,12 +734,18 @@ uuid:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0 rdfs:label "Container execution of ima
     cwlprov:image "debian:8" .
 
 uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de rdfs:label "Run of workflow/packed.cwl#main/rev" ;
-    prov:qualifiedAssociation [ prov:hadPlan <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev> ] ;
-    prov:qualifiedEnd [ prov:atTime "2018-10-25T15:46:36.967359"^^xsd:dateTime ;
+    dct:type "Activity",
+        "wfprov:ProcessRun" ;
+    prov:qualifiedAssociation [ dct:type "Association" ;
+            prov:hadPlan <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev> ] ;
+    prov:qualifiedEnd [ dct:type "End" ;
+            prov:atTime "2018-10-25T15:46:36.967359"^^xsd:dateTime ;
             prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] ;
-    prov:qualifiedStart [ prov:atTime "2018-10-25T15:46:35.314101"^^xsd:dateTime ;
+    prov:qualifiedStart [ dct:type "Start" ;
+            prov:atTime "2018-10-25T15:46:35.314101"^^xsd:dateTime ;
             prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] ;
-    prov:qualifiedUsage [ prov:atTime "2018-10-25T15:46:35.597726"^^xsd:dateTime ;
+    prov:qualifiedUsage [ dct:type "Usage" ;
+            prov:atTime "2018-10-25T15:46:35.597726"^^xsd:dateTime ;
             prov:entity uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b ;
             prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev/input> ] ;
     prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519,
@@ -728,6 +753,7 @@ uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de rdfs:label "Run of workflow/packed.cwl
 
 uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7 a wf4ever:File,
         wfprov:Artifact ;
+    dct:type "Entity" ;
     prov:specializationOf sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376 ;
     cwlprov:basename "whale.txt" ;
     cwlprov:nameext ".txt" ;
@@ -735,7 +761,9 @@ uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7 a wf4ever:File,
 
 uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265 a wf4ever:File,
         wfprov:Artifact ;
-    prov:qualifiedGeneration [ prov:activity uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de ;
+    dct:type "Entity" ;
+    prov:qualifiedGeneration [ dct:type "Generation" ;
+            prov:activity uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de ;
             prov:atTime "2018-10-25T15:46:36.963254"^^xsd:dateTime ;
             prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev/output> ] ;
     prov:specializationOf sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f ;
@@ -743,29 +771,41 @@ uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265 a wf4ever:File,
     cwlprov:nameext ".txt" ;
     cwlprov:nameroot "output" .
 
-<wf:main/sorted> a wfdesc:Process,
-        prov:Plan .
-
 <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev> a wfdesc:Process,
-        prov:Plan .
+        prov:Plan ;
+    dct:type "Entity" .
+
+sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376 dct:type "Entity",
+        "wfprov:Artifact" .
 
 uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f rdfs:label "Run of workflow/packed.cwl#main" ;
-    prov:qualifiedAssociation [ prov:hadPlan wf:main ] ;
-    prov:qualifiedEnd [ prov:atTime "2018-10-25T15:46:43.020168"^^xsd:dateTime ;
+    dct:type "Activity",
+        "wfprov:WorkflowRun" ;
+    prov:qualifiedAssociation [ dct:type "Association" ;
+            prov:hadPlan wf:main ] ;
+    prov:qualifiedEnd [ dct:type "End" ;
+            prov:atTime "2018-10-25T15:46:43.020168"^^xsd:dateTime ;
             prov:hadActivity uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;
-    prov:qualifiedStart [ prov:atTime "2018-10-25T15:46:35.211153"^^xsd:dateTime ;
+    prov:qualifiedStart [ dct:type "Start" ;
+            prov:atTime "2018-10-25T15:46:35.211153"^^xsd:dateTime ;
             prov:hadActivity uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;
-    prov:qualifiedUsage [ prov:atTime "2018-10-25T15:46:35.303643"^^xsd:dateTime ;
-            prov:entity uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/reverse_sort> ],
-        [ prov:atTime "2018-10-25T15:46:35.303484"^^xsd:dateTime ;
+    prov:qualifiedUsage [ dct:type "Usage" ;
+            prov:atTime "2018-10-25T15:46:35.303484"^^xsd:dateTime ;
             prov:entity uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7 ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/input> ] ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/input> ],
+        [ dct:type "Usage" ;
+            prov:atTime "2018-10-25T15:46:35.303643"^^xsd:dateTime ;
+            prov:entity uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/reverse_sort> ] ;
     prov:startedAtTime "2018-10-25T15:46:35.211026"^^xsd:dateTime ;
     prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 .
 
 uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 rdfs:label "cwltool 1.0.20181012180214" ;
-    prov:qualifiedStart [ prov:atTime "2018-10-25T15:46:35.210973"^^xsd:dateTime ;
+    dct:type "Agent",
+        "SoftwareAgent",
+        "wfprov:WorkflowEngine" ;
+    prov:qualifiedStart [ dct:type "Start" ;
+            prov:atTime "2018-10-25T15:46:35.210973"^^xsd:dateTime ;
             prov:hadActivity uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210 ] .
 
 
@@ -870,6 +910,7 @@ JSON
 #### jsonld
 ```jsonld
 {
+  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld",
   "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
   "type": "Entity",
   "featureType": [
@@ -956,14 +997,14 @@ JSON
   },
   "cwlprov:basename": "output.txt",
   "cwlprov:nameext": ".txt",
-  "cwlprov:nameroot": "output",
-  "@context": "https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld"
+  "cwlprov:nameroot": "output"
 }
 ```
 
 #### ttl
 ```ttl
 @prefix cwlprov: <https://w3id.org/cwl/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sha1: <urn:hash::sha1:> .
@@ -976,10 +1017,13 @@ JSON
 
 uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
         wfprov:Artifact ;
-    prov:qualifiedGeneration [ prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
+    dct:type "Entity" ;
+    prov:qualifiedGeneration [ dct:type "Generation" ;
+            prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
             prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ;
             prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/primary/output> ],
-        [ prov:activity uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 ;
+        [ dct:type "Generation" ;
+            prov:activity uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 ;
             prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ;
             prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/output> ] ;
     prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
@@ -990,21 +1034,30 @@ uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
 wf:main a wfdesc:Workflow,
         prov:Plan ;
     rdfs:label "Prospective provenance" ;
+    dct:type "Entity" ;
     wfdesc:hasSubProcess <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,
         <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted> .
 
-sha1:b9214658cc453331b62c2282b772a5c063dbd284 a wfprov:Artifact .
+<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev> dct:type "Entity",
+        "Plan",
+        "wfdesc:Process" .
+
+sha1:b9214658cc453331b62c2282b772a5c063dbd284 a wfprov:Artifact ;
+    dct:type "Entity" .
 
 uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 rdfs:label "Run of workflow/packed.cwl#main/sorted" ;
-    prov:qualifiedAssociation [ prov:hadPlan <wf:main/sorted> ] ;
-    prov:qualifiedEnd [ prov:atTime "2018-10-25T15:46:38.069110"^^xsd:dateTime ;
+    dct:type "Activity",
+        "wfprov:ProcessRun" ;
+    prov:qualifiedAssociation [ dct:type "Association" ] ;
+    prov:qualifiedEnd [ dct:type "End" ;
+            prov:atTime "2018-10-25T15:46:38.069110"^^xsd:dateTime ;
             prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] .
 
-<wf:main/sorted> a wfdesc:Process,
-        prov:Plan .
-
 uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f rdfs:label "Run of workflow/packed.cwl#main" ;
-    prov:qualifiedAssociation [ prov:hadPlan wf:main ] ;
+    dct:type "Activity",
+        "wfprov:WorkflowRun" ;
+    prov:qualifiedAssociation [ dct:type "Association" ;
+            prov:hadPlan wf:main ] ;
     prov:startedAtTime "2018-10-25T15:46:35.211026"^^xsd:dateTime ;
     prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 .
 
@@ -1041,16 +1094,90 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "wasInfluencedBy": {
+      "@context": {
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "anchor": {},
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
+      },
+      "@id": "prov:wasInfluencedBy",
+      "@type": "@id"
+    },
+    "qualifiedInfluence": {
+      "@context": {
+        "influencer": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "anchor": {},
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "prov:influencer",
+          "@type": "@id"
+        },
+        "agent": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "anchor": {},
+            "hreflang": "dct:language",
+            "title": "rdfs:label",
+            "length": "dct:extent"
+          },
+          "@id": "prov:agent",
+          "@type": "@id"
+        }
+      },
+      "@id": "prov:qualifiedInfluence",
+      "@type": "@id"
+    },
+    "provType": "@type",
+    "prov:type": {},
+    "type": "dct:type",
+    "hadMember": {
+      "@id": "prov:hadMember",
+      "@type": "@id"
+    },
     "id": "@id",
     "featureType": "@type",
     "entityType": "@type",
     "has_provenance": {
-      "@context": {},
       "@id": "dct:provenance",
       "@type": "@id"
     },
     "wasGeneratedBy": {
-      "@context": {},
       "@id": "prov:wasGeneratedBy",
       "@type": "@id"
     },
@@ -1067,7 +1194,7 @@ Links to the schema:
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "type": "dct:type",
+        "anchor": {},
         "hreflang": "dct:language",
         "title": "rdfs:label",
         "length": "dct:extent"
@@ -1092,87 +1219,15 @@ Links to the schema:
       "@type": "@id"
     },
     "wasInvalidatedBy": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
       "@id": "prov:wasInvalidatedBy",
       "@type": "@id"
     },
     "wasQuotedFrom": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
       "@id": "prov:wasQuotedFrom",
       "@type": "@id"
     },
     "wasRevisionOf": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
       "@id": "prov:wasRevisionOf",
-      "@type": "@id"
-    },
-    "mentionOf": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
-      "@id": "prov:mentionOf",
       "@type": "@id"
     },
     "atLocation": {
@@ -1192,7 +1247,7 @@ Links to the schema:
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "type": "dct:type",
+        "anchor": {},
         "hreflang": "dct:language",
         "title": "rdfs:label",
         "length": "dct:extent"
@@ -1200,382 +1255,23 @@ Links to the schema:
       "@id": "rdfs:seeAlso"
     },
     "qualifiedGeneration": {
-      "@context": {
-        "atTime": {
-          "@id": "prov:atTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "hadRole": {
-          "@id": "prov:hadRole",
-          "@type": "@id"
-        },
-        "influencer": {
-          "@id": "prov:influencer",
-          "@type": "@id"
-        },
-        "hadActivity": {
-          "@id": "prov:hadActivity",
-          "@type": "@id"
-        },
-        "activity": {
-          "@id": "prov:activity",
-          "@type": "@id"
-        }
-      },
       "@id": "prov:qualifiedGeneration",
       "@type": "@id"
     },
     "qualifiedInvalidation": {
-      "@context": {
-        "atTime": {
-          "@id": "prov:atTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "hadRole": {
-          "@id": "prov:hadRole",
-          "@type": "@id"
-        },
-        "influencer": {
-          "@id": "prov:influencer",
-          "@type": "@id"
-        },
-        "hadActivity": {
-          "@id": "prov:hadActivity",
-          "@type": "@id"
-        },
-        "activity": {
-          "@id": "prov:activity",
-          "@type": "@id"
-        }
-      },
       "@id": "prov:qualifiedInvalidation",
       "@type": "@id"
     },
     "qualifiedDerivation": {
-      "@context": {
-        "hadGeneration": {
-          "@context": {
-            "atTime": {
-              "@id": "prov:atTime",
-              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-            },
-            "hadRole": {
-              "@id": "prov:hadRole",
-              "@type": "@id"
-            },
-            "influencer": {
-              "@id": "prov:influencer",
-              "@type": "@id"
-            },
-            "activity": {
-              "@id": "prov:activity",
-              "@type": "@id"
-            }
-          },
-          "@id": "prov:hadGeneration",
-          "@type": "@id"
-        },
-        "hadActivity": {
-          "@id": "prov:hadActivity",
-          "@type": "@id"
-        },
-        "hadUsage": {
-          "@context": {
-            "atTime": {
-              "@id": "prov:atTime",
-              "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          },
-          "@id": "prov:hadUsage",
-          "@type": "@id"
-        },
-        "entity": {
-          "@id": "prov:entity",
-          "@type": "@id"
-        }
-      },
       "@id": "prov:qualifiedDerivation",
       "@type": "@id"
     },
     "qualifiedAttribution": {
-      "@context": {
-        "agent": {
-          "@id": "prov:agent",
-          "@type": "@id"
-        }
-      },
       "@id": "prov:qualifiedAttribution",
       "@type": "@id"
     },
-    "wasInfluencedBy": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
-      "@id": "prov:wasInfluencedBy",
-      "@type": "@id"
-    },
-    "qualifiedInfluence": {
-      "@context": {
-        "influencer": {
-          "@context": {
-            "href": {
-              "@type": "@id",
-              "@id": "oa:hasTarget"
-            },
-            "rel": {
-              "@context": {
-                "@base": "http://www.iana.org/assignments/relation/"
-              },
-              "@id": "http://www.iana.org/assignments/relation",
-              "@type": "@id"
-            },
-            "type": "dct:type",
-            "hreflang": "dct:language",
-            "title": "rdfs:label",
-            "length": "dct:extent"
-          },
-          "@id": "prov:influencer",
-          "@type": "@id"
-        },
-        "entity": {
-          "@id": "prov:entity",
-          "@type": "@id"
-        },
-        "activity": {
-          "@id": "prov:activity",
-          "@type": "@id"
-        },
-        "agent": {
-          "@context": {
-            "href": {
-              "@type": "@id",
-              "@id": "oa:hasTarget"
-            },
-            "rel": {
-              "@context": {
-                "@base": "http://www.iana.org/assignments/relation/"
-              },
-              "@id": "http://www.iana.org/assignments/relation",
-              "@type": "@id"
-            },
-            "type": "dct:type",
-            "hreflang": "dct:language",
-            "title": "rdfs:label",
-            "length": "dct:extent"
-          },
-          "@id": "prov:agent",
-          "@type": "@id"
-        }
-      },
-      "@id": "prov:qualifiedInfluence",
-      "@type": "@id"
-    },
-    "provType": "@type",
-    "hadMember": {
-      "@context": {},
-      "@id": "prov:hadMember",
-      "@type": "@id"
-    },
     "activityType": "@type",
-    "endedAtTime": {
-      "@id": "prov:endedAtTime",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "wasAssociatedWith": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
-      "@id": "prov:wasAssociatedWith",
-      "@type": "@id"
-    },
-    "wasInformedBy": {
-      "@id": "prov:wasInformedBy",
-      "@type": "@id"
-    },
-    "used": {
-      "@context": {},
-      "@id": "prov:used",
-      "@type": "@id"
-    },
-    "wasStartedBy": {
-      "@context": {},
-      "@id": "prov:wasStartedBy",
-      "@type": "@id"
-    },
-    "wasEndedBy": {
-      "@context": {},
-      "@id": "prov:wasEndedBy",
-      "@type": "@id"
-    },
-    "invalidated": {
-      "@context": {},
-      "@id": "prov:invalidated",
-      "@type": "@id"
-    },
-    "generated": {
-      "@context": {},
-      "@id": "prov:generated",
-      "@type": "@id"
-    },
-    "qualifiedUsage": {
-      "@context": {
-        "atTime": {
-          "@id": "prov:atTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "entity": {
-          "@id": "prov:entity",
-          "@type": "@id"
-        }
-      },
-      "@id": "prov:qualifiedUsage",
-      "@type": "@id"
-    },
-    "qualifiedCommunication": {
-      "@context": {
-        "atTime": {
-          "@id": "prov:atTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "hadRole": {
-          "@id": "prov:hadRole",
-          "@type": "@id"
-        },
-        "influencer": {
-          "@id": "prov:influencer",
-          "@type": "@id"
-        },
-        "hadActivity": {
-          "@id": "prov:hadActivity",
-          "@type": "@id"
-        },
-        "activity": {
-          "@id": "prov:activity",
-          "@type": "@id"
-        }
-      },
-      "@id": "prov:qualifiedCommunication",
-      "@type": "@id"
-    },
-    "qualifiedStart": {
-      "@context": {
-        "atTime": {
-          "@id": "prov:atTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "entity": {
-          "@id": "prov:entity",
-          "@type": "@id"
-        },
-        "hadActivity": {
-          "@id": "prov:hadActivity",
-          "@type": "@id"
-        }
-      },
-      "@id": "prov:qualifiedStart",
-      "@type": "@id"
-    },
-    "qualifiedEnd": {
-      "@context": {
-        "atTime": {
-          "@id": "prov:atTime",
-          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "entity": {
-          "@id": "prov:entity",
-          "@type": "@id"
-        },
-        "hadActivity": {
-          "@id": "prov:hadActivity",
-          "@type": "@id"
-        }
-      },
-      "@id": "prov:qualifiedEnd",
-      "@type": "@id"
-    },
-    "qualifiedAssociation": {
-      "@context": {
-        "agent": {
-          "@id": "prov:agent",
-          "@type": "@id"
-        },
-        "hadRole": {
-          "@id": "prov:hadRole",
-          "@type": "@id"
-        },
-        "hadPlan": {
-          "@id": "prov:hadPlan",
-          "@type": "@id"
-        }
-      },
-      "@id": "prov:qualifiedAssociation",
-      "@type": "@id"
-    },
     "agentType": "@type",
-    "name": "rdfs:label",
-    "actedOnBehalfOf": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
-      "@id": "prov:actedOnBehalfOf",
-      "@type": "@id"
-    },
-    "qualifiedDelegation": {
-      "@context": {
-        "agent": {
-          "@id": "prov:agent",
-          "@type": "@id"
-        },
-        "hadActivity": {
-          "@id": "prov:hadActivity",
-          "@type": "@id"
-        }
-      },
-      "@id": "prov:qualifiedDelegation",
-      "@type": "@id"
-    },
     "Activity": "prov:Activity",
     "ActivityInfluence": "prov:ActivityInfluence",
     "Agent": "prov:Agent",
@@ -1626,30 +1322,102 @@ Links to the schema:
     "KeyEntityPair": "prov:KeyEntityPair",
     "Insertion": "prov:Insertion",
     "Removal": "prov:Removal",
+    "atTime": {
+      "@id": "prov:atTime",
+      "@type": "xsd:dateTime"
+    },
+    "endedAtTime": {
+      "@id": "prov:endedAtTime",
+      "@type": "xsd:dateTime"
+    },
     "generatedAtTime": {
       "@id": "prov:generatedAtTime",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@type": "xsd:dateTime"
     },
     "invalidatedAtTime": {
       "@id": "prov:invalidatedAtTime",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@type": "xsd:dateTime"
     },
     "startedAtTime": {
       "@id": "prov:startedAtTime",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@type": "xsd:dateTime"
     },
     "value": "prov:value",
     "provenanceUriTemplate": "prov:provenanceUriTemplate",
     "pairKey": {
       "@id": "prov:pairKey",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      "@type": "rdfs:Literal"
     },
     "removedKey": {
       "@id": "prov:removedKey",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      "@type": "rdfs:Literal"
+    },
+    "actedOnBehalfOf": {
+      "@id": "prov:actedOnBehalfOf",
+      "@type": "@id"
+    },
+    "agent": {
+      "@id": "prov:agent",
+      "@type": "@id"
+    },
+    "entity": {
+      "@id": "prov:entity",
+      "@type": "@id"
+    },
+    "generated": {
+      "@id": "prov:generated",
+      "@type": "@id"
+    },
+    "hadActivity": {
+      "@id": "prov:hadActivity",
+      "@type": "@id"
+    },
+    "activity": {
+      "@id": "prov:activity",
+      "@type": "@id"
+    },
+    "hadGeneration": {
+      "@id": "prov:hadGeneration",
+      "@type": "@id"
+    },
+    "hadPlan": {
+      "@id": "prov:hadPlan",
+      "@type": "@id"
+    },
+    "hadRole": {
+      "@id": "prov:hadRole",
+      "@type": "@id"
+    },
+    "hadUsage": {
+      "@id": "prov:hadUsage",
+      "@type": "@id"
     },
     "influenced": {
       "@id": "prov:influenced",
+      "@type": "@id"
+    },
+    "influencer": {
+      "@id": "prov:influencer",
+      "@type": "@id"
+    },
+    "invalidated": {
+      "@id": "prov:invalidated",
+      "@type": "@id"
+    },
+    "qualifiedAssociation": {
+      "@id": "prov:qualifiedAssociation",
+      "@type": "@id"
+    },
+    "qualifiedCommunication": {
+      "@id": "prov:qualifiedCommunication",
+      "@type": "@id"
+    },
+    "qualifiedDelegation": {
+      "@id": "prov:qualifiedDelegation",
+      "@type": "@id"
+    },
+    "qualifiedEnd": {
+      "@id": "prov:qualifiedEnd",
       "@type": "@id"
     },
     "qualifiedPrimarySource": {
@@ -1662,6 +1430,51 @@ Links to the schema:
     },
     "qualifiedRevision": {
       "@id": "prov:qualifiedRevision",
+      "@type": "@id"
+    },
+    "qualifiedStart": {
+      "@id": "prov:qualifiedStart",
+      "@type": "@id"
+    },
+    "qualifiedUsage": {
+      "@id": "prov:qualifiedUsage",
+      "@type": "@id"
+    },
+    "used": {
+      "@id": "prov:used",
+      "@type": "@id"
+    },
+    "wasAssociatedWith": {
+      "@id": "prov:wasAssociatedWith",
+      "@type": "@id",
+      "@context": {
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "anchor": {},
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
+      }
+    },
+    "wasEndedBy": {
+      "@id": "prov:wasEndedBy",
+      "@type": "@id"
+    },
+    "wasInformedBy": {
+      "@id": "prov:wasInformedBy",
+      "@type": "@id"
+    },
+    "wasStartedBy": {
+      "@id": "prov:wasStartedBy",
       "@type": "@id"
     },
     "has_anchor": {
@@ -1716,6 +1529,11 @@ Links to the schema:
       "@id": "prov:asInBundle",
       "@type": "@id"
     },
+    "mentionOf": {
+      "@id": "prov:mentionOf",
+      "@type": "@id"
+    },
+    "name": "rdfs:label",
     "prov": "http://www.w3.org/ns/prov#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
