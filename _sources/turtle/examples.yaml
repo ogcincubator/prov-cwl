@@ -1,0 +1,7 @@
+examples:
+  - title: Example output from revsort-1 run
+    content:
+      Obtained from https://github.com/common-workflow-language/cwlprov/
+    snippets:
+      - language: turtle
+        ref: examples/revsort-run-1.ttl

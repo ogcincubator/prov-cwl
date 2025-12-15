@@ -1,0 +1,14 @@
+{
+  "name": "CWL (Prov) from Turtle",
+  "abstract": "Common Workflow Language - profile from cwltool RDF output",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-15T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogcincubator",
+  "version": "0.1",
+  "dateOfLastChange": "2025-12-15",
+  "maturity": "under-development",
+  "scope": "unstable",
+  "link": "https://github.com/common-workflow-language/cwlprov/",
+  "tags": ["templates", "provenance", "profile", "cwl", "cwlprov"]
+}

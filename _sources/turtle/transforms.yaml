@@ -1,0 +1,12 @@
+transforms:
+  - id: bblock-prov-schema
+    type: jsonld-frame
+    ref: transforms/bblock-prov-schema.jsonld
+    description: |
+      Transforms CWL prov into [bblock-prov-schema](https://ogcincubator.github.io/bblock-prov-schema/).
+    outputs:
+      mediaTypes:
+        - application/ld+json
+        - application/json
+      profiles:
+        - bblocks://ogc.ogc-utils.prov
