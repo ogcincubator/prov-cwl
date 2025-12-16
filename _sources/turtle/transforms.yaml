@@ -7,6 +7,16 @@ transforms:
     outputs:
       mediaTypes:
         - application/ld+json
+      profiles:
+        - bblocks://ogc.ogc-utils.prov
+  - id: bblock-prov-schema-json
+    type: jsonld-frame
+    ref: transforms/bblock-prov-schema.jsonld
+    description: |
+      Transforms CWL prov into [bblock-prov-schema](https://ogcincubator.github.io/bblock-prov-schema/)
+      with pure JSON output.
+    outputs:
+      mediaTypes:
         - application/json
       profiles:
         - bblocks://ogc.ogc-utils.prov
