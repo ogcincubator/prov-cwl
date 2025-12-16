@@ -79,13 +79,13 @@ uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 rdfs:label "Run of workflow/packed.cwl
             prov:atTime "2018-10-25T15:46:36.975235"^^xsd:dateTime ;
             prov:hadActivity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ] ;
     prov:qualifiedUsage [ dct:type "Usage" ;
-            prov:atTime "2018-10-25T15:46:37.067604"^^xsd:dateTime ;
-            prov:entity uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265 ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/input> ],
-        [ dct:type "Usage" ;
             prov:atTime "2018-10-25T15:46:37.067864"^^xsd:dateTime ;
             prov:entity uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93 ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/reverse> ] ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/reverse> ],
+        [ dct:type "Usage" ;
+            prov:atTime "2018-10-25T15:46:37.067604"^^xsd:dateTime ;
+            prov:entity uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265 ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/input> ] ;
     prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519,
         uuid:ba0fe122-124e-417b-8a2a-95e721320a2d .
 
@@ -154,13 +154,13 @@ uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f rdfs:label "Run of workflow/packed.cwl
             prov:atTime "2018-10-25T15:46:35.211153"^^xsd:dateTime ;
             prov:hadActivity uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;
     prov:qualifiedUsage [ dct:type "Usage" ;
-            prov:atTime "2018-10-25T15:46:35.303484"^^xsd:dateTime ;
-            prov:entity uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7 ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/input> ],
-        [ dct:type "Usage" ;
             prov:atTime "2018-10-25T15:46:35.303643"^^xsd:dateTime ;
             prov:entity uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/reverse_sort> ] ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/reverse_sort> ],
+        [ dct:type "Usage" ;
+            prov:atTime "2018-10-25T15:46:35.303484"^^xsd:dateTime ;
+            prov:entity uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7 ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/input> ] ;
     prov:startedAtTime "2018-10-25T15:46:35.211026"^^xsd:dateTime ;
     prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 .
 

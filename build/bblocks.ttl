@@ -13,18 +13,18 @@
 
 <https://ogcincubator.github.io/prov-cwl/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N14020a001ed443a6bbd07175ab5dc692 ;
+    prov:wasAttributedTo _:Nbc217ba4509f4662901bcc9f63d78e6d ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2025-12-15T22:39:01.895743"^^xsd:dateTime ;
-            prov:startedAtTime "2025-12-15T22:39:01.830744"^^xsd:dateTime ;
+            prov:endedAtTime "2025-12-16T08:23:28.181046"^^xsd:dateTime ;
+            prov:startedAtTime "2025-12-16T08:23:28.115148"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:c7a602b5aaa9540021c63358ebe0a4363c6ba7e0" ;
+                    dct:hasVersion "git:037830e9ce4dbbe8abf06e25fbb43dedbaf570da" ;
                     rdfs:seeAlso <https://ogcincubator.github.io/prov-cwl/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N14020a001ed443a6bbd07175ab5dc692 ] .
+            prov:wasAssociatedWith _:Nbc217ba4509f4662901bcc9f63d78e6d ] .
 
 <bblocks://ogc.profiles.prov.cwl.provenance> a skos:Concept,
         dcat:Dataset,
@@ -32,32 +32,32 @@
     rdfs:label "CWL (Prov)" ;
     dct:abstract "Common Workflow Language - profile using PROV JSON schema building block."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/build/generateddocs/markdown/profiles/prov/cwl/provenance/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/bblock/ogc.profiles.prov.cwl.provenance> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/profiles/prov/cwl/provenance/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/bblock/ogc.profiles.prov.cwl.provenance> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/build/generateddocs/markdown/profiles/prov/cwl/provenance/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-15"^^xsd:date ;
+    dct:modified "2025-12-16"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/prov-cwl/> ;
     skos:prefLabel "CWL (Prov)" ;
     skos:topConceptOf <https://ogcincubator.github.io/prov-cwl/> ;
     dcat:keyword "profile",
         "provenance",
         "templates" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/prov-cwl/build/annotated/profiles/prov/cwl/provenance/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.ogc-utils.prov> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/prov-cwl/_sources/provenance/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -72,12 +72,12 @@
     dct:created "2025-12-15T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/build/generateddocs/markdown/profiles/prov/cwl/turtle/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/bblock/ogc.profiles.prov.cwl.turtle> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/profiles/prov/cwl/turtle/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/build/generateddocs/json-full/profiles/prov/cwl/turtle/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/prov-cwl/bblock/ogc.profiles.prov.cwl.turtle> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-15"^^xsd:date ;
+    dct:modified "2025-12-16"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/prov-cwl/> ;
     skos:prefLabel "CWL (Prov) from Turtle" ;
     skos:topConceptOf <https://ogcincubator.github.io/prov-cwl/> ;
@@ -99,7 +99,7 @@
 
 This bblock is an initial test that the PROV schema can be extended to support such a profile.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2025-12-15T22:38:58.730894"^^xsd:dateTime ;
+    dct:modified "2025-12-16T08:23:24.826025"^^xsd:dateTime ;
     owl:imports <https://ogcincubator.github.io/bblock-prov-schema/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.profiles.prov.cwl.provenance>,
@@ -108,7 +108,7 @@ This bblock is an initial test that the PROV schema can be extended to support s
     foaf:homepage <https://ogcincubator.github.io/prov-cwl/> ;
     bblocks:hasValidationReport <https://ogcincubator.github.io/prov-cwl/build/tests/report.html> .
 
-_:N14020a001ed443a6bbd07175ab5dc692 a prov:Agent,
+_:Nbc217ba4509f4662901bcc9f63d78e6d a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.3" ;

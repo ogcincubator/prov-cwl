@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2025-12-15",
+  "dateOfLastChange": "2025-12-16",
   "maturity": "under-development",
   "scope": "unstable",
   "link": "https://github.com/common-workflow-language/cwlprov/",
@@ -44,7 +44,62 @@
             "extensions": [
               "jsonld"
             ]
+          }
+        ],
+        "profiles": [
+          "bblocks://ogc.ogc-utils.prov"
+        ]
+      },
+      "code": "{\n  \"@context\": [\n    \"https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/context.jsonld\",\n    {\n      \"uuid\": \"urn:uuid:\",\n      \"sha1\": \"urn:hash::sha1:\",\n      \"wf\": \"arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#\",\n      \"wf4ever\": \"http://purl.org/wf4ever/wf4ever#\",\n      \"wfdesc\": \"http://purl.org/wf4ever/wfdesc#\",\n      \"wfprov\": \"http://purl.org/wf4ever/wfprov#\",\n      \"cwlprov\": \"https://w3id.org/cwl/prov#\",\n      \"sdo\": \"http://schema.org/\",\n      \"foaf\": \"http://xmlns.com/foaf/0.1/\"\n    }\n  ],\n  \"qualifiedGeneration\": {}\n}",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "id": "ttl",
+            "defaultExtension": "ttl",
+            "label": "RDF/Turtle",
+            "mimeType": "text/turtle",
+            "aliases": [
+              "turtle",
+              "rdf/turtle"
+            ],
+            "extensions": [
+              "ttl"
+            ]
           },
+          {
+            "id": "rdf",
+            "defaultExtension": "rdf",
+            "label": "RDF/XML",
+            "mimeType": "application/rdf+xml",
+            "aliases": [
+              "rdf/xml"
+            ],
+            "extensions": [
+              "rdf"
+            ]
+          },
+          {
+            "id": "json-ld",
+            "defaultExtension": "jsonld",
+            "label": "JSON-LD",
+            "mimeType": "application/ld+json",
+            "aliases": [
+              "jsonld"
+            ],
+            "extensions": [
+              "jsonld"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "bblock-prov-schema-json",
+      "type": "jsonld-frame",
+      "ref": "https://ogcincubator.github.io/prov-cwl/_sources/turtle/transforms/bblock-prov-schema.jsonld",
+      "description": "Transforms CWL prov into [bblock-prov-schema](https://ogcincubator.github.io/bblock-prov-schema/)\nwith pure JSON output.\n",
+      "outputs": {
+        "mediaTypes": [
           {
             "id": "json",
             "defaultExtension": "json",
@@ -113,7 +168,8 @@
           "ref": "examples/revsort-run-1.ttl",
           "code": "@prefix cwlprov: <https://w3id.org/cwl/prov#> .\n@prefix data: <urn:hash::sha1:> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix id: <urn:uuid:> .\n@prefix input: <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/primary-job.json#> .\n@prefix metadata: <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/metadata/> .\n@prefix orcid: <https://orcid.org/> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix provenance: <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/metadata/provenance/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix researchobject: <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/> .\n@prefix schema: <http://schema.org/> .\n@prefix sha256: <nih:sha-256;> .\n@prefix wf: <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#> .\n@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<urn:uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd> a wf4ever:File,\n        wfprov:Artifact,\n        prov:Entity ;\n    prov:qualifiedGeneration [ a prov:Generation ;\n            prov:activity <urn:uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f> ;\n            prov:atTime \"2018-10-25T15:46:43.020002\"^^xsd:dateTime ;\n            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/primary/output> ],\n        [ a prov:Generation ;\n            prov:activity id:d7e8b17e-2d80-4c42-a797-bc3628f52c44 ;\n            prov:atTime \"2018-10-25T15:46:38.058365\"^^xsd:dateTime ;\n            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/output> ] ;\n    prov:specializationOf data:b9214658cc453331b62c2282b772a5c063dbd284 ;\n    cwlprov:basename \"output.txt\"^^xsd:string ;\n    cwlprov:nameext \".txt\"^^xsd:string ;\n    cwlprov:nameroot \"output\"^^xsd:string .\n\nwf:main a wfdesc:Workflow,\n        prov:Entity,\n        prov:Plan ;\n    rdfs:label \"Prospective provenance\"^^xsd:string ;\n    wfdesc:hasSubProcess <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,\n        <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted> .\n\n<https://orcid.org/0000-0001-9842-9718> a schema:Person,\n        prov:Agent,\n        prov:Person ;\n    rdfs:label \"Stian Soiland-Reyes\"^^xsd:string ;\n    schema:name \"Stian Soiland-Reyes\"^^xsd:string ;\n    foaf:name \"Stian Soiland-Reyes\"^^xsd:string .\n\n<urn:hash::sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f> a wfprov:Artifact,\n        prov:Entity .\n\ndata:b9214658cc453331b62c2282b772a5c063dbd284 a wfprov:Artifact,\n        prov:Entity .\n\n<urn:uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93> a prov:Entity ;\n    prov:value true .\n\n<urn:uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b> a wf4ever:File,\n        wfprov:Artifact,\n        prov:Entity ;\n    prov:specializationOf <urn:hash::sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376> ;\n    cwlprov:basename \"whale.txt\"^^xsd:string ;\n    cwlprov:nameext \".txt\"^^xsd:string ;\n    cwlprov:nameroot \"whale\"^^xsd:string .\n\n<urn:uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210> a prov:Agent ;\n    prov:actedOnBehalfOf <https://orcid.org/0000-0001-9842-9718> .\n\nid:ba0fe122-124e-417b-8a2a-95e721320a2d a prov:Agent,\n        prov:SoftwareAgent ;\n    rdfs:label \"Container execution of image debian:8\"^^xsd:string ;\n    cwlprov:image \"debian:8\"^^xsd:string .\n\nid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 a wfprov:ProcessRun,\n        prov:Activity ;\n    rdfs:label \"Run of workflow/packed.cwl#main/sorted\"^^xsd:string ;\n    prov:qualifiedAssociation [ a prov:Association ;\n            prov:hadPlan <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted> ] ;\n    prov:qualifiedEnd [ a prov:End ;\n            prov:atTime \"2018-10-25T15:46:38.069110\"^^xsd:dateTime ;\n            prov:hadActivity <urn:uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f> ] ;\n    prov:qualifiedStart [ a prov:Start ;\n            prov:atTime \"2018-10-25T15:46:36.975235\"^^xsd:dateTime ;\n            prov:hadActivity <urn:uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f> ] ;\n    prov:qualifiedUsage [ a prov:Usage ;\n            prov:atTime \"2018-10-25T15:46:37.067604\"^^xsd:dateTime ;\n            prov:entity id:feabfc2c-e5eb-49d0-ad5c-c19076482265 ;\n            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/input> ],\n        [ a prov:Usage ;\n            prov:atTime \"2018-10-25T15:46:37.067864\"^^xsd:dateTime ;\n            prov:entity <urn:uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93> ;\n            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/reverse> ] ;\n    prov:wasAssociatedWith id:ac9c1653-4291-47bc-86f8-6dedcff13519,\n        id:ba0fe122-124e-417b-8a2a-95e721320a2d .\n\nid:ed8d007b-a1f3-4bfe-b390-08df074d712d a prov:Entity ;\n    prov:value true .\n\nid:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0 a prov:Agent,\n        prov:SoftwareAgent ;\n    rdfs:label \"Container execution of image debian:8\"^^xsd:string ;\n    cwlprov:image \"debian:8\"^^xsd:string .\n\nid:f81dd60b-46db-4e58-b9f9-5606de1f10de a wfprov:ProcessRun,\n        prov:Activity ;\n    rdfs:label \"Run of workflow/packed.cwl#main/rev\"^^xsd:string ;\n    prov:qualifiedAssociation [ a prov:Association ;\n            prov:hadPlan <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev> ] ;\n    prov:qualifiedEnd [ a prov:End ;\n            prov:atTime \"2018-10-25T15:46:36.967359\"^^xsd:dateTime ;\n            prov:hadActivity <urn:uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f> ] ;\n    prov:qualifiedStart [ a prov:Start ;\n            prov:atTime \"2018-10-25T15:46:35.314101\"^^xsd:dateTime ;\n            prov:hadActivity <urn:uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f> ] ;\n    prov:qualifiedUsage [ a prov:Usage ;\n            prov:atTime \"2018-10-25T15:46:35.597726\"^^xsd:dateTime ;\n            prov:entity <urn:uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b> ;\n            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev/input> ] ;\n    prov:wasAssociatedWith id:ac9c1653-4291-47bc-86f8-6dedcff13519,\n        id:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0 .\n\nid:fe16801a-7995-4968-a8bb-5e9d46255bb7 a wf4ever:File,\n        wfprov:Artifact,\n        prov:Entity ;\n    prov:specializationOf <urn:hash::sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376> ;\n    cwlprov:basename \"whale.txt\"^^xsd:string ;\n    cwlprov:nameext \".txt\"^^xsd:string ;\n    cwlprov:nameroot \"whale\"^^xsd:string .\n\nid:feabfc2c-e5eb-49d0-ad5c-c19076482265 a wf4ever:File,\n        wfprov:Artifact,\n        prov:Entity ;\n    prov:qualifiedGeneration [ a prov:Generation ;\n            prov:activity id:f81dd60b-46db-4e58-b9f9-5606de1f10de ;\n            prov:atTime \"2018-10-25T15:46:36.963254\"^^xsd:dateTime ;\n            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev/output> ] ;\n    prov:specializationOf <urn:hash::sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f> ;\n    cwlprov:basename \"output.txt\"^^xsd:string ;\n    cwlprov:nameext \".txt\"^^xsd:string ;\n    cwlprov:nameroot \"output\"^^xsd:string .\n\n<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev> a wfdesc:Process,\n        prov:Entity,\n        prov:Plan .\n\n<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted> a wfdesc:Process,\n        prov:Entity,\n        prov:Plan .\n\n<urn:hash::sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376> a wfprov:Artifact,\n        prov:Entity .\n\n<urn:uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f> a wfprov:WorkflowRun,\n        prov:Activity ;\n    rdfs:label \"Run of workflow/packed.cwl#main\"^^xsd:string ;\n    prov:qualifiedAssociation [ a prov:Association ;\n            prov:hadPlan wf:main ] ;\n    prov:qualifiedEnd [ a prov:End ;\n            prov:atTime \"2018-10-25T15:46:43.020168\"^^xsd:dateTime ;\n            prov:hadActivity id:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;\n    prov:qualifiedStart [ a prov:Start ;\n            prov:atTime \"2018-10-25T15:46:35.211153\"^^xsd:dateTime ;\n            prov:hadActivity id:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;\n    prov:qualifiedUsage [ a prov:Usage ;\n            prov:atTime \"2018-10-25T15:46:35.303484\"^^xsd:dateTime ;\n            prov:entity id:fe16801a-7995-4968-a8bb-5e9d46255bb7 ;\n            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/input> ],\n        [ a prov:Usage ;\n            prov:atTime \"2018-10-25T15:46:35.303643\"^^xsd:dateTime ;\n            prov:entity id:ed8d007b-a1f3-4bfe-b390-08df074d712d ;\n            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/reverse_sort> ] ;\n    prov:startedAtTime \"2018-10-25T15:46:35.211026\"^^xsd:dateTime ;\n    prov:wasAssociatedWith id:ac9c1653-4291-47bc-86f8-6dedcff13519 .\n\nid:ac9c1653-4291-47bc-86f8-6dedcff13519 a wfprov:WorkflowEngine,\n        prov:Agent,\n        prov:SoftwareAgent ;\n    rdfs:label \"cwltool 1.0.20181012180214\"^^xsd:string ;\n    prov:qualifiedStart [ a prov:Start ;\n            prov:atTime \"2018-10-25T15:46:35.210973\"^^xsd:dateTime ;\n            prov:hadActivity <urn:uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210> ] .\n",
           "transformResults": {
-            "bblock-prov-schema": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/turtle/transforms/example_1_1.bblock-prov-schema.jsonld"
+            "bblock-prov-schema": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/turtle/transforms/example_1_1.bblock-prov-schema.jsonld",
+            "bblock-prov-schema-json": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/turtle/transforms/example_1_1.bblock-prov-schema-json.json"
           },
           "url": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/turtle/example_1_1.ttl"
         }
