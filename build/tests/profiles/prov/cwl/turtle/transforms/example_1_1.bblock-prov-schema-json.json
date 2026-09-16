@@ -1,27 +1,27 @@
 [
   {
     "id": "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd",
-    "activityType": [
+    "provType": [
       "wf4ever:File",
       "wfprov:Artifact",
       "Entity"
     ],
     "qualifiedGeneration": [
       {
-        "activityType": "Generation",
+        "provType": "Generation",
         "activity": {
           "id": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
-          "activityType": [
+          "provType": [
             "wfprov:WorkflowRun",
             "Activity"
           ],
           "name": "Run of workflow/packed.cwl#main",
           "qualifiedAssociation": {
             "id": "_:b0",
-            "activityType": "Association",
+            "provType": "Association",
             "hadPlan": {
               "id": "wf:main",
-              "activityType": [
+              "provType": [
                 "wfdesc:Workflow",
                 "Entity",
                 "Plan"
@@ -29,7 +29,7 @@
               "wfdesc:hasSubProcess": [
                 {
                   "id": "wf:main/rev",
-                  "activityType": [
+                  "provType": [
                     "wfdesc:Process",
                     "Entity",
                     "Plan"
@@ -37,7 +37,7 @@
                 },
                 {
                   "id": "wf:main/sorted",
-                  "activityType": [
+                  "provType": [
                     "wfdesc:Process",
                     "Entity",
                     "Plan"
@@ -49,26 +49,26 @@
           },
           "qualifiedEnd": {
             "id": "_:b1",
-            "activityType": "End",
+            "provType": "End",
             "atTime": "2018-10-25T15:46:43.020168",
             "hadActivity": {
               "id": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519",
-              "activityType": [
+              "provType": [
                 "wfprov:WorkflowEngine",
                 "Agent",
                 "SoftwareAgent"
               ],
               "name": "cwltool 1.0.20181012180214",
               "qualifiedStart": {
-                "id": "_:b13",
-                "activityType": "Start",
+                "id": "_:b9",
+                "provType": "Start",
                 "atTime": "2018-10-25T15:46:35.210973",
                 "hadActivity": {
                   "id": "uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210",
-                  "activityType": "Agent",
+                  "provType": "Agent",
                   "actedOnBehalfOf": {
                     "id": "https://orcid.org/0000-0001-9842-9718",
-                    "activityType": [
+                    "provType": [
                       "sdo:Person",
                       "Agent",
                       "Person"
@@ -83,25 +83,25 @@
           },
           "qualifiedStart": {
             "id": "_:b2",
-            "activityType": "Start",
+            "provType": "Start",
             "atTime": "2018-10-25T15:46:35.211153",
             "hadActivity": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
           },
           "qualifiedUsage": [
             {
               "id": "_:b3",
-              "activityType": "Usage",
+              "provType": "Usage",
               "atTime": "2018-10-25T15:46:35.303484",
               "entity": {
                 "id": "uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7",
-                "activityType": [
+                "provType": [
                   "wf4ever:File",
                   "wfprov:Artifact",
                   "Entity"
                 ],
                 "specializationOf": {
                   "id": "sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
-                  "activityType": [
+                  "provType": [
                     "wfprov:Artifact",
                     "Entity"
                   ]
@@ -114,11 +114,11 @@
             },
             {
               "id": "_:b4",
-              "activityType": "Usage",
+              "provType": "Usage",
               "atTime": "2018-10-25T15:46:35.303643",
               "entity": {
                 "id": "uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d",
-                "activityType": "Entity",
+                "provType": "Entity",
                 "value": true
               },
               "hadRole": "wf:main/reverse_sort"
@@ -131,73 +131,73 @@
         "hadRole": "wf:main/primary/output"
       },
       {
-        "activityType": "Generation",
+        "provType": "Generation",
         "activity": {
           "id": "uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44",
-          "activityType": [
+          "provType": [
             "wfprov:ProcessRun",
             "Activity"
           ],
           "name": "Run of workflow/packed.cwl#main/sorted",
           "qualifiedAssociation": {
-            "activityType": "Association",
+            "provType": "Association",
             "hadPlan": "wf:main/sorted"
           },
           "qualifiedEnd": {
-            "activityType": "End",
+            "provType": "End",
             "atTime": "2018-10-25T15:46:38.069110",
             "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
           },
           "qualifiedStart": {
-            "activityType": "Start",
+            "provType": "Start",
             "atTime": "2018-10-25T15:46:36.975235",
             "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
           },
           "qualifiedUsage": [
             {
-              "activityType": "Usage",
+              "provType": "Usage",
               "atTime": "2018-10-25T15:46:37.067604",
               "entity": {
                 "id": "uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265",
-                "activityType": [
+                "provType": [
                   "wf4ever:File",
                   "wfprov:Artifact",
                   "Entity"
                 ],
                 "qualifiedGeneration": {
-                  "id": "_:b7",
-                  "activityType": "Generation",
+                  "id": "_:b17",
+                  "provType": "Generation",
                   "activity": {
                     "id": "uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de",
-                    "activityType": [
+                    "provType": [
                       "wfprov:ProcessRun",
                       "Activity"
                     ],
                     "name": "Run of workflow/packed.cwl#main/rev",
                     "qualifiedAssociation": {
-                      "id": "_:b14",
-                      "activityType": "Association",
+                      "id": "_:b5",
+                      "provType": "Association",
                       "hadPlan": "wf:main/rev"
                     },
                     "qualifiedEnd": {
-                      "id": "_:b15",
-                      "activityType": "End",
+                      "id": "_:b6",
+                      "provType": "End",
                       "atTime": "2018-10-25T15:46:36.967359",
                       "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
                     },
                     "qualifiedStart": {
-                      "id": "_:b16",
-                      "activityType": "Start",
+                      "id": "_:b7",
+                      "provType": "Start",
                       "atTime": "2018-10-25T15:46:35.314101",
                       "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
                     },
                     "qualifiedUsage": {
-                      "id": "_:b17",
-                      "activityType": "Usage",
+                      "id": "_:b8",
+                      "provType": "Usage",
                       "atTime": "2018-10-25T15:46:35.597726",
                       "entity": {
                         "id": "uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b",
-                        "activityType": [
+                        "provType": [
                           "wf4ever:File",
                           "wfprov:Artifact",
                           "Entity"
@@ -213,7 +213,7 @@
                       "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519",
                       {
                         "id": "uuid:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0",
-                        "activityType": [
+                        "provType": [
                           "Agent",
                           "SoftwareAgent"
                         ],
@@ -227,7 +227,7 @@
                 },
                 "specializationOf": {
                   "id": "sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f",
-                  "activityType": [
+                  "provType": [
                     "wfprov:Artifact",
                     "Entity"
                   ]
@@ -239,11 +239,11 @@
               "hadRole": "wf:main/sorted/input"
             },
             {
-              "activityType": "Usage",
+              "provType": "Usage",
               "atTime": "2018-10-25T15:46:37.067864",
               "entity": {
                 "id": "uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93",
-                "activityType": "Entity",
+                "provType": "Entity",
                 "value": true
               },
               "hadRole": "wf:main/sorted/reverse"
@@ -253,7 +253,7 @@
             "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519",
             {
               "id": "uuid:ba0fe122-124e-417b-8a2a-95e721320a2d",
-              "activityType": [
+              "provType": [
                 "Agent",
                 "SoftwareAgent"
               ],
@@ -268,7 +268,7 @@
     ],
     "specializationOf": {
       "id": "sha1:b9214658cc453331b62c2282b772a5c063dbd284",
-      "activityType": [
+      "provType": [
         "wfprov:Artifact",
         "Entity"
       ]
@@ -279,27 +279,27 @@
   },
   {
     "id": "uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265",
-    "activityType": [
+    "provType": [
       "wf4ever:File",
       "wfprov:Artifact",
       "Entity"
     ],
     "qualifiedGeneration": {
-      "id": "_:b7",
-      "activityType": "Generation",
+      "id": "_:b17",
+      "provType": "Generation",
       "activity": {
         "id": "uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de",
-        "activityType": [
+        "provType": [
           "wfprov:ProcessRun",
           "Activity"
         ],
         "name": "Run of workflow/packed.cwl#main/rev",
         "qualifiedAssociation": {
-          "id": "_:b14",
-          "activityType": "Association",
+          "id": "_:b5",
+          "provType": "Association",
           "hadPlan": {
             "id": "wf:main/rev",
-            "activityType": [
+            "provType": [
               "wfdesc:Process",
               "Entity",
               "Plan"
@@ -307,22 +307,22 @@
           }
         },
         "qualifiedEnd": {
-          "id": "_:b15",
-          "activityType": "End",
+          "id": "_:b6",
+          "provType": "End",
           "atTime": "2018-10-25T15:46:36.967359",
           "hadActivity": {
             "id": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
-            "activityType": [
+            "provType": [
               "wfprov:WorkflowRun",
               "Activity"
             ],
             "name": "Run of workflow/packed.cwl#main",
             "qualifiedAssociation": {
               "id": "_:b0",
-              "activityType": "Association",
+              "provType": "Association",
               "hadPlan": {
                 "id": "wf:main",
-                "activityType": [
+                "provType": [
                   "wfdesc:Workflow",
                   "Entity",
                   "Plan"
@@ -333,7 +333,7 @@
                   },
                   {
                     "id": "wf:main/sorted",
-                    "activityType": [
+                    "provType": [
                       "wfdesc:Process",
                       "Entity",
                       "Plan"
@@ -345,26 +345,26 @@
             },
             "qualifiedEnd": {
               "id": "_:b1",
-              "activityType": "End",
+              "provType": "End",
               "atTime": "2018-10-25T15:46:43.020168",
               "hadActivity": {
                 "id": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519",
-                "activityType": [
+                "provType": [
                   "wfprov:WorkflowEngine",
                   "Agent",
                   "SoftwareAgent"
                 ],
                 "name": "cwltool 1.0.20181012180214",
                 "qualifiedStart": {
-                  "id": "_:b13",
-                  "activityType": "Start",
+                  "id": "_:b9",
+                  "provType": "Start",
                   "atTime": "2018-10-25T15:46:35.210973",
                   "hadActivity": {
                     "id": "uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210",
-                    "activityType": "Agent",
+                    "provType": "Agent",
                     "actedOnBehalfOf": {
                       "id": "https://orcid.org/0000-0001-9842-9718",
-                      "activityType": [
+                      "provType": [
                         "sdo:Person",
                         "Agent",
                         "Person"
@@ -379,25 +379,25 @@
             },
             "qualifiedStart": {
               "id": "_:b2",
-              "activityType": "Start",
+              "provType": "Start",
               "atTime": "2018-10-25T15:46:35.211153",
               "hadActivity": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
             },
             "qualifiedUsage": [
               {
                 "id": "_:b3",
-                "activityType": "Usage",
+                "provType": "Usage",
                 "atTime": "2018-10-25T15:46:35.303484",
                 "entity": {
                   "id": "uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7",
-                  "activityType": [
+                  "provType": [
                     "wf4ever:File",
                     "wfprov:Artifact",
                     "Entity"
                   ],
                   "specializationOf": {
                     "id": "sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
-                    "activityType": [
+                    "provType": [
                       "wfprov:Artifact",
                       "Entity"
                     ]
@@ -410,11 +410,11 @@
               },
               {
                 "id": "_:b4",
-                "activityType": "Usage",
+                "provType": "Usage",
                 "atTime": "2018-10-25T15:46:35.303643",
                 "entity": {
                   "id": "uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d",
-                  "activityType": "Entity",
+                  "provType": "Entity",
                   "value": true
                 },
                 "hadRole": "wf:main/reverse_sort"
@@ -425,18 +425,18 @@
           }
         },
         "qualifiedStart": {
-          "id": "_:b16",
-          "activityType": "Start",
+          "id": "_:b7",
+          "provType": "Start",
           "atTime": "2018-10-25T15:46:35.314101",
           "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
         },
         "qualifiedUsage": {
-          "id": "_:b17",
-          "activityType": "Usage",
+          "id": "_:b8",
+          "provType": "Usage",
           "atTime": "2018-10-25T15:46:35.597726",
           "entity": {
             "id": "uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b",
-            "activityType": [
+            "provType": [
               "wf4ever:File",
               "wfprov:Artifact",
               "Entity"
@@ -452,7 +452,7 @@
           "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519",
           {
             "id": "uuid:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0",
-            "activityType": [
+            "provType": [
               "Agent",
               "SoftwareAgent"
             ],
@@ -466,7 +466,7 @@
     },
     "specializationOf": {
       "id": "sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f",
-      "activityType": [
+      "provType": [
         "wfprov:Artifact",
         "Entity"
       ]

@@ -1,10 +1,10 @@
 Validation report for ogc.profiles.prov.cwl.provenance - CWL (Prov)
-Generated 2026-09-16T22:20:32.801188+00:00
+Generated 2026-09-16T22:20:32.513764+00:00
 === Files ===
-Using example3.json from examples
+Using example2.json from examples
 JSON-LD context is present - uplifting
-Output JSON-LD example_3_1.jsonld created
-Output Turtle example_3_1.ttl created
+Output JSON-LD example_2_1.jsonld created
+Output Turtle example_2_1.ttl created
 === End Files ===
 
 === JSON Schema ===
@@ -33,7 +33,7 @@ Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/
  - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*
  - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*
  - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*
- - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: wf:main
+ - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: wf:main,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>
  - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*
@@ -52,7 +52,7 @@ Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/
  - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*
- - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*
+ - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd
  - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*
  - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*

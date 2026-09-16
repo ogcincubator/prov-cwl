@@ -1,10 +1,9 @@
-Validation report for ogc.profiles.prov.cwl.provenance - CWL (Prov)
-Generated 2026-09-16T22:20:32.801188+00:00
+Validation report for ogc.ogc-utils.prov - Provenance Chain
+Generated 2026-09-16T22:20:34.425126+00:00
 === Files ===
-Using example3.json from examples
-JSON-LD context is present - uplifting
-Output JSON-LD example_3_1.jsonld created
-Output Turtle example_3_1.ttl created
+Using example_1_1.bblock-prov-schema.jsonld from transform outputs
+"@graph" found, trying validation with contents unwrapped
+Output Turtle example_1_1.bblock-prov-schema.ttl created
 === End Files ===
 
 === JSON Schema ===
@@ -31,9 +30,9 @@ Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/
  - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*
  - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*
- - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*
+ - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44,uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de,uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f
  - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*
- - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: wf:main
+ - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: wf:main,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted>
  - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*
@@ -48,15 +47,15 @@ Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/
  - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*
- - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*
+ - Shape <https://www.ogc.org/rules/prov/#End-shape>: uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedEnd,uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedEnd,uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedEnd
  - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*
- - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*
+ - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: wf:main,uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b,uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93,sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd,sha1:b9214658cc453331b62c2282b772a5c063dbd284,uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d,uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted>,sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f,uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7
  - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*
  - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*
- - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*
+ - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedUsage,uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedUsage,uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedUsage,uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedUsage,uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedUsage
  - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*
@@ -67,10 +66,10 @@ Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/
  - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*
- - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*
+ - Shape <https://www.ogc.org/rules/prov/#Start-shape>: uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedStart,uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedStart,uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedStart,uuid:ac9c1653-4291-47bc-86f8-6dedcff13519/prov:qualifiedStart
  - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*
- - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*
+ - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd/prov:qualifiedGeneration,uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd/prov:qualifiedGeneration,uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265/prov:qualifiedGeneration
  - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*
  - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*

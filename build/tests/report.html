@@ -46,14 +46,27 @@
                     border-width: var(--bs-accordion-border-width);
                 }
             }
+            .anchor {
+                color: black;
+                opacity: 0;
+                text-decoration: none;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+            }
+            .anchor-container:hover .anchor {
+                opacity: 60%;
+            }
+            .anchor-container:hover .anchor:hover {
+                opacity: 100%;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2025-12-16T08:23:28.113665+00:00</small>
-                <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 1 / 2 (50%)
+            <small class="datetime">Generated at 2026-09-16T22:20:35.957710+00:00</small>
+                <p class="summary fw-semibold text-success">
+                    Number of passing building blocks: 2 / 2 (100%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -61,13 +74,14 @@
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.profiles.prov.cwl.turtle" id="bblock-ogc.profiles.prov.cwl.turtle">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.profiles\.prov\.cwl\.turtle">
                                     <div class="flex-fill">
                                         CWL (Prov) from Turtle
                                         <small class="ms-2 bblock-id">ogc.profiles.prov.cwl.turtle</small>
+                                        <a class="anchor" href="#bblock-ogc.profiles.prov.cwl.turtle">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -81,9 +95,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.profiles.prov.cwl.turtle-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-1"
                                                             aria-expanded="false" aria-controls="uid-1"
@@ -93,6 +107,7 @@
                                                     </button>
                                                     <a href="profiles/prov/cwl/turtle/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.profiles.prov.cwl.turtle-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -100,7 +115,10 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1 from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/revsort-run-1.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                     </div>
                                                 </div>
@@ -110,29 +128,30 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.profiles.prov.cwl.provenance" id="bblock-ogc.profiles.prov.cwl.provenance">
-                            <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button " type="button"
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.profiles\.prov\.cwl\.provenance">
                                     <div class="flex-fill">
                                         CWL (Prov)
                                         <small class="ms-2 bblock-id">ogc.profiles.prov.cwl.provenance</small>
+                                        <a class="anchor" href="#bblock-ogc.profiles.prov.cwl.provenance">¶</a>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (66.67% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.profiles.prov.cwl.provenance">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.profiles.prov.cwl.provenance">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 2 / 3
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 3 / 3
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.profiles.prov.cwl.provenance-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-2"
                                                             aria-expanded="false" aria-controls="uid-2"
@@ -142,6 +161,7 @@
                                                     </button>
                                                     <a href="profiles/prov/cwl/provenance/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.profiles.prov.cwl.provenance-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -149,19 +169,94 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json (example_1_1) from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using example.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - https://www.w3.org/ns/prov-o</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasStartedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAttributedTo&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInfluence&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPrimarySource&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedEnd&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadRole&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedQuotation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDerivation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasRevisionOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#InstantaneousEvent-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasGeneratedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Activity-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Bundle-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Plan-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-atLocation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadGeneration&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-generated&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedRevision&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInfluencedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-used&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-influencer&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDelegation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedStart&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-invalidated&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-specializationOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#End-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasDerivedFrom&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadActivity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInformedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Entity-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Collection-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-agent&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#EmptyCollection-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Usage-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedCommunication&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedUsage&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-alternateOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAssociatedWith&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPlan&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-activity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasEndedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAttribution&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadUsage&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAssociation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Start-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Invalidation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasQuotedFrom&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Generation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedGeneration&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-entity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadMember&gt;: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.profiles.prov.cwl.provenance-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-3"
                                                             aria-expanded="false" aria-controls="uid-3"
@@ -171,477 +266,102 @@
                                                     </button>
                                                     <a href="profiles/prov/cwl/provenance/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.profiles.prov.cwl.provenance-2">¶</a>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_2_1.json (example_2_1) from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using example2.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: {&#x27;id&#x27;: &#x27;uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd&#x27;, &#x27;type&#x27;: &#x27;Feature&#x27;, &#x27;provType&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;wf4ever:File&#x27;, &#x27;wfprov:Artifact&#x27;], &#x27;qualifiedGeneration&#x27;: [{&#x27;type&#x27;: &#x27;Generation&#x27;, &#x27;activity&#x27;: {&#x27;id&#x27;: &#x27;uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44&#x27;, &#x27;type&#x27;: [&#x27;wfprov:ProcessRun&#x27;, &#x27;Activity&#x27;], &#x27;name&#x27;: &#x27;Run of workflow/packed.cwl#main/sorted&#x27;, &#x27;qualifiedAssociation&#x27;: {&#x27;type&#x27;: &#x27;Association&#x27;, &#x27;hadPlan&#x27;: {&#x27;id&#x27;: &#x27; wf:main/sorted&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;Plan&#x27;, &#x27;wfdesc:Process&#x27;]}}, &#x27;qualifiedEnd&#x27;: {&#x27;type&#x27;: &#x27;End&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:38.069110&#x27;, &#x27;hadActivity&#x27;: {&#x27;id&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;, &#x27;type&#x27;: [&#x27;wfprov:WorkflowRun&#x27;, &#x27;Activity&#x27;], &#x27;name&#x27;: &#x27;Run of workflow/packed.cwl#main&#x27;, &#x27;qualifiedAssociation&#x27;: {&#x27;type&#x27;: &#x27;Association&#x27;, &#x27;hadPlan&#x27;: {&#x27;id&#x27;: &#x27;wf:main&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;Plan&#x27;, &#x27;wfdesc:Workflow&#x27;], &#x27;wfdesc:hasSubProcess&#x27;: [{&#x27;id&#x27;: &#x27;wf:main/rev&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;Plan&#x27;, &#x27;wfdesc:Process&#x27;]}, {&#x27;id&#x27;: &#x27;wf:main/sorted&#x27;}], &#x27;name&#x27;: &#x27;Prospective provenance&#x27;}}, &#x27;qualifiedEnd&#x27;: {&#x27;type&#x27;: &#x27;End&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:43.020168&#x27;, &#x27;hadActivity&#x27;: {&#x27;id&#x27;: &#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;, &#x27;type&#x27;: [&#x27;Agent&#x27;, &#x27;SoftwareAgent&#x27;, &#x27;wfprov:WorkflowEngine&#x27;], &#x27;name&#x27;: &#x27;cwltool 1.0.20181012180214&#x27;, &#x27;qualifiedStart&#x27;: {&#x27;type&#x27;: &#x27;Start&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.210973&#x27;, &#x27;hadActivity&#x27;: {&#x27;id&#x27;: &#x27;uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210&#x27;, &#x27;type&#x27;: &#x27;Agent&#x27;, &#x27;actedOnBehalfOf&#x27;: {&#x27;id&#x27;: &#x27;https://orcid.org/0000-0001-9842-9718&#x27;, &#x27;type&#x27;: [&#x27;schemaorg:Person&#x27;, &#x27;Person&#x27;, &#x27;Agent&#x27;], &#x27;schemaorg:name&#x27;: &#x27;Stian Soiland-Reyes&#x27;, &#x27;name&#x27;: &#x27;Stian Soiland-Reyes&#x27;, &#x27;foaf:name&#x27;: &#x27;Stian Soiland-Reyes&#x27;}}}}}, &#x27;qualifiedStart&#x27;: {&#x27;type&#x27;: &#x27;Start&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.211153&#x27;, &#x27;hadActivity&#x27;: &#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;}, &#x27;qualifiedUsage&#x27;: [{&#x27;type&#x27;: &#x27;Usage&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.303484&#x27;, &#x27;entity&#x27;: {&#x27;id&#x27;: &#x27;uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;wfprov:Artifact&#x27;, &#x27;wf4ever:File&#x27;], &#x27;specializationOf&#x27;: {&#x27;id&#x27;: &#x27;sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&#x27;, &#x27;type&#x27;: [&#x27;wfprov:Artifact&#x27;, &#x27;Entity&#x27;]}, &#x27;cwlprov:basename&#x27;: &#x27;whale.txt&#x27;, &#x27;cwlprov:nameext&#x27;: &#x27;.txt&#x27;, &#x27;cwlprov:nameroot&#x27;: &#x27;whale&#x27;}, &#x27;hadRole&#x27;: &#x27;wf:main/input&#x27;}, {&#x27;type&#x27;: &#x27;Usage&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.303643&#x27;, &#x27;entity&#x27;: {&#x27;id&#x27;: &#x27;uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;value&#x27;: True}, &#x27;hadRole&#x27;: &#x27;wf:main/reverse_sort&#x27;}], &#x27;startedAtTime&#x27;: &#x27;2018-10-25T15:46:35.211026&#x27;, &#x27;wasAssociatedWith&#x27;: &#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;}}, &#x27;qualifiedStart&#x27;: {&#x27;type&#x27;: &#x27;Start&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:36.975235&#x27;, &#x27;hadActivity&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;}, &#x27;qualifiedUsage&#x27;: [{&#x27;type&#x27;: &#x27;Usage&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:37.067604&#x27;, &#x27;entity&#x27;: {&#x27;id&#x27;: &#x27;uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;wf4ever:File&#x27;, &#x27;wfprov:Artifact&#x27;], &#x27;qualifiedGeneration&#x27;: {&#x27;type&#x27;: &#x27;Generation&#x27;, &#x27;activity&#x27;: {&#x27;id&#x27;: &#x27;uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de&#x27;, &#x27;type&#x27;: [&#x27;wfprov:ProcessRun&#x27;, &#x27;Activity&#x27;], &#x27;name&#x27;: &#x27;Run of workflow/packed.cwl#main/rev&#x27;, &#x27;qualifiedAssociation&#x27;: {&#x27;type&#x27;: &#x27;Association&#x27;, &#x27;hadPlan&#x27;: &#x27;wf:main/rev&#x27;}, &#x27;qualifiedEnd&#x27;: {&#x27;type&#x27;: &#x27;End&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:36.967359&#x27;, &#x27;hadActivity&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;}, &#x27;qualifiedStart&#x27;: {&#x27;type&#x27;: &#x27;Start&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.314101&#x27;, &#x27;hadActivity&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;}, &#x27;qualifiedUsage&#x27;: {&#x27;type&#x27;: &#x27;Usage&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.597726&#x27;, &#x27;entity&#x27;: {&#x27;id&#x27;: &#x27;uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;wfprov:Artifact&#x27;, &#x27;wf4ever:File&#x27;], &#x27;specializationOf&#x27;: &#x27;sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&#x27;, &#x27;cwlprov:basename&#x27;: &#x27;whale.txt&#x27;, &#x27;cwlprov:nameext&#x27;: &#x27;.txt&#x27;, &#x27;cwlprov:nameroot&#x27;: &#x27;whale&#x27;}, &#x27;hadRole&#x27;: &#x27;wf:main/rev/input&#x27;}, &#x27;wasAssociatedWith&#x27;: [{&#x27;id&#x27;: &#x27;uuid:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0&#x27;, &#x27;type&#x27;: [&#x27;SoftwareAgent&#x27;, &#x27;Agent&#x27;], &#x27;name&#x27;: &#x27;Container execution of image debian:8&#x27;, &#x27;cwlprov:image&#x27;: &#x27;debian:8&#x27;}, &#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;]}, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:36.963254&#x27;, &#x27;hadRole&#x27;: &#x27;wf:main/rev/output&#x27;}, &#x27;specializationOf&#x27;: {&#x27;id&#x27;: &#x27;sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;wfprov:Artifact&#x27;]}, &#x27;cwlprov:basename&#x27;: &#x27;output.txt&#x27;, &#x27;cwlprov:nameext&#x27;: &#x27;.txt&#x27;, &#x27;cwlprov:nameroot&#x27;: &#x27;output&#x27;}, &#x27;hadRole&#x27;: &#x27;wf:main/sorted/input&#x27;}, {&#x27;type&#x27;: &#x27;Usage&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:37.067864&#x27;, &#x27;entity&#x27;: {&#x27;id&#x27;: &#x27;uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;value&#x27;: True}, &#x27;hadRole&#x27;: &#x27;wf:main/sorted/reverse&#x27;}], &#x27;wasAssociatedWith&#x27;: [&#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;, {&#x27;id&#x27;: &#x27;uuid:ba0fe122-124e-417b-8a2a-95e721320a2d&#x27;, &#x27;type&#x27;: [&#x27;SoftwareAgent&#x27;, &#x27;Agent&#x27;], &#x27;name&#x27;: &#x27;Container execution of image debian:8&#x27;, &#x27;cwlprov:image&#x27;: &#x27;debian:8&#x27;}]}, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:38.058365&#x27;, &#x27;hadRole&#x27;: &#x27;wf:main/sorted/output&#x27;}, {&#x27;type&#x27;: &#x27;Generation&#x27;, &#x27;activity&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;, &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:43.020002&#x27;, &#x27;hadRole&#x27;: &#x27;wf:main/primary/output&#x27;}], &#x27;specializationOf&#x27;: {&#x27;id&#x27;: &#x27;sha1:b9214658cc453331b62c2282b772a5c063dbd284&#x27;, &#x27;type&#x27;: &#x27;Entity&#x27;, &#x27;featureType&#x27;: [&#x27;wfprov:Artifact&#x27;]}, &#x27;cwlprov:basename&#x27;: &#x27;output.txt&#x27;, &#x27;cwlprov:nameext&#x27;: &#x27;.txt&#x27;, &#x27;cwlprov:nameroot&#x27;: &#x27;output&#x27;} is not valid under any of the given schemas
-
-Failed validating &#x27;anyOf&#x27; in schema:
-    {&#x27;$defs&#x27;: {&#x27;Activity&#x27;: {&#x27;$anchor&#x27;: &#x27;Activity&#x27;,
-                            &#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml&#x27;},
-               &#x27;Agent&#x27;: {&#x27;$anchor&#x27;: &#x27;Agent&#x27;,
-                         &#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml&#x27;},
-               &#x27;Association&#x27;: {&#x27;$anchor&#x27;: &#x27;Association&#x27;,
-                               &#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml#Association&#x27;},
-               &#x27;Entity&#x27;: {&#x27;$anchor&#x27;: &#x27;Entity&#x27;,
-                          &#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml&#x27;},
-               &#x27;Influence&#x27;: {&#x27;$anchor&#x27;: &#x27;Influence&#x27;,
-                             &#x27;anyOf&#x27;: [{&#x27;required&#x27;: [&#x27;influencer&#x27;]},
-                                       {&#x27;required&#x27;: [&#x27;entity&#x27;]},
-                                       {&#x27;required&#x27;: [&#x27;activity&#x27;]},
-                                       {&#x27;required&#x27;: [&#x27;agent&#x27;]}],
-                             &#x27;properties&#x27;: {&#x27;activity&#x27;: {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreActivitiesOrRefIds&#x27;,
-                                                         &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#activity&#x27;,
-                                                         &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                                            &#x27;agent&#x27;: {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreAgentsOrRefIds&#x27;,
-                                                      &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#agent&#x27;,
-                                                      &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                                            &#x27;entity&#x27;: {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds&#x27;,
-                                                       &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#entity&#x27;,
-                                                       &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                                            &#x27;id&#x27;: {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref&#x27;,
-                                                   &#x27;x-jsonld-id&#x27;: &#x27;@id&#x27;},
-                                            &#x27;influencer&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreActivitiesOrRefIds&#x27;},
-                                                                     {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds&#x27;},
-                                                                     {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreAgentsOrRefIds&#x27;}],
-                                                           &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#influencer&#x27;,
-                                                           &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;}},
-                             &#x27;type&#x27;: &#x27;object&#x27;},
-               &#x27;Prov&#x27;: {&#x27;$anchor&#x27;: &#x27;Prov&#x27;,
-                        &#x27;description&#x27;: &#x27;An list of provenance objects &#x27;
-                                       &#x27;linked together to form a &#x27;
-                                       &#x27;provenance chain for the current &#x27;
-                                       &#x27;object. Objects may have nested &#x27;
-                                       &#x27;objects as well, with or without &#x27;
-                                       &#x27;referencable ids&#x27;,
-                        &#x27;items&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#Entity&#x27;},
-                                            {&#x27;$ref&#x27;: &#x27;#Agent&#x27;},
-                                            {&#x27;$ref&#x27;: &#x27;#Activity&#x27;}]},
-                        &#x27;type&#x27;: &#x27;array&#x27;},
-               &#x27;externalLink&#x27;: {&#x27;$anchor&#x27;: &#x27;externalLink&#x27;,
-                                &#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml&#x27;},
-               &#x27;influenced&#x27;: {&#x27;$anchor&#x27;: &#x27;influenced&#x27;,
-                              &#x27;properties&#x27;: {&#x27;qualifiedInfluence&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#objectref&#x27;},
-                                                                              {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Influence&#x27;},
-                                                                              {&#x27;items&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#objectref&#x27;},
-                                                                                                   {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Influence&#x27;}]},
-                                                                               &#x27;type&#x27;: &#x27;array&#x27;}],
-                                                                    &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedInfluence&#x27;,
-                                                                    &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                                             &#x27;wasInfluencedBy&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#oneOrMoreActivitiesOrRefIds&#x27;},
-                                                                           {&#x27;$ref&#x27;: &#x27;#oneOrMoreEntitiesOrRefIds&#x27;},
-                                                                           {&#x27;$ref&#x27;: &#x27;#oneOrMoreAgentsOrRefIds&#x27;}],
-                                                                 &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasInfluencedBy&#x27;,
-                                                                 &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;}},
-                              &#x27;type&#x27;: &#x27;object&#x27;},
-               &#x27;objectref&#x27;: {&#x27;$anchor&#x27;: &#x27;objectref&#x27;,
-                             &#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml&#x27;},
-               &#x27;oneOrMoreActivitiesOrRefIds&#x27;: {&#x27;$anchor&#x27;: &#x27;oneOrMoreActivitiesOrRefIds&#x27;,
-                                               &#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#objectref&#x27;},
-                                                         {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Activity&#x27;},
-                                                         {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#objectref&#x27;},
-                                                                              {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Activity&#x27;}]},
-                                                          &#x27;type&#x27;: &#x27;array&#x27;}]},
-               &#x27;oneOrMoreAgentsOrRefIds&#x27;: {&#x27;$anchor&#x27;: &#x27;oneOrMoreAgentsOrRefIds&#x27;,
-                                           &#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#objectref&#x27;},
-                                                     {&#x27;$ref&#x27;: &#x27;#externalLink&#x27;},
-                                                     {&#x27;$ref&#x27;: &#x27;#Agent&#x27;},
-                                                     {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#objectref&#x27;},
-                                                                          {&#x27;$ref&#x27;: &#x27;#Agent&#x27;}]},
-                                                      &#x27;type&#x27;: &#x27;array&#x27;}]},
-               &#x27;oneOrMoreEntitiesOrRefIds&#x27;: {&#x27;$anchor&#x27;: &#x27;oneOrMoreEntitiesOrRefIds&#x27;,
-                                             &#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#objectref&#x27;},
-                                                       {&#x27;$ref&#x27;: &#x27;#Entity&#x27;},
-                                                       {&#x27;items&#x27;: {&#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#objectref&#x27;},
-                                                                            {&#x27;$ref&#x27;: &#x27;#Entity&#x27;}]},
-                                                        &#x27;type&#x27;: &#x27;array&#x27;}]},
-               &#x27;oneOrMoreObjectref&#x27;: {&#x27;$anchor&#x27;: &#x27;oneOrMoreObjectref&#x27;,
-                                      &#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml#/$defs/MultipleOrObject&#x27;}},
-     &#x27;$schema&#x27;: &#x27;https://json-schema.org/draft/2020-12/schema&#x27;,
-     &#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#Prov&#x27;},
-               {&#x27;$ref&#x27;: &#x27;#Entity&#x27;},
-               {&#x27;$ref&#x27;: &#x27;#Activity&#x27;}],
-     &#x27;description&#x27;: &#x27;Provenance Chain using PROV-O core model supporting &#x27;
-                    &#x27;both an ID based object graph and nesting&#x27;,
-     &#x27;x-jsonld-extra-terms&#x27;: {&#x27;Accept&#x27;: &#x27;http://www.w3.org/ns/prov#Accept&#x27;,
-                              &#x27;Activity&#x27;: &#x27;http://www.w3.org/ns/prov#Activity&#x27;,
-                              &#x27;ActivityInfluence&#x27;: &#x27;http://www.w3.org/ns/prov#ActivityInfluence&#x27;,
-                              &#x27;Agent&#x27;: &#x27;http://www.w3.org/ns/prov#Agent&#x27;,
-                              &#x27;AgentInfluence&#x27;: &#x27;http://www.w3.org/ns/prov#AgentInfluence&#x27;,
-                              &#x27;Association&#x27;: &#x27;http://www.w3.org/ns/prov#Association&#x27;,
-                              &#x27;Attribution&#x27;: &#x27;http://www.w3.org/ns/prov#Attribution&#x27;,
-                              &#x27;Bundle&#x27;: &#x27;http://www.w3.org/ns/prov#Bundle&#x27;,
-                              &#x27;Collection&#x27;: &#x27;http://www.w3.org/ns/prov#Collection&#x27;,
-                              &#x27;Communication&#x27;: &#x27;http://www.w3.org/ns/prov#Communication&#x27;,
-                              &#x27;Contribute&#x27;: &#x27;http://www.w3.org/ns/prov#Contribute&#x27;,
-                              &#x27;Contributor&#x27;: &#x27;http://www.w3.org/ns/prov#Contributor&#x27;,
-                              &#x27;Copyright&#x27;: &#x27;http://www.w3.org/ns/prov#Copyright&#x27;,
-                              &#x27;Create&#x27;: &#x27;http://www.w3.org/ns/prov#Create&#x27;,
-                              &#x27;Creator&#x27;: &#x27;http://www.w3.org/ns/prov#Creator&#x27;,
-                              &#x27;Delegation&#x27;: &#x27;http://www.w3.org/ns/prov#Delegation&#x27;,
-                              &#x27;Derivation&#x27;: &#x27;http://www.w3.org/ns/prov#Derivation&#x27;,
-                              &#x27;Dictionary&#x27;: &#x27;http://www.w3.org/ns/prov#Dictionary&#x27;,
-                              &#x27;DirectQueryService&#x27;: &#x27;http://www.w3.org/ns/prov#DirectQueryService&#x27;,
-                              &#x27;EmptyCollection&#x27;: &#x27;http://www.w3.org/ns/prov#EmptyCollection&#x27;,
-                              &#x27;EmptyDictionary&#x27;: &#x27;http://www.w3.org/ns/prov#EmptyDictionary&#x27;,
-                              &#x27;End&#x27;: &#x27;http://www.w3.org/ns/prov#End&#x27;,
-                              &#x27;Entity&#x27;: &#x27;http://www.w3.org/ns/prov#Entity&#x27;,
-                              &#x27;EntityInfluence&#x27;: &#x27;http://www.w3.org/ns/prov#EntityInfluence&#x27;,
-                              &#x27;Generation&#x27;: &#x27;http://www.w3.org/ns/prov#Generation&#x27;,
-                              &#x27;Influence&#x27;: &#x27;http://www.w3.org/ns/prov#Influence&#x27;,
-                              &#x27;Insertion&#x27;: &#x27;http://www.w3.org/ns/prov#Insertion&#x27;,
-                              &#x27;InstantaneousEvent&#x27;: &#x27;http://www.w3.org/ns/prov#InstantaneousEvent&#x27;,
-                              &#x27;Invalidation&#x27;: &#x27;http://www.w3.org/ns/prov#Invalidation&#x27;,
-                              &#x27;KeyEntityPair&#x27;: &#x27;http://www.w3.org/ns/prov#KeyEntityPair&#x27;,
-                              &#x27;Location&#x27;: &#x27;http://www.w3.org/ns/prov#Location&#x27;,
-                              &#x27;Modify&#x27;: &#x27;http://www.w3.org/ns/prov#Modify&#x27;,
-                              &#x27;Organization&#x27;: &#x27;http://www.w3.org/ns/prov#Organization&#x27;,
-                              &#x27;Person&#x27;: &#x27;http://www.w3.org/ns/prov#Person&#x27;,
-                              &#x27;Plan&#x27;: &#x27;http://www.w3.org/ns/prov#Plan&#x27;,
-                              &#x27;PrimarySource&#x27;: &#x27;http://www.w3.org/ns/prov#PrimarySource&#x27;,
-                              &#x27;Publish&#x27;: &#x27;http://www.w3.org/ns/prov#Publish&#x27;,
-                              &#x27;Publisher&#x27;: &#x27;http://www.w3.org/ns/prov#Publisher&#x27;,
-                              &#x27;Quotation&#x27;: &#x27;http://www.w3.org/ns/prov#Quotation&#x27;,
-                              &#x27;Removal&#x27;: &#x27;http://www.w3.org/ns/prov#Removal&#x27;,
-                              &#x27;Replace&#x27;: &#x27;http://www.w3.org/ns/prov#Replace&#x27;,
-                              &#x27;Revision&#x27;: &#x27;http://www.w3.org/ns/prov#Revision&#x27;,
-                              &#x27;RightsAssignment&#x27;: &#x27;http://www.w3.org/ns/prov#RightsAssignment&#x27;,
-                              &#x27;RightsHolder&#x27;: &#x27;http://www.w3.org/ns/prov#RightsHolder&#x27;,
-                              &#x27;Role&#x27;: &#x27;http://www.w3.org/ns/prov#Role&#x27;,
-                              &#x27;ServiceDescription&#x27;: &#x27;http://www.w3.org/ns/prov#ServiceDescription&#x27;,
-                              &#x27;SoftwareAgent&#x27;: &#x27;http://www.w3.org/ns/prov#SoftwareAgent&#x27;,
-                              &#x27;Start&#x27;: &#x27;http://www.w3.org/ns/prov#Start&#x27;,
-                              &#x27;Submit&#x27;: &#x27;http://www.w3.org/ns/prov#Submit&#x27;,
-                              &#x27;Usage&#x27;: &#x27;http://www.w3.org/ns/prov#Usage&#x27;,
-                              &#x27;actedOnBehalfOf&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#actedOnBehalfOf&#x27;,
-                                                  &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;activity&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#activity&#x27;,
-                                           &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;activityType&#x27;: &#x27;@type&#x27;,
-                              &#x27;agent&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#agent&#x27;,
-                                        &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;agentType&#x27;: &#x27;@type&#x27;,
-                              &#x27;alternateOf&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#alternateOf&#x27;,
-                                              &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;asInBundle&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#asInBundle&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;atLocation&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#atLocation&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;atTime&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#atTime&#x27;,
-                                         &#x27;x-jsonld-type&#x27;: &#x27;http://www.w3.org/2001/XMLSchema#dateTime&#x27;},
-                              &#x27;derivedByInsertionFrom&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#derivedByInsertionFrom&#x27;,
-                                                         &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;derivedByRemovalFrom&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#derivedByRemovalFrom&#x27;,
-                                                       &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;describesService&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#describesService&#x27;,
-                                                   &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;dictionary&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#dictionary&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;endedAtTime&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#endedAtTime&#x27;,
-                                              &#x27;x-jsonld-type&#x27;: &#x27;http://www.w3.org/2001/XMLSchema#dateTime&#x27;},
-                              &#x27;entity&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#entity&#x27;,
-                                         &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;entityType&#x27;: &#x27;@type&#x27;,
-                              &#x27;featureType&#x27;: &#x27;@type&#x27;,
-                              &#x27;generated&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#generated&#x27;,
-                                            &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;generatedAtTime&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#generatedAtTime&#x27;,
-                                                  &#x27;x-jsonld-type&#x27;: &#x27;http://www.w3.org/2001/XMLSchema#dateTime&#x27;},
-                              &#x27;hadActivity&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#hadActivity&#x27;,
-                                              &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;hadDictionaryMember&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#hadDictionaryMember&#x27;,
-                                                      &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;hadGeneration&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#hadGeneration&#x27;,
-                                                &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;hadMember&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#hadMember&#x27;,
-                                            &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;hadPlan&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#hadPlan&#x27;,
-                                          &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;hadPrimarySource&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#hadPrimarySource&#x27;,
-                                                   &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;hadRole&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#hadRole&#x27;,
-                                          &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;hadUsage&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#hadUsage&#x27;,
-                                           &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;has_anchor&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#has_anchor&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;has_provenance&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://purl.org/dc/terms/provenance&#x27;,
-                                                 &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;has_query_service&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#has_query_service&#x27;,
-                                                    &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;id&#x27;: &#x27;@id&#x27;,
-                              &#x27;influenced&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#influenced&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;influencer&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#influencer&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;insertedKeyEntityPair&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#insertedKeyEntityPair&#x27;,
-                                                        &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;invalidated&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#invalidated&#x27;,
-                                              &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;invalidatedAtTime&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#invalidatedAtTime&#x27;,
-                                                    &#x27;x-jsonld-type&#x27;: &#x27;http://www.w3.org/2001/XMLSchema#dateTime&#x27;},
-                              &#x27;links&#x27;: &#x27;http://www.w3.org/2000/01/rdf-schema#seeAlso&#x27;,
-                              &#x27;mentionOf&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#mentionOf&#x27;,
-                                            &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;name&#x27;: &#x27;http://www.w3.org/2000/01/rdf-schema#label&#x27;,
-                              &#x27;pairEntity&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#pairEntity&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;pairKey&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#pairKey&#x27;,
-                                          &#x27;x-jsonld-type&#x27;: &#x27;http://www.w3.org/2000/01/rdf-schema#Literal&#x27;},
-                              &#x27;pingback&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#pingback&#x27;,
-                                           &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;provType&#x27;: &#x27;@type&#x27;,
-                              &#x27;provenanceUriTemplate&#x27;: &#x27;http://www.w3.org/ns/prov#provenanceUriTemplate&#x27;,
-                              &#x27;qualifiedAssociation&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedAssociation&#x27;,
-                                                       &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedAttribution&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedAttribution&#x27;,
-                                                       &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedCommunication&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedCommunication&#x27;,
-                                                         &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedDelegation&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedDelegation&#x27;,
-                                                      &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedDerivation&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedDerivation&#x27;,
-                                                      &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedEnd&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedEnd&#x27;,
-                                               &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedGeneration&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedGeneration&#x27;,
-                                                      &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedInfluence&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedInfluence&#x27;,
-                                                     &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedInsertion&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedInsertion&#x27;,
-                                                     &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedInvalidation&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedInvalidation&#x27;,
-                                                        &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedPrimarySource&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedPrimarySource&#x27;,
-                                                         &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedQuotation&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedQuotation&#x27;,
-                                                     &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedRemoval&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedRemoval&#x27;,
-                                                   &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedRevision&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedRevision&#x27;,
-                                                    &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedStart&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedStart&#x27;,
-                                                 &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;qualifiedUsage&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedUsage&#x27;,
-                                                 &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;removedKey&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#removedKey&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;http://www.w3.org/2000/01/rdf-schema#Literal&#x27;},
-                              &#x27;specializationOf&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#specializationOf&#x27;,
-                                                   &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;startedAtTime&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#startedAtTime&#x27;,
-                                                &#x27;x-jsonld-type&#x27;: &#x27;http://www.w3.org/2001/XMLSchema#dateTime&#x27;},
-                              &#x27;used&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#used&#x27;,
-                                       &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;value&#x27;: &#x27;http://www.w3.org/ns/prov#value&#x27;,
-                              &#x27;wasAssociatedWith&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasAssociatedWith&#x27;,
-                                                    &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasAttributedTo&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasAttributedTo&#x27;,
-                                                  &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasDerivedFrom&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasDerivedFrom&#x27;,
-                                                 &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasEndedBy&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasEndedBy&#x27;,
-                                             &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasGeneratedBy&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasGeneratedBy&#x27;,
-                                                 &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasInfluencedBy&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasInfluencedBy&#x27;,
-                                                  &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasInformedBy&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasInformedBy&#x27;,
-                                                &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasInvalidatedBy&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasInvalidatedBy&#x27;,
-                                                   &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasQuotedFrom&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasQuotedFrom&#x27;,
-                                                &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasRevisionOf&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasRevisionOf&#x27;,
-                                                &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
-                              &#x27;wasStartedBy&#x27;: {&#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#wasStartedBy&#x27;,
-                                               &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;}},
-     &#x27;x-jsonld-prefixes&#x27;: {&#x27;dct&#x27;: &#x27;http://purl.org/dc/terms/&#x27;,
-                           &#x27;prov&#x27;: &#x27;http://www.w3.org/ns/prov#&#x27;,
-                           &#x27;rdf&#x27;: &#x27;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#x27;,
-                           &#x27;rdfs&#x27;: &#x27;http://www.w3.org/2000/01/rdf-schema#&#x27;,
-                           &#x27;xsd&#x27;: &#x27;http://www.w3.org/2001/XMLSchema#&#x27;}}
-
-On instance:
-    {&#x27;cwlprov:basename&#x27;: &#x27;output.txt&#x27;,
-     &#x27;cwlprov:nameext&#x27;: &#x27;.txt&#x27;,
-     &#x27;cwlprov:nameroot&#x27;: &#x27;output&#x27;,
-     &#x27;featureType&#x27;: [&#x27;wf4ever:File&#x27;, &#x27;wfprov:Artifact&#x27;],
-     &#x27;id&#x27;: &#x27;uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd&#x27;,
-     &#x27;provType&#x27;: &#x27;Entity&#x27;,
-     &#x27;qualifiedGeneration&#x27;: [{&#x27;activity&#x27;: {&#x27;id&#x27;: &#x27;uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44&#x27;,
-                                           &#x27;name&#x27;: &#x27;Run of &#x27;
-                                                   &#x27;workflow/packed.cwl#main/sorted&#x27;,
-                                           &#x27;qualifiedAssociation&#x27;: {&#x27;hadPlan&#x27;: {&#x27;featureType&#x27;: [&#x27;Plan&#x27;,
-                                                                                                &#x27;wfdesc:Process&#x27;],
-                                                                                &#x27;id&#x27;: &#x27; &#x27;
-                                                                                      &#x27;wf:main/sorted&#x27;,
-                                                                                &#x27;type&#x27;: &#x27;Entity&#x27;},
-                                                                    &#x27;type&#x27;: &#x27;Association&#x27;},
-                                           &#x27;qualifiedEnd&#x27;: {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:38.069110&#x27;,
-                                                            &#x27;hadActivity&#x27;: {&#x27;id&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;,
-                                                                            &#x27;name&#x27;: &#x27;Run &#x27;
-                                                                                    &#x27;of &#x27;
-                                                                                    &#x27;workflow/packed.cwl#main&#x27;,
-                                                                            &#x27;qualifiedAssociation&#x27;: {&#x27;hadPlan&#x27;: {&#x27;featureType&#x27;: [&#x27;Plan&#x27;,
-                                                                                                                                 &#x27;wfdesc:Workflow&#x27;],
-                                                                                                                 &#x27;id&#x27;: &#x27;wf:main&#x27;,
-                                                                                                                 &#x27;name&#x27;: &#x27;Prospective &#x27;
-                                                                                                                         &#x27;provenance&#x27;,
-                                                                                                                 &#x27;type&#x27;: &#x27;Entity&#x27;,
-                                                                                                                 &#x27;wfdesc:hasSubProcess&#x27;: [{&#x27;featureType&#x27;: [&#x27;Plan&#x27;,
-                                                                                                                                                           &#x27;wfdesc:Process&#x27;],
-                                                                                                                                           &#x27;id&#x27;: &#x27;wf:main/rev&#x27;,
-                                                                                                                                           &#x27;type&#x27;: &#x27;Entity&#x27;},
-                                                                                                                                          {&#x27;id&#x27;: &#x27;wf:main/sorted&#x27;}]},
-                                                                                                     &#x27;type&#x27;: &#x27;Association&#x27;},
-                                                                            &#x27;qualifiedEnd&#x27;: {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:43.020168&#x27;,
-                                                                                             &#x27;hadActivity&#x27;: {&#x27;id&#x27;: &#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;,
-                                                                                                             &#x27;name&#x27;: &#x27;cwltool &#x27;
-                                                                                                                     &#x27;1.0.20181012180214&#x27;,
-                                                                                                             &#x27;qualifiedStart&#x27;: {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.210973&#x27;,
-                                                                                                                                &#x27;hadActivity&#x27;: {&#x27;actedOnBehalfOf&#x27;: {&#x27;foaf:name&#x27;: &#x27;Stian &#x27;
-                                                                                                                                                                                 &#x27;Soiland-Reyes&#x27;,
-                                                                                                                                                                    &#x27;id&#x27;: &#x27;https://orcid.org/0000-0001-9842-9718&#x27;,
-                                                                                                                                                                    &#x27;name&#x27;: &#x27;Stian &#x27;
-                                                                                                                                                                            &#x27;Soiland-Reyes&#x27;,
-                                                                                                                                                                    &#x27;schemaorg:name&#x27;: &#x27;Stian &#x27;
-                                                                                                                                                                                      &#x27;Soiland-Reyes&#x27;,
-                                                                                                                                                                    &#x27;type&#x27;: [&#x27;schemaorg:Person&#x27;,
-                                                                                                                                                                             &#x27;Person&#x27;,
-                                                                                                                                                                             &#x27;Agent&#x27;]},
-                                                                                                                                                &#x27;id&#x27;: &#x27;uuid:7fa2c8d0-9a3e-4512-9171-fc3b729c2210&#x27;,
-                                                                                                                                                &#x27;type&#x27;: &#x27;Agent&#x27;},
-                                                                                                                                &#x27;type&#x27;: &#x27;Start&#x27;},
-                                                                                                             &#x27;type&#x27;: [&#x27;Agent&#x27;,
-                                                                                                                      &#x27;SoftwareAgent&#x27;,
-                                                                                                                      &#x27;wfprov:WorkflowEngine&#x27;]},
-                                                                                             &#x27;type&#x27;: &#x27;End&#x27;},
-                                                                            &#x27;qualifiedStart&#x27;: {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.211153&#x27;,
-                                                                                               &#x27;hadActivity&#x27;: &#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;,
-                                                                                               &#x27;type&#x27;: &#x27;Start&#x27;},
-                                                                            &#x27;qualifiedUsage&#x27;: [{&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.303484&#x27;,
-                                                                                                &#x27;entity&#x27;: {&#x27;cwlprov:basename&#x27;: &#x27;whale.txt&#x27;,
-                                                                                                           &#x27;cwlprov:nameext&#x27;: &#x27;.txt&#x27;,
-                                                                                                           &#x27;cwlprov:nameroot&#x27;: &#x27;whale&#x27;,
-                                                                                                           &#x27;featureType&#x27;: [&#x27;wfprov:Artifact&#x27;,
-                                                                                                                           &#x27;wf4ever:File&#x27;],
-                                                                                                           &#x27;id&#x27;: &#x27;uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7&#x27;,
-                                                                                                           &#x27;specializationOf&#x27;: {&#x27;id&#x27;: &#x27;sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&#x27;,
-                                                                                                                                &#x27;type&#x27;: [&#x27;wfprov:Artifact&#x27;,
-                                                                                                                                         &#x27;Entity&#x27;]},
-                                                                                                           &#x27;type&#x27;: &#x27;Entity&#x27;},
-                                                                                                &#x27;hadRole&#x27;: &#x27;wf:main/input&#x27;,
-                                                                                                &#x27;type&#x27;: &#x27;Usage&#x27;},
-                                                                                               {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.303643&#x27;,
-                                                                                                &#x27;entity&#x27;: {&#x27;id&#x27;: &#x27;uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d&#x27;,
-                                                                                                           &#x27;type&#x27;: &#x27;Entity&#x27;,
-                                                                                                           &#x27;value&#x27;: True},
-                                                                                                &#x27;hadRole&#x27;: &#x27;wf:main/reverse_sort&#x27;,
-                                                                                                &#x27;type&#x27;: &#x27;Usage&#x27;}],
-                                                                            &#x27;startedAtTime&#x27;: &#x27;2018-10-25T15:46:35.211026&#x27;,
-                                                                            &#x27;type&#x27;: [&#x27;wfprov:WorkflowRun&#x27;,
-                                                                                     &#x27;Activity&#x27;],
-                                                                            &#x27;wasAssociatedWith&#x27;: &#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;},
-                                                            &#x27;type&#x27;: &#x27;End&#x27;},
-                                           &#x27;qualifiedStart&#x27;: {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:36.975235&#x27;,
-                                                              &#x27;hadActivity&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;,
-                                                              &#x27;type&#x27;: &#x27;Start&#x27;},
-                                           &#x27;qualifiedUsage&#x27;: [{&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:37.067604&#x27;,
-                                                               &#x27;entity&#x27;: {&#x27;cwlprov:basename&#x27;: &#x27;output.txt&#x27;,
-                                                                          &#x27;cwlprov:nameext&#x27;: &#x27;.txt&#x27;,
-                                                                          &#x27;cwlprov:nameroot&#x27;: &#x27;output&#x27;,
-                                                                          &#x27;featureType&#x27;: [&#x27;wf4ever:File&#x27;,
-                                                                                          &#x27;wfprov:Artifact&#x27;],
-                                                                          &#x27;id&#x27;: &#x27;uuid:feabfc2c-e5eb-49d0-ad5c-c19076482265&#x27;,
-                                                                          &#x27;qualifiedGeneration&#x27;: {&#x27;activity&#x27;: {&#x27;id&#x27;: &#x27;uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de&#x27;,
-                                                                                                               &#x27;name&#x27;: &#x27;Run &#x27;
-                                                                                                                       &#x27;of &#x27;
-                                                                                                                       &#x27;workflow/packed.cwl#main/rev&#x27;,
-                                                                                                               &#x27;qualifiedAssociation&#x27;: {&#x27;hadPlan&#x27;: &#x27;wf:main/rev&#x27;,
-                                                                                                                                        &#x27;type&#x27;: &#x27;Association&#x27;},
-                                                                                                               &#x27;qualifiedEnd&#x27;: {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:36.967359&#x27;,
-                                                                                                                                &#x27;hadActivity&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;,
-                                                                                                                                &#x27;type&#x27;: &#x27;End&#x27;},
-                                                                                                               &#x27;qualifiedStart&#x27;: {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.314101&#x27;,
-                                                                                                                                  &#x27;hadActivity&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;,
-                                                                                                                                  &#x27;type&#x27;: &#x27;Start&#x27;},
-                                                                                                               &#x27;qualifiedUsage&#x27;: {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:35.597726&#x27;,
-                                                                                                                                  &#x27;entity&#x27;: {&#x27;cwlprov:basename&#x27;: &#x27;whale.txt&#x27;,
-                                                                                                                                             &#x27;cwlprov:nameext&#x27;: &#x27;.txt&#x27;,
-                                                                                                                                             &#x27;cwlprov:nameroot&#x27;: &#x27;whale&#x27;,
-                                                                                                                                             &#x27;featureType&#x27;: [&#x27;wfprov:Artifact&#x27;,
-                                                                                                                                                             &#x27;wf4ever:File&#x27;],
-                                                                                                                                             &#x27;id&#x27;: &#x27;uuid:6e84364f-faa9-4a27-aaba-5e4b80d9564b&#x27;,
-                                                                                                                                             &#x27;specializationOf&#x27;: &#x27;sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&#x27;,
-                                                                                                                                             &#x27;type&#x27;: &#x27;Entity&#x27;},
-                                                                                                                                  &#x27;hadRole&#x27;: &#x27;wf:main/rev/input&#x27;,
-                                                                                                                                  &#x27;type&#x27;: &#x27;Usage&#x27;},
-                                                                                                               &#x27;type&#x27;: [&#x27;wfprov:ProcessRun&#x27;,
-                                                                                                                        &#x27;Activity&#x27;],
-                                                                                                               &#x27;wasAssociatedWith&#x27;: [{&#x27;cwlprov:image&#x27;: &#x27;debian:8&#x27;,
-                                                                                                                                      &#x27;id&#x27;: &#x27;uuid:f5ce6344-3b3b-4653-84fd-1f5abfa57fb0&#x27;,
-                                                                                                                                      &#x27;name&#x27;: &#x27;Container &#x27;
-                                                                                                                                              &#x27;execution &#x27;
-                                                                                                                                              &#x27;of &#x27;
-                                                                                                                                              &#x27;image &#x27;
-                                                                                                                                              &#x27;debian:8&#x27;,
-                                                                                                                                      &#x27;type&#x27;: [&#x27;SoftwareAgent&#x27;,
-                                                                                                                                               &#x27;Agent&#x27;]},
-                                                                                                                                     &#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;]},
-                                                                                                  &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:36.963254&#x27;,
-                                                                                                  &#x27;hadRole&#x27;: &#x27;wf:main/rev/output&#x27;,
-                                                                                                  &#x27;type&#x27;: &#x27;Generation&#x27;},
-                                                                          &#x27;specializationOf&#x27;: {&#x27;featureType&#x27;: [&#x27;wfprov:Artifact&#x27;],
-                                                                                               &#x27;id&#x27;: &#x27;sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f&#x27;,
-                                                                                               &#x27;type&#x27;: &#x27;Entity&#x27;},
-                                                                          &#x27;type&#x27;: &#x27;Entity&#x27;},
-                                                               &#x27;hadRole&#x27;: &#x27;wf:main/sorted/input&#x27;,
-                                                               &#x27;type&#x27;: &#x27;Usage&#x27;},
-                                                              {&#x27;atTime&#x27;: &#x27;2018-10-25T15:46:37.067864&#x27;,
-                                                               &#x27;entity&#x27;: {&#x27;id&#x27;: &#x27;uuid:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93&#x27;,
-                                                                          &#x27;type&#x27;: &#x27;Entity&#x27;,
-                                                                          &#x27;value&#x27;: True},
-                                                               &#x27;hadRole&#x27;: &#x27;wf:main/sorted/reverse&#x27;,
-                                                               &#x27;type&#x27;: &#x27;Usage&#x27;}],
-                                           &#x27;type&#x27;: [&#x27;wfprov:ProcessRun&#x27;,
-                                                    &#x27;Activity&#x27;],
-                                           &#x27;wasAssociatedWith&#x27;: [&#x27;uuid:ac9c1653-4291-47bc-86f8-6dedcff13519&#x27;,
-                                                                 {&#x27;cwlprov:image&#x27;: &#x27;debian:8&#x27;,
-                                                                  &#x27;id&#x27;: &#x27;uuid:ba0fe122-124e-417b-8a2a-95e721320a2d&#x27;,
-                                                                  &#x27;name&#x27;: &#x27;Container &#x27;
-                                                                          &#x27;execution &#x27;
-                                                                          &#x27;of &#x27;
-                                                                          &#x27;image &#x27;
-                                                                          &#x27;debian:8&#x27;,
-                                                                  &#x27;type&#x27;: [&#x27;SoftwareAgent&#x27;,
-                                                                           &#x27;Agent&#x27;]}]},
-                              &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:38.058365&#x27;,
-                              &#x27;hadRole&#x27;: &#x27;wf:main/sorted/output&#x27;,
-                              &#x27;type&#x27;: &#x27;Generation&#x27;},
-                             {&#x27;activity&#x27;: &#x27;uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f&#x27;,
-                              &#x27;atTime&#x27;: &#x27;2018-10-25T15:46:43.020002&#x27;,
-                              &#x27;hadRole&#x27;: &#x27;wf:main/primary/output&#x27;,
-                              &#x27;type&#x27;: &#x27;Generation&#x27;}],
-     &#x27;specializationOf&#x27;: {&#x27;featureType&#x27;: [&#x27;wfprov:Artifact&#x27;],
-                          &#x27;id&#x27;: &#x27;sha1:b9214658cc453331b62c2282b772a5c063dbd284&#x27;,
-                          &#x27;type&#x27;: &#x27;Entity&#x27;},
-     &#x27;type&#x27;: &#x27;Feature&#x27;}</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - https://www.w3.org/ns/prov-o</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasStartedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAttributedTo&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInfluence&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPrimarySource&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedEnd&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadRole&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedQuotation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDerivation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasRevisionOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#InstantaneousEvent-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasGeneratedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Activity-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Bundle-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Plan-shape&gt;: wf:main,&lt;arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev&gt;
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-atLocation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadGeneration&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-generated&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedRevision&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInfluencedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-used&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-influencer&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDelegation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedStart&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-invalidated&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-specializationOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#End-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasDerivedFrom&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadActivity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInformedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Entity-shape&gt;: uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd
+ - Shape &lt;https://www.ogc.org/rules/prov/#Collection-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-agent&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#EmptyCollection-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Usage-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedCommunication&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedUsage&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-alternateOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAssociatedWith&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPlan&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-activity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasEndedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAttribution&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadUsage&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAssociation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Start-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Invalidation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasQuotedFrom&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Generation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedGeneration&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-entity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadMember&gt;: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.profiles.prov.cwl.provenance-3">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-4"
                                                             aria-expanded="false" aria-controls="uid-4"
@@ -651,6 +371,7 @@ On instance:
                                                     </button>
                                                     <a href="profiles/prov/cwl/provenance/example_3_1.json" target="_blank">example_3_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.profiles.prov.cwl.provenance-3">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -658,12 +379,87 @@ On instance:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_3_1.json (example_3_1) from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using example3.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_3_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - https://www.w3.org/ns/prov-o</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasStartedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAttributedTo&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInfluence&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPrimarySource&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedEnd&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadRole&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedQuotation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDerivation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasRevisionOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#InstantaneousEvent-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasGeneratedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Activity-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Bundle-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Plan-shape&gt;: wf:main
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-atLocation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadGeneration&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-generated&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedRevision&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInfluencedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-used&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-influencer&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDelegation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedStart&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-invalidated&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-specializationOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#End-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasDerivedFrom&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadActivity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInformedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Entity-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Collection-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-agent&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#EmptyCollection-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Usage-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedCommunication&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedUsage&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-alternateOf&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAssociatedWith&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPlan&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-activity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasEndedBy&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAttribution&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadUsage&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAssociation&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Start-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Invalidation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasQuotedFrom&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Generation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedGeneration&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-entity&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadMember&gt;: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -685,13 +481,20 @@ On instance:
                         accordionEntries.forEach(e => e.classList.remove('show'));
                     }
                 });
-                if (location.hash.startsWith('#bblock-')) {
+                if (/^#(bblock|item)-/.test(location.hash)) {
                     const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
                     if (highlight) {
                         highlight.querySelector('.accordion-collapse').classList.add('show');
                         highlight.classList.add('highlighted');
                     }
                 }
+                document.addEventListener('click', ev => {
+                    if (!ev.target.classList.contains('anchor') || !ev.target.href) {
+                      return;
+                    }
+                    ev.stopPropagation();
+                    navigator?.clipboard?.writeText(ev.target.href);
+                });
             });
         </script>
     </body>
