@@ -11,23 +11,45 @@ Common Workflow Language - profile using PROV JSON schema building block.
 
 ## Provenance profile
 
-This is a profile of the JSON schema for PROV-O.
+This is a profile of the JSON schema for PROV-O, using the CWLPROV vocabulary to describe the
+execution of Common Workflow Language (CWL) workflows and tools.
 
 > This demonstrates inheritance of the JSON-LD binding from the schema to the PROV-O ontology.
 
-The template provides for a sample profile that extends the underlying provenance model through:
-- defining specific Entity and Activity types
-- adds example metadata attributes for provenance classes
-- defines a SHACL rule for checking presence of specific types
+This block reuses the underlying provenance model as-is (no additional schema constraints), and adds
+a JSON-LD `context.jsonld` binding the CWL/CWLPROV-specific vocabulary (workflow, process, and
+association types) used by real `cwltool` provenance output.
 
 ## components
 
-under a building block directory _/example-prov-profile:
-- schema.yaml extends the [base](https://ogcincubator.github.io/bblock-prov-schema) and shows how to define additional schema elements
-- context.jsonld defines URI bindings for customisations and bases for keywords (e.g. activity and entity types)
-- rules.shacl defines logical consistency rules for the profile (what types of activities etc.)
+This block's [source directory](https://github.com/ogcincubator/prov-cwl/tree/master/_sources/provenance)
+contains:
+- [`schema.yaml`](https://github.com/ogcincubator/prov-cwl/blob/master/_sources/provenance/schema.yaml),
+  which references the [base OGC PROV Chain schema](https://ogcincubator.github.io/bblock-prov-schema)
+  without further constraining it
+- [`context.jsonld`](https://github.com/ogcincubator/prov-cwl/blob/master/_sources/provenance/context.jsonld),
+  which adds the CWL/CWLPROV-specific URI bindings (`wf`, `wfdesc`, `wfprov`, `cwlprov`, `schemaorg`,
+  `foaf`) referenced by the examples
 
-Note that compliance with general PROV patterns is handled by inheritance of SHACL rules from the base profile.
+## Relation to the generic W3C PROV profiles
+
+This block's schema is built on [`ogc.ogc-utils.prov`](bblocks://ogc.ogc-utils.prov) (the OGC PROV
+Chain / "Single Schema for PROV"), and follows the same nested-object-plus-JSON-LD-context pattern
+as [`W3C PROV-JSONLD`](bblocks://ogc.ogc-utils.prov.w3c-prov-jsonld) - this profile is declared
+(`isProfileOf`) as a further specialization of both. Its own `context.jsonld` adds the CWL-specific
+vocabulary (`wfdesc`, `wfprov`, `cwlprov`, etc.) needed to describe workflow runs.
+
+The [`turtle`](bblocks://ogc.profiles.prov.cwl.turtle) sibling block in this register represents the
+same CWL provenance content as RDF/Turtle rather than JSON-LD - the two are cross-linked via
+`hasFormat`, the same relation used among the generic W3C PROV representations.
+
+## Relation to CWL workflow definitions
+
+A provenance record's `qualifiedAssociation.hadPlan` entities (see the examples) identify the CWL
+workflow or tool that was actually run - a `prov:Plan` in PROV terms. This block declares a
+`dependsOn` [`ogc.cwl.v1_2_1.CWL`](bblocks://ogc.cwl.v1_2_1.CWL): the provenance record is an
+execution trace whose `Plan` entities are instances of a CWL document defined by that block, rather
+than a schema-level specialization of it.
 
 ## Examples
 
@@ -745,12 +767,12 @@ uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f rdfs:label "Run of workflow/packed.cwl
             prov:hadActivity uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;
     prov:qualifiedStart [ prov:atTime "2018-10-25T15:46:35.211153"^^xsd:dateTime ;
             prov:hadActivity uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 ] ;
-    prov:qualifiedUsage [ prov:atTime "2018-10-25T15:46:35.303484"^^xsd:dateTime ;
-            prov:entity uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7 ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/input> ],
-        [ prov:atTime "2018-10-25T15:46:35.303643"^^xsd:dateTime ;
+    prov:qualifiedUsage [ prov:atTime "2018-10-25T15:46:35.303643"^^xsd:dateTime ;
             prov:entity uuid:ed8d007b-a1f3-4bfe-b390-08df074d712d ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/reverse_sort> ] ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/reverse_sort> ],
+        [ prov:atTime "2018-10-25T15:46:35.303484"^^xsd:dateTime ;
+            prov:entity uuid:fe16801a-7995-4968-a8bb-5e9d46255bb7 ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/input> ] ;
     prov:startedAtTime "2018-10-25T15:46:35.211026"^^xsd:dateTime ;
     prov:wasAssociatedWith uuid:ac9c1653-4291-47bc-86f8-6dedcff13519 .
 
@@ -966,12 +988,12 @@ JSON
 
 uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd a wf4ever:File,
         wfprov:Artifact ;
-    prov:qualifiedGeneration [ prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
-            prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/primary/output> ],
-        [ prov:activity uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 ;
+    prov:qualifiedGeneration [ prov:activity uuid:d7e8b17e-2d80-4c42-a797-bc3628f52c44 ;
             prov:atTime "2018-10-25T15:46:38.058365"^^xsd:dateTime ;
-            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/output> ] ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted/output> ],
+        [ prov:activity uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f ;
+            prov:atTime "2018-10-25T15:46:43.020002"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/primary/output> ] ;
     prov:specializationOf sha1:b9214658cc453331b62c2282b772a5c063dbd284 ;
     cwlprov:basename "output.txt" ;
     cwlprov:nameext ".txt" ;

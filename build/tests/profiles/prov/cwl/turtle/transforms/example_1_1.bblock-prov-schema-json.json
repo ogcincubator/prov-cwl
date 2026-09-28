@@ -17,7 +17,7 @@
           ],
           "name": "Run of workflow/packed.cwl#main",
           "qualifiedAssociation": {
-            "id": "_:b0",
+            "id": "_:b12",
             "provType": "Association",
             "hadPlan": {
               "id": "wf:main",
@@ -48,7 +48,7 @@
             }
           },
           "qualifiedEnd": {
-            "id": "_:b1",
+            "id": "_:b13",
             "provType": "End",
             "atTime": "2018-10-25T15:46:43.020168",
             "hadActivity": {
@@ -60,7 +60,7 @@
               ],
               "name": "cwltool 1.0.20181012180214",
               "qualifiedStart": {
-                "id": "_:b9",
+                "id": "_:b17",
                 "provType": "Start",
                 "atTime": "2018-10-25T15:46:35.210973",
                 "hadActivity": {
@@ -82,14 +82,14 @@
             }
           },
           "qualifiedStart": {
-            "id": "_:b2",
+            "id": "_:b14",
             "provType": "Start",
             "atTime": "2018-10-25T15:46:35.211153",
             "hadActivity": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
           },
           "qualifiedUsage": [
             {
-              "id": "_:b3",
+              "id": "_:b15",
               "provType": "Usage",
               "atTime": "2018-10-25T15:46:35.303484",
               "entity": {
@@ -113,7 +113,7 @@
               "hadRole": "wf:main/input"
             },
             {
-              "id": "_:b4",
+              "id": "_:b16",
               "provType": "Usage",
               "atTime": "2018-10-25T15:46:35.303643",
               "entity": {
@@ -165,7 +165,7 @@
                   "Entity"
                 ],
                 "qualifiedGeneration": {
-                  "id": "_:b17",
+                  "id": "_:b0",
                   "provType": "Generation",
                   "activity": {
                     "id": "uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de",
@@ -175,24 +175,24 @@
                     ],
                     "name": "Run of workflow/packed.cwl#main/rev",
                     "qualifiedAssociation": {
-                      "id": "_:b5",
+                      "id": "_:b3",
                       "provType": "Association",
                       "hadPlan": "wf:main/rev"
                     },
                     "qualifiedEnd": {
-                      "id": "_:b6",
+                      "id": "_:b4",
                       "provType": "End",
                       "atTime": "2018-10-25T15:46:36.967359",
                       "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
                     },
                     "qualifiedStart": {
-                      "id": "_:b7",
+                      "id": "_:b5",
                       "provType": "Start",
                       "atTime": "2018-10-25T15:46:35.314101",
                       "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
                     },
                     "qualifiedUsage": {
-                      "id": "_:b8",
+                      "id": "_:b6",
                       "provType": "Usage",
                       "atTime": "2018-10-25T15:46:35.597726",
                       "entity": {
@@ -285,7 +285,7 @@
       "Entity"
     ],
     "qualifiedGeneration": {
-      "id": "_:b17",
+      "id": "_:b0",
       "provType": "Generation",
       "activity": {
         "id": "uuid:f81dd60b-46db-4e58-b9f9-5606de1f10de",
@@ -295,7 +295,7 @@
         ],
         "name": "Run of workflow/packed.cwl#main/rev",
         "qualifiedAssociation": {
-          "id": "_:b5",
+          "id": "_:b3",
           "provType": "Association",
           "hadPlan": {
             "id": "wf:main/rev",
@@ -307,7 +307,7 @@
           }
         },
         "qualifiedEnd": {
-          "id": "_:b6",
+          "id": "_:b4",
           "provType": "End",
           "atTime": "2018-10-25T15:46:36.967359",
           "hadActivity": {
@@ -318,7 +318,7 @@
             ],
             "name": "Run of workflow/packed.cwl#main",
             "qualifiedAssociation": {
-              "id": "_:b0",
+              "id": "_:b12",
               "provType": "Association",
               "hadPlan": {
                 "id": "wf:main",
@@ -344,7 +344,7 @@
               }
             },
             "qualifiedEnd": {
-              "id": "_:b1",
+              "id": "_:b13",
               "provType": "End",
               "atTime": "2018-10-25T15:46:43.020168",
               "hadActivity": {
@@ -356,7 +356,7 @@
                 ],
                 "name": "cwltool 1.0.20181012180214",
                 "qualifiedStart": {
-                  "id": "_:b9",
+                  "id": "_:b17",
                   "provType": "Start",
                   "atTime": "2018-10-25T15:46:35.210973",
                   "hadActivity": {
@@ -378,14 +378,14 @@
               }
             },
             "qualifiedStart": {
-              "id": "_:b2",
+              "id": "_:b14",
               "provType": "Start",
               "atTime": "2018-10-25T15:46:35.211153",
               "hadActivity": "uuid:ac9c1653-4291-47bc-86f8-6dedcff13519"
             },
             "qualifiedUsage": [
               {
-                "id": "_:b3",
+                "id": "_:b15",
                 "provType": "Usage",
                 "atTime": "2018-10-25T15:46:35.303484",
                 "entity": {
@@ -409,7 +409,7 @@
                 "hadRole": "wf:main/input"
               },
               {
-                "id": "_:b4",
+                "id": "_:b16",
                 "provType": "Usage",
                 "atTime": "2018-10-25T15:46:35.303643",
                 "entity": {
@@ -425,13 +425,13 @@
           }
         },
         "qualifiedStart": {
-          "id": "_:b7",
+          "id": "_:b5",
           "provType": "Start",
           "atTime": "2018-10-25T15:46:35.314101",
           "hadActivity": "uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f"
         },
         "qualifiedUsage": {
-          "id": "_:b8",
+          "id": "_:b6",
           "provType": "Usage",
           "atTime": "2018-10-25T15:46:35.597726",
           "entity": {

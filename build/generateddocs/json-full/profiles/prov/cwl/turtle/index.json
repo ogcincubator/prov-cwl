@@ -9,7 +9,17 @@
   "itemClass": "model",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-09-16",
+  "dateOfLastChange": "2026-09-28",
+  "isProfileOf": [
+    "ogc.ogc-utils.prov.w3c-prov-rdf"
+  ],
+  "dependsOn": [
+    "ogc.ogc-utils.prov.w3c-prov-rdf",
+    "ogc.cwl.v1_2_1.CWL"
+  ],
+  "hasFormat": [
+    "ogc.profiles.prov.cwl.provenance"
+  ],
   "maturity": "under-development",
   "scope": "unstable",
   "link": "https://github.com/common-workflow-language/cwlprov/",
@@ -20,7 +30,11 @@
     "cwl",
     "cwlprov"
   ],
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.model.cross-domain.prov": [
+      "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+    ]
+  },
   "sourceFiles": "https://ogcincubator.github.io/prov-cwl/_sources/turtle/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/prov-cwl/blob/master/build/tests/profiles/prov/cwl/turtle/",
@@ -158,7 +172,7 @@
           "transformResults": {
             "bblock-prov-schema": {
               "success": true,
-              "sizeBytes": 17736,
+              "sizeBytes": 17746,
               "url": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/turtle/transforms/example_1_1.bblock-prov-schema.jsonld",
               "profilesValidation": {
                 "ogc.ogc-utils.prov": {
@@ -172,7 +186,7 @@
             },
             "bblock-prov-schema-json": {
               "success": true,
-              "sizeBytes": 16205,
+              "sizeBytes": 16215,
               "url": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/turtle/transforms/example_1_1.bblock-prov-schema-json.json",
               "profilesValidation": {
                 "ogc.ogc-utils.prov": {

@@ -10,15 +10,15 @@ This bblock is an initial test that the PROV schema can be extended to support s
 
 ## Building Blocks
 
-### `ogc.profiles.prov.cwl.turtle` — CWL (Prov) from Turtle
-
-**Type:** model
-
-Common Workflow Language - profile from cwltool RDF output
-
 ### `ogc.profiles.prov.cwl.provenance` — CWL (Prov)
 
 **Type:** schema
 
 Common Workflow Language - profile using PROV JSON schema building block.
+
+### `ogc.profiles.prov.cwl.turtle` — CWL (Prov) from Turtle
+
+**Type:** model
+
+Common Workflow Language - profile from cwltool RDF output
 

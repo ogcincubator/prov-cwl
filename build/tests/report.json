@@ -6,58 +6,11 @@
     "result": true
   },
   "bblocks": {
-    "ogc.profiles.prov.cwl.turtle": {
-      "title": "Validation report for ogc.profiles.prov.cwl.turtle - CWL (Prov) from Turtle",
-      "bblockName": "CWL (Prov) from Turtle",
-      "bblockId": "ogc.profiles.prov.cwl.turtle",
-      "generated": "2026-09-16T22:20:30.877049+00:00",
-      "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/profiles/prov/cwl/turtle/example_1_1.ttl",
-            "url": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/turtle/example_1_1.ttl",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "text/turtle"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using examples/revsort-run-1.ttl from examples"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 162,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 1,
-        "failed": 0
-      }
-    },
     "ogc.profiles.prov.cwl.provenance": {
       "title": "Validation report for ogc.profiles.prov.cwl.provenance - CWL (Prov)",
       "bblockName": "CWL (Prov)",
       "bblockId": "ogc.profiles.prov.cwl.provenance",
-      "generated": "2026-09-16T22:20:32.801304+00:00",
+      "generated": "2026-09-28T21:03:06.299272+00:00",
       "result": true,
       "items": [
         {
@@ -119,7 +72,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o"
+                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o\n - https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOntology/ontology.ttl\n - https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SchemaSaladOntology/ontology.ttl\n - https://www.w3.org/ns/prov-o#"
                 },
                 {
                   "op": "shacl-report",
@@ -131,174 +84,174 @@
                 {
                   "shaclFile": "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl",
                   "focusNodes": {
-                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Activity-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
-                      "nodes": []
-                    },
                     "<https://www.ogc.org/rules/prov/#Plan-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
                       "nodes": []
                     },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
+                      "nodes": []
+                    },
                     "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-used>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#End-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#EmptyCollection-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-activity>": {
+                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
+                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
                       "nodes": []
                     },
+                    "<https://www.ogc.org/rules/prov/#EmptyCollection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
+                      "nodes": []
+                    },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                    "<https://www.ogc.org/rules/prov/#Activity-shape>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Invalidation-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-used>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#End-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Generation-shape>": {
                       "nodes": []
                     },
+                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
+                      "nodes": []
+                    },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
+                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-activity>": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n"
+                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n"
                 }
               ]
             }
@@ -363,7 +316,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o"
+                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o\n - https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOntology/ontology.ttl\n - https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SchemaSaladOntology/ontology.ttl\n - https://www.w3.org/ns/prov-o#"
                 },
                 {
                   "op": "shacl-report",
@@ -375,106 +328,58 @@
                 {
                   "shaclFile": "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl",
                   "focusNodes": {
-                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
-                      "nodes": []
+                    "<https://www.ogc.org/rules/prov/#Plan-shape>": {
+                      "nodes": [
+                        "<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>",
+                        "wf:main"
+                      ]
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
+                    "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
+                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
+                    "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#Activity-shape>": {
+                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#Plan-shape>": {
-                      "nodes": [
-                        "wf:main",
-                        "<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>"
-                      ]
-                    },
                     "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-used>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#End-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
+                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Entity-shape>": {
@@ -482,72 +387,120 @@
                         "uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd"
                       ]
                     },
-                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#EmptyCollection-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
+                    "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-activity>": {
+                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
-                      "nodes": []
-                    },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                    "<https://www.ogc.org/rules/prov/#Activity-shape>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Invalidation-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-used>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#End-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Generation-shape>": {
                       "nodes": []
                     },
+                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
+                      "nodes": []
+                    },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
+                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-activity>": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: wf:main,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n"
+                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,wf:main\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: uuid:071d1b5c-1b2b-4995-a6e0-80821af85abd\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n"
                 }
               ]
             }
@@ -612,7 +565,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o"
+                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o\n - https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOntology/ontology.ttl\n - https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SchemaSaladOntology/ontology.ttl\n - https://www.w3.org/ns/prov-o#"
                 },
                 {
                   "op": "shacl-report",
@@ -624,176 +577,176 @@
                 {
                   "shaclFile": "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl",
                   "focusNodes": {
-                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Activity-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
-                      "nodes": []
-                    },
                     "<https://www.ogc.org/rules/prov/#Plan-shape>": {
                       "nodes": [
                         "wf:main"
                       ]
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
-                      "nodes": []
-                    },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-used>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#End-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#EmptyCollection-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-activity>": {
+                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
+                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
                       "nodes": []
                     },
+                    "<https://www.ogc.org/rules/prov/#EmptyCollection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
+                      "nodes": []
+                    },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                    "<https://www.ogc.org/rules/prov/#Activity-shape>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Invalidation-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-used>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#End-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Generation-shape>": {
                       "nodes": []
                     },
+                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
+                      "nodes": []
+                    },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
+                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-activity>": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: wf:main\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n"
+                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: wf:main\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n"
                 }
               ]
             }
@@ -804,6 +757,282 @@
       "counts": {
         "total": 3,
         "passed": 3,
+        "failed": 0
+      }
+    },
+    "ogc.profiles.prov.cwl.turtle": {
+      "title": "Validation report for ogc.profiles.prov.cwl.turtle - CWL (Prov) from Turtle",
+      "bblockName": "CWL (Prov) from Turtle",
+      "bblockId": "ogc.profiles.prov.cwl.turtle",
+      "generated": "2026-09-28T21:03:07.286230+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/profiles/prov/cwl/turtle/example_1_1.ttl",
+            "url": "https://ogcincubator.github.io/prov-cwl/build/tests/profiles/prov/cwl/turtle/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/revsort-run-1.ttl from examples"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 162,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o\n - https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOntology/ontology.ttl\n - https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SchemaSaladOntology/ontology.ttl\n - https://www.w3.org/ns/prov-o#"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl",
+                  "focusNodes": {
+                    "<https://www.ogc.org/rules/prov/#Plan-shape>": {
+                      "nodes": [
+                        "<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>",
+                        "<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted>",
+                        "wf:main"
+                      ]
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
+                      "nodes": [
+                        "id:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedUsage",
+                        "id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedUsage",
+                        "id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedUsage",
+                        "id:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedUsage",
+                        "id:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedUsage"
+                      ]
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
+                      "nodes": [
+                        "data:97fe1b50b4582cebc7d853796ebd62e3e163aa3f",
+                        "id:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93",
+                        "id:fe16801a-7995-4968-a8bb-5e9d46255bb7",
+                        "id:ed8d007b-a1f3-4bfe-b390-08df074d712d",
+                        "id:feabfc2c-e5eb-49d0-ad5c-c19076482265",
+                        "id:071d1b5c-1b2b-4995-a6e0-80821af85abd",
+                        "id:6e84364f-faa9-4a27-aaba-5e4b80d9564b",
+                        "<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>",
+                        "data:b9214658cc453331b62c2282b772a5c063dbd284",
+                        "<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted>",
+                        "wf:main",
+                        "data:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376"
+                      ]
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#EmptyCollection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Activity-shape>": {
+                      "nodes": [
+                        "id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f",
+                        "id:f81dd60b-46db-4e58-b9f9-5606de1f10de",
+                        "id:d7e8b17e-2d80-4c42-a797-bc3628f52c44"
+                      ]
+                    },
+                    "<https://www.ogc.org/rules/prov/#Invalidation-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-used>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#End-shape>": {
+                      "nodes": [
+                        "id:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedEnd",
+                        "id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedEnd",
+                        "id:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedEnd"
+                      ]
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Generation-shape>": {
+                      "nodes": [
+                        "id:feabfc2c-e5eb-49d0-ad5c-c19076482265/prov:qualifiedGeneration",
+                        "id:071d1b5c-1b2b-4995-a6e0-80821af85abd/prov:qualifiedGeneration",
+                        "id:071d1b5c-1b2b-4995-a6e0-80821af85abd/prov:qualifiedGeneration"
+                      ]
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                      "nodes": [
+                        "id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedStart",
+                        "id:ac9c1653-4291-47bc-86f8-6dedcff13519/prov:qualifiedStart",
+                        "id:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedStart",
+                        "id:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedStart"
+                      ]
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-activity>": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: <arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted>,wf:main\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: id:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedUsage,id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedUsage,id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedUsage,id:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedUsage,id:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedUsage\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: data:97fe1b50b4582cebc7d853796ebd62e3e163aa3f,id:4ab5a3fe-e481-4f7f-98c4-af8e5dfccb93,id:fe16801a-7995-4968-a8bb-5e9d46255bb7,id:ed8d007b-a1f3-4bfe-b390-08df074d712d,id:feabfc2c-e5eb-49d0-ad5c-c19076482265,id:071d1b5c-1b2b-4995-a6e0-80821af85abd,id:6e84364f-faa9-4a27-aaba-5e4b80d9564b,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/rev>,data:b9214658cc453331b62c2282b772a5c063dbd284,<arcp://uuid,1f767ad4-ac52-4623-b5bc-dd9faf2b869f/workflow/packed.cwl#main/sorted>,wf:main,data:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f,id:f81dd60b-46db-4e58-b9f9-5606de1f10de,id:d7e8b17e-2d80-4c42-a797-bc3628f52c44\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: id:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedEnd,id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedEnd,id:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedEnd\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: id:feabfc2c-e5eb-49d0-ad5c-c19076482265/prov:qualifiedGeneration,id:071d1b5c-1b2b-4995-a6e0-80821af85abd/prov:qualifiedGeneration,id:071d1b5c-1b2b-4995-a6e0-80821af85abd/prov:qualifiedGeneration\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: id:1f767ad4-ac52-4623-b5bc-dd9faf2b869f/prov:qualifiedStart,id:ac9c1653-4291-47bc-86f8-6dedcff13519/prov:qualifiedStart,id:d7e8b17e-2d80-4c42-a797-bc3628f52c44/prov:qualifiedStart,id:f81dd60b-46db-4e58-b9f9-5606de1f10de/prov:qualifiedStart\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
         "failed": 0
       }
     }

@@ -1,7 +1,7 @@
 @prefix ns1: <cwlprov:> .
-@prefix ns2: <foaf:> .
-@prefix ns3: <sdo:> .
-@prefix ns4: <wfdesc:> .
+@prefix ns2: <wfdesc:> .
+@prefix ns3: <foaf:> .
+@prefix ns4: <sdo:> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -24,10 +24,10 @@
 
 <https://orcid.org/0000-0001-9842-9718> a prov:Agent,
         prov:Person,
-        ns3:Person ;
+        ns4:Person ;
     rdfs:label "Stian Soiland-Reyes" ;
-    ns2:name "Stian Soiland-Reyes" ;
-    ns3:name "Stian Soiland-Reyes" .
+    ns3:name "Stian Soiland-Reyes" ;
+    ns4:name "Stian Soiland-Reyes" .
 
 <sha1:97fe1b50b4582cebc7d853796ebd62e3e163aa3f> a prov:Entity,
         <wfprov:Artifact> .
@@ -124,9 +124,9 @@
 
 <wf:main> a prov:Entity,
         prov:Plan,
-        ns4:Workflow ;
+        ns2:Workflow ;
     rdfs:label "Prospective provenance" ;
-    ns4:hasSubProcess <wf:main/rev>,
+    ns2:hasSubProcess <wf:main/rev>,
         <wf:main/sorted> .
 
 <sha1:327fc7aedf4f6b69a42a7c8b808dc5a7aff61376> a prov:Entity,
@@ -134,11 +134,11 @@
 
 <wf:main/rev> a prov:Entity,
         prov:Plan,
-        ns4:Process .
+        ns2:Process .
 
 <wf:main/sorted> a prov:Entity,
         prov:Plan,
-        ns4:Process .
+        ns2:Process .
 
 <uuid:1f767ad4-ac52-4623-b5bc-dd9faf2b869f> a prov:Activity,
         <wfprov:WorkflowRun> ;
