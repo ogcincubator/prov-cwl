@@ -11,3 +11,5 @@ description: |
 imports:
   - default
   - '@ogc/prov-schema'
+  - '@ogc/cwl'
+  - https://ogcincubator.github.io/bblocks-prov-jsonld-alt
